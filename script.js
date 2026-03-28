@@ -1,159 +1,175 @@
-// toggle bar 
-const togglebutton = document.getElementsByClassName("toggle-button")[0];
-const navbarlinks = document.getElementsByClassName("nav-links")[0];
-const overlay = document.querySelector(".overlay");
-const cursor = document.querySelector(".cursor");
+// Custom cursor
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursor-ring');
+let mx = 0, my = 0, rx = 0, ry = 0;
 
-// link scroll
-document.addEventListener("DOMContentLoaded", function() {
-
-    // Links
-    const Profile = document.querySelector(".prolink");
-    const experience = document.querySelector(".explink");
-    const education = document.querySelector(".edulink");
-    const skills = document.querySelector(".skillink");
-    const contact = document.querySelector(".contlink");
-
-    Profile.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        const profSec = document.getElementById("profile");
-        profSec.scrollIntoView({behavior: "smooth"});
-    });
-
-    experience.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        const expSec = document.getElementById("experience");
-        expSec.scrollIntoView({behavior: "smooth"});
-    });
-
-    education.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        const eduSec = document.getElementById("education");
-        eduSec.scrollIntoView({behavior: "smooth"});
-    });
-
-    skills.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        const skillSec = document.getElementById("skill");
-        skillSec.scrollIntoView({behavior: "smooth"});
-    });
-
-    contact.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        const contSec = document.getElementById("contact");
-        contSec.scrollIntoView({behavior: "smooth"});
-    });
+document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cursor.style.left = mx + 'px';
+    cursor.style.top = my + 'px';
 });
 
+function animRing() {
+    rx += (mx - rx) * 0.15;
+    ry += (my - ry) * 0.15;
+    ring.style.left = rx + 'px';
+    ring.style.top = ry + 'px';
+    requestAnimationFrame(animRing);
+}
+animRing();
 
-// custom cursor
-// document.addEventListener("mousemove", e => {
-//     cursor.setAttribute("style", "top:" + (e.pageY) + "px; left:" + (e.pageX) + "px;")
-// });
-
-// overlay
-togglebutton.addEventListener( "click", ()=> {
-    navbarlinks.classList.toggle('active');
-    overlay.classList.toggle('active');
-} );
-
-overlay.addEventListener("click", () => {
-    overlay.classList.remove("active");
-    navbarlinks.classList.remove("active");
+document.querySelectorAll('a, button, .skill-card, .project-card').forEach(el => {
+    el.addEventListener('mouseenter', () => { cursor.classList.add('hover'); ring.classList.add('hover'); });
+    el.addEventListener('mouseleave', () => { cursor.classList.remove('hover'); ring.classList.remove('hover'); });
 });
 
-// navbar scrolli action
+// Canvas background — animated grid + particles
+const canvas = document.getElementById('bg-canvas');
+const ctx = canvas.getContext('2d');
+let W, H, particles = [], mouse = { x: -999, y: -999 };
 
-const navbar = document.querySelector(".navbar");
-const navLink = document.querySelector(".nav-links");
-const toggleButton = document.querySelector(".toggle-button")
+function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', () => { resize(); initParticles(); });
 
-let lastScrollTop = 0;
+document.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
 
-window.addEventListener('scroll', () => {
-    const scrollPos = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const documentHeight = document.body.clientHeight;
-
-    if (scrollPos > 0 && scrollPos < (documentHeight - windowHeight)) {
-        if (scrollPos < lastScrollTop) {
-            navbar.style.top = '0';
-        } else {
-            navbar.style.top = '-90px';
+class Particle {
+    constructor() { this.reset(); }
+    reset() {
+        this.x = Math.random() * W;
+        this.y = Math.random() * H;
+        this.size = Math.random() * 1.5 + 0.3;
+        this.vx = (Math.random() - 0.5) * 0.3;
+        this.vy = (Math.random() - 0.5) * 0.3;
+        this.opacity = Math.random() * 0.5 + 0.1;
+    }
+    update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        const dx = this.x - mouse.x, dy = this.y - mouse.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 120) {
+            this.x += dx / dist * 0.8;
+            this.y += dy / dist * 0.8;
         }
-        lastScrollTop = scrollPos <= 0 ? 0 : scrollPos;
-    } else if (scrollPos >= (documentHeight - windowHeight)) {
-        navbar.style.top = '0';
+        if (this.x < 0 || this.x > W || this.y < 0 || this.y > H) this.reset();
     }
-
-    if (scrollPos > 0) {
-        navbar.classList.add("scroll");
-        navLink.classList.add("scroll");
-        toggleButton.classList.add("scroll");
-    } else {
-        navbar.style.backgroundColor = "##8666f3";
-        navbar.classList.remove("scroll");
-        navLink.classList.remove("scroll");
-        toggleButton.classList.remove("scroll");
+    draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0, 255, 136, ${this.opacity})`;
+        ctx.fill();
     }
-});
-
-function cvDownload() {
-    const pdfPath = 'ResumePdf/resume.pdf';
-
-    const anchor = document.createElement('a');
-
-    anchor.href = pdfPath;
-
-    anchor.download = 'NanthaCv.pdf';
-
-    document.body.appendChild(anchor);
-
-    anchor.click();
-
-    document.body.removeChild(anchor);
 }
 
-// cursor button
+function initParticles() {
+    particles = [];
+    const count = Math.floor(W * H / 10000);
+    for (let i = 0; i < count; i++) particles.push(new Particle());
+}
+initParticles();
 
-const curButton = document.querySelectorAll(".arrows");
-const slider = document.querySelector(".skill-wrapper");
-// const iconBoxes = document.querySelectorAll(".icon-box");
-const iconBoxes = [...document.querySelectorAll(".icon-box")];
-const iconBoxWidth = iconBoxes[0].offsetWidth;
+let t = 0;
+function drawBG() {
+    ctx.clearRect(0, 0, W, H);
+    t += 0.005;
 
-const firstBox = iconBoxes[0];
-const lastBox =iconBoxes[iconBoxes.length-1];
+    // Draw grid lines
+    const gridSize = 80;
+    ctx.strokeStyle = 'rgba(255,255,255,0.025)';
+    ctx.lineWidth = 0.5;
+    for (let x = 0; x < W; x += gridSize) {
+        ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
+    }
+    for (let y = 0; y < H; y += gridSize) {
+        ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+    }
 
-let currentPosition = 0;
+    // Gradient pulse around mouse
+    const grad = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, 300);
+    grad.addColorStop(0, 'rgba(0,255,136,0.04)');
+    grad.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, W, H);
 
-curButton.forEach((arrowButton) => {
-    arrowButton.addEventListener("click", () => {
-        if(arrowButton.classList.contains("right-a")) {
-            currentPosition = currentPosition-iconBoxWidth;
-            if (currentPosition < ((iconBoxes.length - 6) * -iconBoxWidth)) {
-                currentPosition = 0;
-            }
-        } else {
-            currentPosition = currentPosition+iconBoxWidth;
-            if (currentPosition > 0) {
-                currentPosition = 0
+    // Particles + connections
+    particles.forEach(p => {
+        p.update();
+        p.draw();
+    });
+
+    // Connect nearby particles
+    for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 100) {
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.strokeStyle = `rgba(0,255,136,${0.08 * (1 - dist / 100)})`;
+                ctx.lineWidth = 0.5;
+                ctx.stroke();
             }
         }
-        slider.style.transform = `translateX(${currentPosition}px)`;
+    }
+
+    requestAnimationFrame(drawBG);
+}
+drawBG();
+
+// Counter animation
+function animateCounter(el, target) {
+    let current = 0;
+    const step = target / 60;
+    const suffix = el.hasAttribute('data-suffix') ? el.getAttribute('data-suffix') : '+';
+    const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = Math.floor(current) + suffix;
+    }, 25);
+}
+
+setTimeout(() => {
+    document.querySelectorAll('.stat-num').forEach(el => {
+        animateCounter(el, parseInt(el.dataset.target));
     });
+    document.getElementById('avail').classList.add('show');
+}, 1600);
+
+// Intersection Observer for scroll animations
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            if (entry.target.classList.contains('contact-big') || entry.target.classList.contains('contact-links')) {
+                entry.target.classList.add('visible');
+            }
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.skill-card, .project-card, .timeline-item, .contact-big, .contact-links').forEach((el, i) => {
+    el.style.transitionDelay = `${i * 0.08}s`;
+    observer.observe(el);
 });
 
-// curButton.forEach((arrowButton) => {
-//     arrowButton.addEventListener("click", () => {
-//         if(arrowButton.classList.contains("right-a")) {
-//             iconBoxes.push(firstBox);
-//             iconBoxes.slice(1)
-//         } 
-//     });
-// });
+// Smooth active nav
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - 200) current = sec.id;
+    });
+    navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + current ? 'var(--text)' : '';
+    });
+});
