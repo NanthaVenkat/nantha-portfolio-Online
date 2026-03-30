@@ -68,6 +68,16 @@ body {
   opacity: 0.3;
 }
 
+@media screen and (max-width: 768px) {
+  [class*='cursor'] {
+    display: none;
+  }
+
+  body {
+    cursor: auto;
+  }
+}
+
 /* Canvas BG */
 #bg-canvas {
   position: fixed;
@@ -350,7 +360,7 @@ section {
 
 .section-title {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(1.3rem, 4vw, 3rem);
+  font-size: clamp(1.6rem, 4vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.03em;
 }
@@ -651,6 +661,12 @@ section {
   margin-bottom: 4px;
 }
 
+@media screen and (max-width: 576px) {
+  .timeline-role {
+    font-size: 1.2rem;
+  }
+}
+
 .timeline-company {
   font-size: 0.8rem;
   color: var(--muted);
@@ -674,7 +690,7 @@ section {
 
 .contact-big {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2.2rem, 7vw, 6rem);
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
