@@ -350,7 +350,7 @@ section {
 
 .section-title {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.3rem, 4vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.03em;
 }
