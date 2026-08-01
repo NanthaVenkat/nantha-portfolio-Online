@@ -1,8 +1,8 @@
 :root {
   --bg: #080810;
   --surface: #0f0f1a;
-  --accent: #00ff88;
-  --accent2: #ff3366;
+  --accent: #ff6900;
+  --accent2: #2b7fff;
   --accent3: #3388ff;
   --text: #e8e8f0;
   --muted: #5a5a7a;
@@ -117,6 +117,9 @@ nav {
   color: var(--accent);
   letter-spacing: -0.02em;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .nav-links {
