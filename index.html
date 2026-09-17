@@ -1,369 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nantha Venkat — Front-End Developer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nantha Venkat — Frontend Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Manrope', 'sans-serif'], mono: ['DM Mono', 'monospace'] }, colors: { paper: '#f4f3ef', ink: '#171716', muted: '#73736e', line: '#cfcec7' } } } }</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-paper font-sans text-ink antialiased">
+    <header class="h-16 md:h-[77px] border-b border-line">
+        <div
+            class="mx-auto grid h-full w-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]">
+            <a class="text-[15px] font-extrabold tracking-[-.04em]" href="index.html">NANTHA VENKAT<sup>®</sup></a>
+            <nav class="hidden gap-[clamp(15px,2vw,34px)] text-xs md:flex">
+                <a class="underline decoration-1 underline-offset-8" href="index.html">Home</a>
+                <!-- <a href="projects.html">Projects</a> -->
+                <a href="about.html">About</a><a href="experience.html">Experience</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:block" href="contact.html">START
+                A PROJECT →</a><button class="menu-toggle justify-self-end p-2 md:hidden" aria-label="Open menu"
+                aria-expanded="false"><span class="my-[5px] block h-px w-[22px] bg-ink"></span><span
+                    class="my-[5px] block h-px w-[22px] bg-ink"></span></button>
+        </div>
+    </header>
 
-    <div class="noise"></div>
-    <canvas id="bg-canvas"></canvas>
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-ring" id="cursor-ring"></div>
-
-    <div class="content">
-
-        <!-- NAV -->
-        <nav>
-            <a href="#" class="nav-logo"><img src="./Image/envy.svg" alt="ENVY" width="55">Envy.</a>
-            <ul class="nav-links">
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <!-- HERO -->
-        <section class="hero" id="hero">
-            <div class="hero-inner">
-                <div class="availability" id="avail">
-                    <span class="dot-pulse"></span>
-                    Available for opportunities
-                </div>
-                <div class="hero-tag">Software Engineer · WordPress | Frontend | React.js | Next.js</div>
-                <h1 class="hero-title">
-                    <span class="line"><span>Hello, I'm</span></span>
-                    <span class="line">
-                        <span>
-                            <span class="glitch-wrap">
-                                Nantha Venkat
-                                <span class="glitch-clone">Nantha Venkat</span>
-                            </span>
-                        </span>
-                    </span>
-                    <span class="line"><span>I build things<span class="cursor-blink"></span></span></span>
-                </h1>
-                <p class="hero-sub">
-                    WordPress & Frontend Developer with 4+ years of experience designing, developing and optimizing high-performance web applications using WordPress, React.js, Next.js, PHP, JavaScript, Tailwind CSS and MySQL. Experienced in custom theme & plugin development, REST API integration, Core Web Vitals optimization, technical SEO and deployments across Windows IIS, cPanel and Plesk.
-                </p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-ghost">Get In Touch</a>
-                </div>
-            </div>
-
-            <div class="hero-stats">
-                <div class="stat">
-                    <div class="stat-num" data-target="4" data-suffix="">0</div>
-                    <div class="stat-label">Years Exp.</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-num" data-target="15" data-suffix="+">0</div>
-                    <div class="stat-label">Websites Delivered</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-num" data-target="3" data-suffix="+">0</div>
-                    <div class="stat-label">Professional Roles</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-num" data-target="85" data-suffix="%">0</div>
-                    <div class="stat-label">Lighthouse Score</div>
-                </div>
-            </div>
-
-            <div class="hero-scroll">
-                <div class="scroll-line"></div>
-                Scroll
+    <nav
+        class="mobile-menu hidden fixed inset-x-0 top-16 z-10 h-[calc(100vh-4rem)] flex-col gap-5 bg-paper px-[clamp(1.25rem,3.1vw,3.5rem)] py-8 text-[clamp(2.2rem,10vw,4rem)] font-bold leading-none tracking-[-.07em]">
+        <a href="index.html">Home</a><a href="projects.html">Projects</a><a href="about.html">About</a><a
+            href="experience.html">Experience</a><a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section
+            class="mx-auto grid min-h-[calc(100svh-4rem)] max-w-[1560px] content-between gap-16 px-[clamp(1.25rem,3.1vw,3.5rem)] py-[clamp(40px,7vw,110px)]">
+            <p class="font-mono text-[11px] uppercase tracking-[.05em] text-orange-600">Independent frontend developer ·
+                India</p>
+            <h1 class="max-w-[13ch] text-[clamp(4.1rem,9.2vw,10.1rem)] font-extrabold leading-[.83] tracking-[-.09em]">
+                FRONTEND<br>DEVELOPER <span class="ml-[clamp(1.2rem,12vw,14rem)] block">&amp; DIGITAL</span>
+                EXPERIENCE<br>BUILDER.</h1>
+            <div class="grid grid-cols-2 gap-5 border-t border-line pt-5 md:grid-cols-[3fr_1.4fr_1.3fr]">
+                <p class="col-span-2 max-w-[31ch] text-[clamp(17px,1.45vw,22px)] leading-[1.35] md:col-span-1">I build
+                    thoughtful, fast and highly usable websites for businesses that care about the details.</p><img
+                    class="aspect-square w-[75px] object-cover grayscale md:w-[110px]" src="Image/prof-1.jpeg"
+                    alt="Nantha Venkat">
+                <p class="text-[13px] leading-5 text-orange-600">Currently<br><strong class="text-ink">Available for
+                        selected projects</strong><br>Coimbatore, Tamil Nadu</p>
             </div>
         </section>
-
-        <!-- SKILLS -->
-        <section id="skills">
-            <div class="section-header">
-                <span class="section-num">01</span>
-                <h2 class="section-title">Tech Stack</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-card" style="--w:92%">
-                    <span class="skill-icon">⚛️</span>
-                    <div class="skill-name">React.js / Next.js</div>
-                    <div class="skill-level">Advanced · 2+ Years</div>
-                    <div class="skill-bar">
-                        <div class="skill-fill"></div>
-                    </div>
+        <section class="border-t border-line py-[clamp(80px,13vw,190px)]">
+            <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
+                <div class="mb-[clamp(45px,7vw,100px)] grid gap-5 md:grid-cols-[2fr_5fr_3fr]">
+                    <p class="font-mono text-[11px] uppercase text-orange-600">(001) Services</p>
+                    <h2 class="text-[clamp(3.6rem,7.4vw,8.7rem)] font-extrabold leading-[.85] tracking-[-.085em]">BUILT
+                        WITH<br>INTENTION.</h2>
+                    <p class="text-[13px] text-orange-600">A focused practice spanning interface craft, robust
+                        engineering and the systems in between.</p>
                 </div>
-                <div class="skill-card" style="--w:94%">
-                    <span class="skill-icon">▣</span>
-                    <div class="skill-name">WordPress (Themes & Plugins)</div>
-                    <div class="skill-level">Advanced · 4+ Years</div>
-                    <div class="skill-bar">
-                        <div class="skill-fill"></div>
-                    </div>
-                </div>
-                <div class="skill-card" style="--w:90%">
-                    <span class="skill-icon">🎨</span>
-                    <div class="skill-name">HTML5 / CSS3 / SCSS / Tailwind / Bootstrap</div>
-                    <div class="skill-level">Advanced · 4+ Years</div>
-                    <div class="skill-bar">
-                        <div class="skill-fill"></div>
-                    </div>
-                </div>
-                <div class="skill-card" style="--w:88%">
-                    <span class="skill-icon">◆</span>
-                    <div class="skill-name">JavaScript (ES6+) / jQuery</div>
-                    <div class="skill-level">Advanced · 4+ Years</div>
-                    <div class="skill-bar">
-                        <div class="skill-fill"></div>
-                    </div>
-                </div>
-                <div class="skill-card" style="--w:85%">
-                    <span class="skill-icon">🐘</span>
-                    <div class="skill-name">PHP / MySQL</div>
-                    <div class="skill-level">Advanced · 3+ Years</div>
-                    <div class="skill-bar">
-                        <div class="skill-fill"></div>
-                    </div>
-                </div>
-                <!-- <div class="skill-card" style="--w:78%">
-                    <span class="skill-icon">◇</span>
-                    <div class="skill-name">Umbraco CMS</div>
-                    <div class="skill-level">Professional · Maintenance & builds</div>
-                    <div class="skill-bar">
-                        <div class="skill-fill"></div>
-                    </div>
-                </div> -->
-                <div class="skill-card" style="--w:82%">
-                    <span class="skill-icon">🛠️</span>
-                    <div class="skill-name">GitHub · Plesk · cPanel · Figma · Illustrator</div>
-                    <div class="skill-level">Daily workflow</div>
-                    <div class="skill-bar">
-                        <div class="skill-fill"></div>
-                    </div>
-                </div>
-                <div class="skill-card" style="--w:91%">
-                    <span class="skill-icon">📈</span>
-                    <div class="skill-name">Lighthouse · Core Web Vitals · SEO · Accessibility</div>
-                    <div class="skill-level">Optimization focus</div>
-                    <div class="skill-bar">
-                        <div class="skill-fill"></div>
-                    </div>
+                <div class="border-t border-line">
+                    <article class="grid gap-4 border-b border-line py-5 md:grid-cols-[1fr_4fr_3fr_1fr] md:py-[26px]">
+                        <span class="font-mono text-[11px]">001</span>
+                        <h3 class="text-[clamp(1.6rem,3vw,3.6rem)] font-bold leading-none tracking-[-.065em]">FRONTEND
+                            DEVELOPMENT</h3>
+                        <p class="text-[13px] text-orange-600">Responsive, accessible interfaces that feel as good as
+                            they perform.</p><span class="font-mono text-[11px]">React / Next.js</span>
+                    </article>
+                    <article class="grid gap-4 border-b border-line py-5 md:grid-cols-[1fr_4fr_3fr_1fr] md:py-[26px]">
+                        <span class="font-mono text-[11px]">002</span>
+                        <h3 class="text-[clamp(1.6rem,3vw,3.6rem)] font-bold leading-none tracking-[-.065em]">WORDPRESS
+                            DEVELOPMENT</h3>
+                        <p class="text-[13px] text-orange-600">Custom themes, plugins and publishing experiences without
+                            the clutter.</p><span class="font-mono text-[11px]">PHP / WooCommerce</span>
+                    </article>
+                    <article class="grid gap-4 border-b border-line py-5 md:grid-cols-[1fr_4fr_3fr_1fr] md:py-[26px]">
+                        <span class="font-mono text-[11px]">003</span>
+                        <h3 class="text-[clamp(1.6rem,3vw,3.6rem)] font-bold leading-none tracking-[-.065em]">UI
+                            DEVELOPMENT</h3>
+                        <p class="text-[13px] text-orange-600">Design systems and considered components made ready for
+                            real users.</p><span class="font-mono text-[11px]">HTML / CSS</span>
+                    </article>
                 </div>
             </div>
         </section>
-
-        <!-- PROJECTS -->
-        <section id="projects">
-            <div class="section-header">
-                <span class="section-num">02</span>
-                <h2 class="section-title">Selected Work</h2>
-                <div class="section-line"></div>
+    </main>
+    <footer class="border-t border-line pt-[clamp(70px,11vw,160px)]">
+        <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
+            <h2
+                class="mb-20 max-w-[8ch] text-[clamp(3.8rem,8.5vw,9rem)] font-extrabold leading-[.83] tracking-[-.09em]">
+                LET'S WORK TOGETHER.</h2>
+            <div
+                class="flex flex-col justify-between gap-3 border-t border-line py-5 font-mono text-[11px] text-orange-600 sm:flex-row">
+                <span>© 2026 NANTHA VENKAT</span>
+                <div class="flex gap-5 text-ink"><a href="mailto:vnanthakumar00@gmail.com">Email</a><a
+                        href="https://github.com/NanthaVenkat">GitHub</a><a href="#" data-top>Back to top ↑</a></div>
             </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-accent-bar"></div>
-                    <div class="project-num">001</div>
-                    <h3 class="project-title">Custom WordPress Dashboard Suite</h3>
-                    <p class="project-desc">Designed and shipped internal-style dashboards on WordPress: Google Review,
-                        Video
-                        Consultant, Customer Service, and LMS — reusable components, clear UX, and integrations aligned
-                        with
-                        client operations.</p>
-                    <div class="project-tags">
-                        <span class="tag">WordPress</span><span class="tag">PHP</span><span
-                            class="tag">JavaScript</span><span class="tag">MySQL</span><span class="tag">UI/UX</span>
-                    </div>
-                    <!-- <a href="#contact" class="project-link">Discuss Similar Work</a> -->
-                </div>
-                <div class="project-card">
-                    <div class="project-accent-bar"></div>
-                    <div class="project-num">002</div>
-                    <h3 class="project-title">Performance & Technical SEO</h3>
-                    <p class="project-desc">Fully responsive, SEO-oriented themes with a strong focus on Core Web Vitals
-                        and
-                        accessibility — consistently moving sites from roughly 40% scores to 85%+ PageSpeed and
-                        accessibility on
-                        client builds.</p>
-                    <div class="project-tags">
-                        <span class="tag">WordPress</span><span class="tag">SCSS</span><span
-                            class="tag">Lighthouse</span><span class="tag">SEO</span><span class="tag">A11y</span>
-                    </div>
-                    <!-- <a href="#contact" class="project-link">Discuss Similar Work</a> -->
-                </div>
-                <div class="project-card">
-                    <div class="project-accent-bar"></div>
-                    <div class="project-num">003</div>
-                    <h3 class="project-title">React.js & Next.js Applications</h3>
-                    <p class="project-desc">Custom WordPress plugins for product-specific needs; 12+ tailored responsive
-                        templates with page builders; reusable React templates that cut turnaround time by about 30%.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">WordPress</span><span class="tag">React</span><span
-                            class="tag">Plugins</span><span class="tag">Templates</span>
-                    </div>
-                    <!-- <a href="#contact" class="project-link">Discuss Similar Work</a> -->
-                </div>
-                <div class="project-card">
-                    <div class="project-accent-bar"></div>
-                    <div class="project-num">004</div>
-                    <h3 class="project-title">Deployment & Infrastructure</h3>
-                    <p class="project-desc">Led performance and SEO initiatives for healthcare sites (90+ PageSpeed
-                        &amp;
-                        accessibility targets), plus structured SEO and asset optimization — lazy loading, caching, and
-                        media
-                        compression where it matters.</p>
-                    <div class="project-tags">
-                        <span class="tag">Performance</span><span class="tag">SEO</span><span
-                            class="tag">Healthcare</span><span class="tag">SaaS</span><span class="tag">Umbraco</span>
-                    </div>
-                    <!-- <a href="#contact" class="project-link">Discuss Similar Work</a> -->
-                </div>
-            </div>
-        </section>
-
-        <!-- EXPERIENCE -->
-        <section id="experience">
-            <div class="section-header">
-                <span class="section-num">03</span>
-                <h2 class="section-title">Experience</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jul 2024 — Present</div>
-                    <div class="timeline-role">WordPress Developer</div>
-                    <div class="timeline-company">Bright Bridge Info Tech</div>
-                    <div class="timeline-desc">Responsive, SEO-friendly, high-performance WordPress themes; improved
-                        PageSpeed
-                        and accessibility from ~40% to 85%+ across client sites. Built custom dashboards (Google Review,
-                        Video
-                        Consultant, Customer Service, LMS). Reusable components (~40% faster delivery); healthcare
-                        performance
-                        (90+ scores) and structured SEO. Close collaboration with design and backend for integrations
-                        and
-                        consistent UI/UX.</div>
-                </div>
-                <!-- <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jan 2023 — Present (Part-Time)</div>
-                    <div class="timeline-role">Freelance WordPress &amp; Frontend Developer</div>
-                    <div class="timeline-company">Self Employed</div>
-                    <div class="timeline-desc">12+ customized responsive site templates (page builders &amp; theme
-                        frameworks);
-                        custom WordPress plugins; React templates for faster rollout (~30% shorter turnaround). Server
-                        work with
-                        Plesk &amp; cPanel — deploys, SSL, backups, maintenance. Umbraco CMS upkeep with QA and design
-                        for quality
-                        and client satisfaction.</div>
-                </div> -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Aug 2022 — Jul 2024</div>
-                    <div class="timeline-role">Product Developer</div>
-                    <div class="timeline-company">6Storage</div>
-                    <div class="timeline-desc">Developed WordPress websites using Elementor, ACF, PHP, HTML, CSS and JavaScript. Customized themes and plugins, managed cPanel and Plesk hosting, maintained Umbraco CMS websites and collaborated with QA and design teams.</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jan 2023 — Present (Part-Time)</div>
-                    <div class="timeline-role">Freelance WordPress &amp; Frontend Developer</div>
-                    <div class="timeline-company">Self Employed</div>
-                    <div class="timeline-desc">Designed and developed custom WordPress, WooCommerce and Shopify websites. Built React.js and Next.js applications, integrated APIs and payment gateways, optimized Core Web Vitals and Technical SEO, managed DNS, SSL, hosting, migrations and ongoing maintenance.</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Feb 2024 — May 2024</div>
-                    <div class="timeline-role">Internship · WordPress Theme Development</div>
-                    <div class="timeline-company">Car Bike Arena</div>
-                    <div class="timeline-desc">Advanced theme work with Advanced Custom Fields (ACF): dynamic templates,
-                        reusable
-                        theme structures, responsive layouts, and structured data on real projects.</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- EDUCATION & CERTIFICATIONS -->
-        <section id="education">
-            <div class="section-header">
-                <span class="section-num">04</span>
-                <h2 class="section-title">Education &amp; Certifications</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Expected Sep 2026</div>
-                    <div class="timeline-role">Master of Computer Applications (MCA)</div>
-                    <div class="timeline-company">Madurai Kamaraj University</div>
-                    <div class="timeline-desc">Ongoing postgraduate study to deepen software and systems knowledge.</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jul 2022</div>
-                    <div class="timeline-role">Bachelor of Computer Applications (BCA)</div>
-                    <div class="timeline-company">The American College</div>
-                    <div class="timeline-desc">2019 - 2022
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Certifications</div>
-                    <div class="timeline-role">Professional learning</div>
-                    <div class="timeline-company">WordPress CMS · HTML &amp; CSS (Great Learning)</div>
-                    <div class="timeline-desc">Content Management using WordPress (Madurai Kamaraj University); HTML &amp; CSS
-                        front-end courses (Great Learning).</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Highlights</div>
-                    <div class="timeline-role">Achievements &amp; recognition</div>
-                    <div class="timeline-company">Performance · leadership · teamwork</div>
-                    <div class="timeline-desc">Resolved a critical workflow issue that improved team productivity;
-                        refactored and optimized legacy sites (40% → 85% PageSpeed); mentored two peers in front-end
-                        tech; multiple
-                        Employee of the Month awards; strong cross-functional collaboration.</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact">
-            <div class="section-header">
-                <span class="section-num">05</span>
-                <h2 class="section-title">Let's Talk</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="contact-big">
-                Have a project<br>in mind? <span>Let's build</span><br>something great.
-            </div>
-            <div class="contact-links">
-                <a href="mailto:vnanthakumar00@gmail.com" class="contact-link">vnanthakumar00@gmail.com</a>
-                <a href="tel:+918940195501" class="contact-link">+91 89401 95501</a>
-                <a href="https://github.com/NanthaVenkat/" class="contact-link">GitHub</a>
-                <a href="https://www.linkedin.com/in/nantha-venkat-268360240/" class="contact-link">LinkedIn</a>
-                <a href="./ResumePdf/Nantha_Kumar_V_Resume.pdf" download="" class="contact-link">Resume PDF</a>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer>
-            <span>© 2026 Nantha Venkat — All rights reserved</span>
-            <span>Artist · Digital design · Vibe coding · WordPress &amp; React</span>
-            <span>Open to opportunities · Remote &amp; hybrid</span>
-        </footer>
-
-    </div><!-- /content -->
-
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Manrope', 'sans-serif'], mono: ['DM Mono', 'monospace'] }, colors: { paper: '#f4f3ef', ink: '#171716', muted: '#73736e', line: '#cfcec7' } } } }</script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-paper font-sans text-ink antialiased">
+    <header class="h-16 border-b border-line md:h-[77px]">
+        <div
+            class="mx-auto grid h-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]">
+            <a class="text-[15px] font-extrabold tracking-[-.04em]" href="index.html">NANTHA VENKAT<sup>®</sup></a>
+            <nav class="hidden gap-7 text-xs md:flex"><a href="index.html">Home</a>
+                <!-- <a class=""
+                    href="projects.html">Projects</a> -->
+                    <a class="" href="about.html">About</a><a
+                    class="underline underline-offset-8" href="experience.html">Experience</a><a class=""
+                    href="contact.html">Contact</a></nav><a
+                class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:block"
+                href="contact.html">START A PROJECT →</a><button class="menu-toggle justify-self-end p-2 md:hidden"
+                aria-label="Open menu" aria-expanded="false"><span
+                    class="my-[5px] block h-px w-[22px] bg-ink"></span><span
+                    class="my-[5px] block h-px w-[22px] bg-ink"></span></button>
+        </div>
+    </header>
+    <nav
+        class="mobile-menu fixed inset-x-0 top-16 z-10 hidden h-[calc(100vh-4rem)] flex-col gap-5 bg-paper px-6 py-8 text-4xl font-bold">
+        <a href="index.html">Home</a><a href="projects.html">Projects</a><a href="about.html">About</a><a
+            href="experience.html">Experience</a><a href="contact.html">Contact</a></nav>
+    <main class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)] py-[clamp(65px,10vw,145px)]">
+        <p class="font-mono text-[11px] text-orange-600">(004) EXPERIENCE</p>
+        <h1 class="mt-6 text-[clamp(4.3rem,10vw,11rem)] font-extrabold leading-[.79] tracking-[-.095em]">THE WORK<br>SO
+            FAR.</h1>
+        <div class="mt-24 border-t border-line">
+            <article class="grid gap-5 border-b border-line py-8 md:grid-cols-[1.1fr_1.4fr_1.6fr]">
+                <p class="font-mono text-[11px]">2024 — PRESENT</p>
+                <div>
+                    <h2 class="text-[clamp(2rem,3.6vw,4.5rem)] font-bold leading-[.9] tracking-[-.07em]">
+                        FRONTEND<br>DEVELOPER</h2>
+                    <p class="mt-2 font-mono text-[11px] text-orange-600">BRIGHT BRIDGE INFO TECH</p>
+                </div>
+                <p class="text-sm text-orange-600">Developing custom WordPress solutions and responsive web
+                    applications, from frontend implementation to API integration.</p>
+            </article>
+            <article class="grid gap-5 border-b border-line py-8 md:grid-cols-[1.1fr_1.4fr_1.6fr]">
+                <p class="font-mono text-[11px]">2022 — 2024</p>
+                <div>
+                    <h2 class="text-[clamp(2rem,3.6vw,4.5rem)] font-bold leading-[.9] tracking-[-.07em]">
+                        WEB<br>DEVELOPER</h2>
+                    <p class="mt-2 font-mono text-[11px] text-orange-600">6STORAGE</p>
+                </div>
+                <p class="text-sm text-orange-600">Built and maintained WordPress and Umbraco experiences with a focus
+                    on performance, SEO and dependable releases.</p>
+            </article>
+        </div>
+    </main>
+    <footer class="border-t border-line pt-24">
+        <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
+            <h2
+                class="mb-20 max-w-[8ch] text-[clamp(3.8rem,8.5vw,9rem)] font-extrabold leading-[.83] tracking-[-.09em]">
+                LET'S WORK TOGETHER.</h2>
+            <div
+                class="flex flex-col justify-between gap-3 border-t border-line py-5 font-mono text-[11px] text-orange-600 sm:flex-row">
+                <span>© 2026 NANTHA VENKAT</span>
+                <div class="flex gap-5 text-ink"><a href="mailto:vnanthakumar00@gmail.com">Email</a><a
+                        href="https://github.com/NanthaVenkat">GitHub</a><a href="#" data-top>Back to top ↑</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
