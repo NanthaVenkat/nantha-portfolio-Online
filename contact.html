@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
     <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Manrope', 'sans-serif'], mono: ['DM Mono', 'monospace'] }, colors: { paper: '#f4f3ef', ink: '#171716', muted: '#73736e', line: '#cfcec7' } } } }</script>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
@@ -15,23 +16,32 @@
     <header class="h-16 border-b border-line md:h-[77px]">
         <div
             class="mx-auto grid h-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]">
-            <a class="text-[15px] font-extrabold tracking-[-.04em]" href="index.html">NANTHA VENKAT<sup>®</sup></a>
-            <nav class="hidden gap-7 text-xs md:flex"><a href="index.html">Home</a>
+            <a class="text-[15px] font-extrabold tracking-[-.04em]" href="index.html">NANTHA VENKAT<sup>®</sup>
+            </a>
+            <nav class="hidden gap-7 text-xs md:flex">
+                <a href="index.html">Home</a>
                 <!-- <a class="" href="projects.html">Projects</a> -->
                 <a class="" href="about.html">About</a>
                 <a class="" href="experience.html">Experience</a>
                 <a class="underline underline-offset-8" href="contact.html">Contact</a>
             </nav>
             <a class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:block" href="contact.html">START
-                A PROJECT →</a><button class="menu-toggle justify-self-end p-2 md:hidden" aria-label="Open menu"
-                aria-expanded="false"><span class="my-[5px] block h-px w-[22px] bg-ink"></span><span
-                    class="my-[5px] block h-px w-[22px] bg-ink"></span></button>
+                A PROJECT →</a>
+            <button class="menu-toggle justify-self-end p-2 md:hidden" aria-label="Open menu" aria-expanded="false">
+                <span class="my-[5px] block h-px w-[22px] bg-ink">
+                </span>
+                <span class="my-[5px] block h-px w-[22px] bg-ink">
+                </span>
+            </button>
         </div>
     </header>
     <nav
         class="mobile-menu fixed inset-x-0 top-16 z-10 hidden h-[calc(100vh-4rem)] flex-col gap-5 bg-paper px-6 py-8 text-4xl font-bold">
-        <a href="index.html">Home</a><a href="projects.html">Projects</a><a href="about.html">About</a><a
-            href="experience.html">Experience</a><a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
     </nav>
     <main class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)] py-[clamp(65px,10vw,145px)]">
         <p class="font-mono text-[11px] text-orange-600">(005) CONTACT</p>
@@ -41,24 +51,36 @@
             <div>
                 <p class="text-[clamp(20px,2.4vw,37px)] leading-[1.18] tracking-[-.05em]">Have a project in mind, or
                     simply want to talk through an idea? I would like to hear it.</p>
-                <div class="mt-16 border-t border-line"><a class="block border-b border-line py-4"
-                        href="mailto:vnanthakumar00@gmail.com">vnanthakumar00@gmail.com ↗</a><a
-                        class="block border-b border-line py-4"
-                        href="https://linkedin.com/in/nantha-venkat-268360240">LinkedIn ↗</a><a
-                        class="block border-b border-line py-4" href="https://github.com/NanthaVenkat">GitHub ↗</a>
+                <div class="mt-16 border-t border-line">
+                    <a class="block border-b border-line py-4"
+                        href="mailto:vnanthakumar00@gmail.com">vnanthakumar00@gmail.com ↗</a>
+                    <a class="block border-b border-line py-4"
+                        href="https://linkedin.com/in/nantha-venkat-268360240">LinkedIn ↗</a>
+                    <a class="block border-b border-line py-4" href="https://github.com/NanthaVenkat">GitHub ↗</a>
                 </div>
             </div>
             <!-- <form action="mailto:vnanthakumar00@gmail.com" method="post">
-                <div class="border-t border-line py-5"><label class="mb-2 block font-mono text-[11px] text-orange-600"
-                        for="name">YOUR NAME</label><input class="w-full bg-transparent text-lg outline-none" id="name"
-                        required placeholder="Name"></div>
-                <div class="border-t border-line py-5"><label class="mb-2 block font-mono text-[11px] text-orange-600"
-                        for="email">EMAIL ADDRESS</label><input class="w-full bg-transparent text-lg outline-none"
-                        id="email" type="email" required placeholder="you@company.com"></div>
-                <div class="border-t border-line py-5"><label class="mb-2 block font-mono text-[11px] text-orange-600"
-                        for="message">TELL ME A LITTLE MORE</label><textarea
+                <div class="border-t border-line py-5">
+<label class="mb-2 block font-mono text-[11px] text-orange-600"
+                        for="name">YOUR NAME</label>
+<input class="w-full bg-transparent text-lg outline-none" id="name"
+                        required placeholder="Name">
+</div>
+                <div class="border-t border-line py-5">
+<label class="mb-2 block font-mono text-[11px] text-orange-600"
+                        for="email">EMAIL ADDRESS</label>
+<input class="w-full bg-transparent text-lg outline-none"
+                        id="email" type="email" required placeholder="you@company.com">
+</div>
+                <div class="border-t border-line py-5">
+<label class="mb-2 block font-mono text-[11px] text-orange-600"
+                        for="message">TELL ME A LITTLE MORE</label>
+<textarea
                         class="min-h-32 w-full resize-y bg-transparent text-lg outline-none" id="message" required
-                        placeholder="Project, timeline, goals..."></textarea></div><button
+                        placeholder="Project, timeline, goals...">
+</textarea>
+</div>
+<button
                     class="border border-ink bg-ink px-5 py-4 text-xs font-bold tracking-[.04em] text-paper hover:bg-transparent hover:text-ink">SEND
                     MESSAGE →</button>
             </form> -->
@@ -72,12 +94,16 @@
             <div
                 class="flex flex-col justify-between gap-3 border-t border-line py-5 font-mono text-[11px] text-orange-600 sm:flex-row">
                 <span>© 2026 NANTHA VENKAT</span>
-                <div class="flex gap-5 text-ink"><a href="mailto:vnanthakumar00@gmail.com">Email</a><a
-                        href="https://github.com/NanthaVenkat">GitHub</a><a href="#" data-top>Back to top ↑</a></div>
+                <div class="flex gap-5 text-ink">
+                    <a href="mailto:vnanthakumar00@gmail.com">Email</a>
+                    <a href="https://github.com/NanthaVenkat">GitHub</a>
+                    <a href="#" data-top>Back to top ↑</a>
+                </div>
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
 </body>
 
 </html>

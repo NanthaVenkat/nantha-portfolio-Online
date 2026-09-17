@@ -1,2 +1,103 @@
-const projects={'wp-dashboard':{n:'01',title:'CUSTOM DASHBOARD SUITE.',type:'WordPress / Custom build',year:'2024',img:'Image/projectImg-1.jpeg',screen:'Image/project-management.png',summary:'A modular internal workspace that turns four everyday customer workflows into one clear, focused WordPress experience.',role:'Frontend & WordPress Developer',tech:'WordPress · PHP · JavaScript · REST API',problem:'The team needed a friendly, unified interface for reviews, consultations, customer support and learning progress.',solution:'A tailored dashboard system with purpose-built templates, custom endpoints and responsive interface patterns.'},'performance-seo':{n:'02',title:'WEB VITALS OVERHAUL.',type:'Performance / Technical SEO',year:'2023—2024',img:'Image/projectImg-2.jpeg',screen:'Image/responsive-website.avif',summary:'A practical performance programme that made healthcare and SaaS websites faster, steadier and easier to find.',role:'Performance Engineer',tech:'Lighthouse · SCSS · JavaScript · Schema',problem:'Slow pages, visual instability and unoptimised media were diluting both organic reach and everyday usability.',solution:'Measured audits led into asset strategy, component refactoring and technical SEO improvements.'}};
-document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-top]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();scrollTo({top:0,behavior:'smooth'})}));const r=document.querySelector('#project-details-root');if(!r)return;const id=new URLSearchParams(location.search).get('id')||'wp-dashboard',p=projects[id]||projects['wp-dashboard'],next=id==='wp-dashboard'?'performance-seo':'wp-dashboard';r.innerHTML='<p class="font-mono text-[11px] text-orange-600">('+p.n+') '+p.type+'</p><div class="mt-8 grid gap-12 md:grid-cols-[1.25fr_.75fr]"><h1 class="text-[clamp(4.3rem,10vw,11rem)] font-extrabold leading-[.79] tracking-[-.095em]">'+p.title+'</h1><div class="self-end text-lg text-orange-600"><p>'+p.summary+'</p><div class="mt-8 grid grid-cols-2 gap-5 border-t border-line pt-4 font-mono text-[11px]"><p>YEAR<br><strong class="font-sans text-ink">'+p.year+'</strong></p><p>ROLE<br><strong class="font-sans text-ink">'+p.role+'</strong></p><p>TECHNOLOGY<br><strong class="font-sans text-ink">'+p.tech+'</strong></p></div></div></div><img class="mt-16 aspect-[1.9] w-full object-cover grayscale" src="'+p.img+'" alt="'+p.title+'"><section class="my-24 grid gap-12 md:grid-cols-[1fr_2fr]"><h2 class="text-[clamp(2.5rem,5vw,6rem)] font-bold leading-[.86] tracking-[-.08em]">PROJECT<br>OVERVIEW.</h2><div><p class="text-[clamp(18px,2vw,28px)]">'+p.problem+'</p><p class="mt-6 text-orange-600">'+p.solution+'</p></div></section><div class="grid gap-5 md:grid-cols-[1.5fr_1fr]"><img class="w-full grayscale" src="'+p.img+'" alt="Project desktop view"><img class="w-full grayscale" src="'+p.screen+'" alt="Project detail"></div><a class="mt-20 block border-t border-line pt-6" href="project-details.html?id='+next+'"><span class="font-mono text-[11px] text-orange-600">NEXT PROJECT →</span><strong class="block text-[clamp(2.5rem,5vw,6rem)] leading-[.9] tracking-[-.08em]">'+projects[next].title+'</strong></a>';document.title=p.title+' — Nantha Venkat';});
+const projects = {
+  "wp-dashboard": {
+    n: "01",
+    title: "CUSTOM DASHBOARD SUITE.",
+    type: "WordPress / Custom build",
+    year: "2024",
+    img: "Image/projectImg-1.jpeg",
+    screen: "Image/project-management.png",
+    summary:
+      "A modular internal workspace that turns four everyday customer workflows into one clear, focused WordPress experience.",
+    role: "Frontend & WordPress Developer",
+    tech: "WordPress · PHP · JavaScript · REST API",
+    problem:
+      "The team needed a friendly, unified interface for reviews, consultations, customer support and learning progress.",
+    solution:
+      "A tailored dashboard system with purpose-built templates, custom endpoints and responsive interface patterns.",
+  },
+  "performance-seo": {
+    n: "02",
+    title: "WEB VITALS OVERHAUL.",
+    type: "Performance / Technical SEO",
+    year: "2023—2024",
+    img: "Image/projectImg-2.jpeg",
+    screen: "Image/responsive-website.avif",
+    summary:
+      "A practical performance programme that made healthcare and SaaS websites faster, steadier and easier to find.",
+    role: "Performance Engineer",
+    tech: "Lighthouse · SCSS · JavaScript · Schema",
+    problem:
+      "Slow pages, visual instability and unoptimised media were diluting both organic reach and everyday usability.",
+    solution:
+      "Measured audits led into asset strategy, component refactoring and technical SEO improvements.",
+  },
+};
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  if (menuToggle && mobileMenu) {
+    const setMenuState = (isOpen) => {
+      mobileMenu.classList.toggle("hidden", !isOpen);
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close menu" : "Open menu",
+      );
+    };
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+      setMenuState(!isOpen);
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => setMenuState(false));
+    });
+  }
+
+  document.querySelectorAll("[data-top]").forEach((a) =>
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      scrollTo({ top: 0, behavior: "smooth" });
+    }),
+  );
+  const r = document.querySelector("#project-details-root");
+  if (!r) return;
+  const id = new URLSearchParams(location.search).get("id") || "wp-dashboard",
+    p = projects[id] || projects["wp-dashboard"],
+    next = id === "wp-dashboard" ? "performance-seo" : "wp-dashboard";
+  r.innerHTML =
+    '<p class="font-mono text-[11px] text-orange-600">(' +
+    p.n +
+    ") " +
+    p.type +
+    '</p><div class="mt-8 grid gap-12 md:grid-cols-[1.25fr_.75fr]"><h1 class="text-[clamp(4.3rem,10vw,11rem)] font-extrabold leading-[.79] tracking-[-.095em]">' +
+    p.title +
+    '</h1><div class="self-end text-lg text-orange-600"><p>' +
+    p.summary +
+    '</p><div class="mt-8 grid grid-cols-2 gap-5 border-t border-line pt-4 font-mono text-[11px]"><p>YEAR<br><strong class="font-sans text-ink">' +
+    p.year +
+    '</strong></p><p>ROLE<br><strong class="font-sans text-ink">' +
+    p.role +
+    '</strong></p><p>TECHNOLOGY<br><strong class="font-sans text-ink">' +
+    p.tech +
+    '</strong></p></div></div></div><img class="mt-16 aspect-[1.9] w-full object-cover grayscale" src="' +
+    p.img +
+    '" alt="' +
+    p.title +
+    '"><section class="my-24 grid gap-12 md:grid-cols-[1fr_2fr]"><h2 class="text-[clamp(2.5rem,5vw,6rem)] font-bold leading-[.86] tracking-[-.08em]">PROJECT<br>OVERVIEW.</h2><div><p class="text-[clamp(18px,2vw,28px)]">' +
+    p.problem +
+    '</p><p class="mt-6 text-orange-600">' +
+    p.solution +
+    '</p></div></section><div class="grid gap-5 md:grid-cols-[1.5fr_1fr]"><img class="w-full grayscale" src="' +
+    p.img +
+    '" alt="Project desktop view"><img class="w-full grayscale" src="' +
+    p.screen +
+    '" alt="Project detail"></div><a class="mt-20 block border-t border-line pt-6" href="project-details.html?id=' +
+    next +
+    '"><span class="font-mono text-[11px] text-orange-600">NEXT PROJECT →</span><strong class="block text-[clamp(2.5rem,5vw,6rem)] leading-[.9] tracking-[-.08em]">' +
+    projects[next].title +
+    "</strong></a>";
+  document.title = p.title + " — Nantha Venkat";
+});

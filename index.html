@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Nantha Venkat — Frontend Developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
     <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Manrope', 'sans-serif'], mono: ['DM Mono', 'monospace'] }, colors: { paper: '#f4f3ef', ink: '#171716', muted: '#73736e', line: '#cfcec7' } } } }</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
@@ -17,24 +18,33 @@
     <header class="h-16 md:h-[77px] border-b border-line">
         <div
             class="mx-auto grid h-full w-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]">
-            <a class="text-[15px] font-extrabold tracking-[-.04em]" href="index.html">NANTHA VENKAT<sup>®</sup></a>
+            <a class="text-[15px] font-extrabold tracking-[-.04em]" href="index.html">NANTHA VENKAT<sup>®</sup>
+            </a>
             <nav class="hidden gap-[clamp(15px,2vw,34px)] text-xs md:flex">
                 <a class="underline decoration-1 underline-offset-8" href="index.html">Home</a>
                 <!-- <a href="projects.html">Projects</a> -->
-                <a href="about.html">About</a><a href="experience.html">Experience</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
                 <a href="contact.html">Contact</a>
             </nav>
             <a class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:block" href="contact.html">START
-                A PROJECT →</a><button class="menu-toggle justify-self-end p-2 md:hidden" aria-label="Open menu"
-                aria-expanded="false"><span class="my-[5px] block h-px w-[22px] bg-ink"></span><span
-                    class="my-[5px] block h-px w-[22px] bg-ink"></span></button>
+                A PROJECT →</a>
+            <button class="menu-toggle justify-self-end p-2 md:hidden" aria-label="Open menu" aria-expanded="false">
+                <span class="my-[5px] block h-px w-[22px] bg-ink">
+                </span>
+                <span class="my-[5px] block h-px w-[22px] bg-ink">
+                </span>
+            </button>
         </div>
     </header>
 
     <nav
         class="mobile-menu hidden fixed inset-x-0 top-16 z-10 h-[calc(100vh-4rem)] flex-col gap-5 bg-paper px-[clamp(1.25rem,3.1vw,3.5rem)] py-8 text-[clamp(2.2rem,10vw,4rem)] font-bold leading-none tracking-[-.07em]">
-        <a href="index.html">Home</a><a href="projects.html">Projects</a><a href="about.html">About</a><a
-            href="experience.html">Experience</a><a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
     </nav>
     <main>
         <section
@@ -46,11 +56,14 @@
                 EXPERIENCE<br>BUILDER.</h1>
             <div class="grid grid-cols-2 gap-5 border-t border-line pt-5 md:grid-cols-[3fr_1.4fr_1.3fr]">
                 <p class="col-span-2 max-w-[31ch] text-[clamp(17px,1.45vw,22px)] leading-[1.35] md:col-span-1">I build
-                    thoughtful, fast and highly usable websites for businesses that care about the details.</p><img
-                    class="aspect-square w-[75px] object-cover grayscale md:w-[110px]" src="Image/prof-1.jpeg"
+                    thoughtful, fast and highly usable websites for businesses that care about the details.</p>
+                <img class="aspect-square w-[75px] object-cover grayscale md:w-[110px]" src="Image/prof-1.jpeg"
                     alt="Nantha Venkat">
-                <p class="text-[13px] leading-5 text-orange-600">Currently<br><strong class="text-ink">Available for
-                        selected projects</strong><br>Coimbatore, Tamil Nadu</p>
+                <p class="text-[13px] leading-5 text-orange-600">Currently<br>
+                    <strong class="text-ink">Available for
+                        selected projects</strong>
+                    <br>Coimbatore, Tamil Nadu
+                </p>
             </div>
         </section>
         <section class="border-t border-line py-[clamp(80px,13vw,190px)]">
@@ -68,21 +81,24 @@
                         <h3 class="text-[clamp(1.6rem,3vw,3.6rem)] font-bold leading-none tracking-[-.065em]">FRONTEND
                             DEVELOPMENT</h3>
                         <p class="text-[13px] text-orange-600">Responsive, accessible interfaces that feel as good as
-                            they perform.</p><span class="font-mono text-[11px]">React / Next.js</span>
+                            they perform.</p>
+                        <span class="font-mono text-[11px]">React / Next.js</span>
                     </article>
                     <article class="grid gap-4 border-b border-line py-5 md:grid-cols-[1fr_4fr_3fr_1fr] md:py-[26px]">
                         <span class="font-mono text-[11px]">002</span>
                         <h3 class="text-[clamp(1.6rem,3vw,3.6rem)] font-bold leading-none tracking-[-.065em]">WORDPRESS
                             DEVELOPMENT</h3>
                         <p class="text-[13px] text-orange-600">Custom themes, plugins and publishing experiences without
-                            the clutter.</p><span class="font-mono text-[11px]">PHP / WooCommerce</span>
+                            the clutter.</p>
+                        <span class="font-mono text-[11px]">PHP / WooCommerce</span>
                     </article>
                     <article class="grid gap-4 border-b border-line py-5 md:grid-cols-[1fr_4fr_3fr_1fr] md:py-[26px]">
                         <span class="font-mono text-[11px]">003</span>
                         <h3 class="text-[clamp(1.6rem,3vw,3.6rem)] font-bold leading-none tracking-[-.065em]">UI
                             DEVELOPMENT</h3>
                         <p class="text-[13px] text-orange-600">Design systems and considered components made ready for
-                            real users.</p><span class="font-mono text-[11px]">HTML / CSS</span>
+                            real users.</p>
+                        <span class="font-mono text-[11px]">HTML / CSS</span>
                     </article>
                 </div>
             </div>
@@ -96,12 +112,16 @@
             <div
                 class="flex flex-col justify-between gap-3 border-t border-line py-5 font-mono text-[11px] text-orange-600 sm:flex-row">
                 <span>© 2026 NANTHA VENKAT</span>
-                <div class="flex gap-5 text-ink"><a href="mailto:vnanthakumar00@gmail.com">Email</a><a
-                        href="https://github.com/NanthaVenkat">GitHub</a><a href="#" data-top>Back to top ↑</a></div>
+                <div class="flex gap-5 text-ink">
+                    <a href="mailto:vnanthakumar00@gmail.com">Email</a>
+                    <a href="https://github.com/NanthaVenkat">GitHub</a>
+                    <a href="#" data-top>Back to top ↑</a>
+                </div>
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
 </body>
 
 </html>
