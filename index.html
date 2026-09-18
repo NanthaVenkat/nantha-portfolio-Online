@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Nantha Venkat — Frontend Developer</title>
-    <script src="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Manrope', 'sans-serif'], mono: ['DM Mono', 'monospace'] }, colors: { paper: '#f4f3ef', ink: '#171716', muted: '#73736e', line: '#cfcec7' } } } }
     </script>
-    <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Manrope', 'sans-serif'], mono: ['DM Mono', 'monospace'] }, colors: { paper: '#f4f3ef', ink: '#171716', muted: '#73736e', line: '#cfcec7' } } } }</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
@@ -18,7 +19,7 @@
     <header class="h-16 md:h-[77px] border-b border-line">
         <div
             class="mx-auto grid h-full w-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]">
-            <a class="text-[15px] font-extrabold tracking-[-.04em]" href="index.html">NANTHA VENKAT<sup>®</sup>
+            <a class="flex group gap-1 items-center text-[15px] font-extrabold tracking-[-.04em]" href="index.html"><img src="./Image/envy.svg" alt="Nantha Venkat" class="w-20 h-20 transition-all group-hover:rotate-12">NANTHA VENKAT<sup>®</sup>
             </a>
             <nav class="hidden gap-[clamp(15px,2vw,34px)] text-xs md:flex">
                 <a class="underline decoration-1 underline-offset-8" href="index.html">Home</a>
@@ -51,7 +52,7 @@
             class="mx-auto grid min-h-[calc(100svh-4rem)] max-w-[1560px] content-between gap-16 px-[clamp(1.25rem,3.1vw,3.5rem)] py-[clamp(40px,7vw,110px)]">
             <p class="font-mono text-[11px] uppercase tracking-[.05em] text-orange-600">Independent frontend developer ·
                 India</p>
-            <h1 class="max-w-[13ch] text-[clamp(4.1rem,9.2vw,10.1rem)] font-extrabold leading-[.83] tracking-[-.09em]">
+            <h1 class="max-w-[13ch] text-[clamp(3.8rem,9.2vw,10.1rem)] font-extrabold leading-[.83] tracking-[-.09em]">
                 FRONTEND<br>DEVELOPER <span class="ml-[clamp(1.2rem,12vw,14rem)] block">&amp; DIGITAL</span>
                 EXPERIENCE<br>BUILDER.</h1>
             <div class="grid grid-cols-2 gap-5 border-t border-line pt-5 md:grid-cols-[3fr_1.4fr_1.3fr]">

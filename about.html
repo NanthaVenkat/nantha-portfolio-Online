@@ -13,40 +13,41 @@
 </head>
 
 <body class="bg-paper font-sans text-ink antialiased">
-    <header class="h-16 border-b border-line md:h-[77px]">
+    <header class="h-20 border-b border-line md:h-[78px]">
         <div
             class="mx-auto grid h-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]">
-            <a class="text-[15px] font-extrabold tracking-[-.04em]" href="index.html">NANTHA VENKAT<sup>®</sup>
-            </a>
-            <nav class="hidden gap-7 text-xs md:flex">
-                <a href="index.html">Home</a>
-                <!-- <a class=""
+            <a class="flex gap-1 items-center text-[15px] font-extrabold tracking-[-.04em]" href="index.html"><img
+                    src="./Image/envy.svg" alt="Nantha Venkat" class="w-20 h-20">NANTHA VENKAT<sup>®</sup>
+                <nav class="hidden gap-7 text-xs md:flex">
+                    <a href="index.html">Home</a>
+                    <!-- <a class=""
                     href="projects.html">Projects</a> -->
-                <a class="underline underline-offset-8" href="about.html">About</a>
-                <a class="" href="experience.html">Experience</a>
-                <a class="" href="contact.html">Contact</a>
-            </nav>
-            <a class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:block" href="contact.html">START
-                A PROJECT →</a>
-            <button class="menu-toggle justify-self-end p-2 md:hidden" aria-label="Open menu" aria-expanded="false">
-                <span class="my-[5px] block h-px w-[22px] bg-ink">
-                </span>
-                <span class="my-[5px] block h-px w-[22px] bg-ink">
-                </span>
-            </button>
+                    <a class="underline underline-offset-8" href="about.html">About</a>
+                    <a class="" href="experience.html">Experience</a>
+                    <a class="" href="contact.html">Contact</a>
+                </nav>
+                <a class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:block"
+                    href="contact.html">START
+                    A PROJECT →</a>
+                <button class="menu-toggle justify-self-end p-2 md:hidden" aria-label="Open menu" aria-expanded="false">
+                    <span class="my-[5px] block h-px w-[22px] bg-ink">
+                    </span>
+                    <span class="my-[5px] block h-px w-[22px] bg-ink">
+                    </span>
+                </button>
         </div>
     </header>
     <nav
-        class="mobile-menu fixed inset-x-0 top-16 z-10 hidden h-[calc(100vh-4rem)] flex flex-col gap-5 bg-paper px-6 py-8 text-4xl font-bold">
+        class="mobile-menu fixed inset-x-0 top-20 z-10 hidden h-[calc(100vh-5rem)] flex flex-col gap-5 bg-paper px-6 py-8 text-4xl font-bold md:hidden">
         <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
+        <!-- <a href="projects.html">Projects</a> -->
         <a href="about.html">About</a>
         <a href="experience.html">Experience</a>
         <a href="contact.html">Contact</a>
     </nav>
     <main class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)] py-[clamp(65px,10vw,145px)]">
         <p class="font-mono text-[11px] text-orange-600">(003) ABOUT</p>
-        <h1 class="mt-6 max-w-[9ch] text-[clamp(4.3rem,10vw,11rem)] font-extrabold leading-[.79] tracking-[-.095em]">A
+        <h1 class="mt-6 max-w-[9ch] text-[clamp(4rem,10vw,11rem)] font-extrabold leading-[.79] tracking-[-.095em]">A
             DEVELOPER WHO CARES ABOUT DETAILS.</h1>
         <div class="mt-[clamp(70px,12vw,180px)] grid gap-[clamp(40px,10vw,170px)] md:grid-cols-[1fr_1.3fr]">
             <img class="aspect-[.8] w-full object-cover grayscale" src="Image/prof-1.jpeg" alt="Nantha Venkat">
@@ -57,12 +58,18 @@
                     WordPress engineering and modern frontend development—translating complex requirements into
                     interfaces people can actually use.</p>
                 <div class="mt-20 border-t border-line text-[clamp(2rem,4vw,5rem)] leading-none tracking-[-.07em]">
-                    <div class="border-b border-line py-3">JAVASCRIPT</div>
-                    <div class="border-b border-line py-3">REACT / NEXT.JS</div>
-                    <div class="border-b border-line py-3">WORDPRESS / PHP</div>
-                    <div class="border-b border-line py-3">HTML / CSS</div>
-                    <div class="border-b border-line py-3">UI / UX</div>
-                    <div class="border-b border-line py-3">Shopify</div>
+                    <div class="border-b border-line group py-3 overflow-hidden"><span
+                            class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">JAVASCRIPT</span></div>
+                    <div class="border-b border-line group py-3 overflow-hidden"><span
+                            class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">REACT / NEXT.JS</span></div>
+                    <div class="border-b border-line group py-3 overflow-hidden"><span
+                            class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">WORDPRESS / PHP</span></div>
+                    <div class="border-b border-line group py-3 overflow-hidden"><span
+                            class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">HTML / CSS</span></div>
+                    <div class="border-b border-line group py-3 overflow-hidden"><span
+                            class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">UI / UX</span></div>
+                    <div class="border-b border-line group py-3 overflow-hidden"><span
+                            class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">Shopify</span></div>
                 </div>
             </div>
         </div>

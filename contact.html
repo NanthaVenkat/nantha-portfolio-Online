@@ -13,39 +13,40 @@
 </head>
 
 <body class="bg-paper font-sans text-ink antialiased">
-    <header class="h-16 border-b border-line md:h-[77px]">
+    <header class="h-20 border-b border-line md:h-[78px]">
         <div
             class="mx-auto grid h-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]">
-            <a class="text-[15px] font-extrabold tracking-[-.04em]" href="index.html">NANTHA VENKAT<sup>®</sup>
-            </a>
-            <nav class="hidden gap-7 text-xs md:flex">
-                <a href="index.html">Home</a>
-                <!-- <a class="" href="projects.html">Projects</a> -->
-                <a class="" href="about.html">About</a>
-                <a class="" href="experience.html">Experience</a>
-                <a class="underline underline-offset-8" href="contact.html">Contact</a>
-            </nav>
-            <a class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:block" href="contact.html">START
-                A PROJECT →</a>
-            <button class="menu-toggle justify-self-end p-2 md:hidden" aria-label="Open menu" aria-expanded="false">
-                <span class="my-[5px] block h-px w-[22px] bg-ink">
-                </span>
-                <span class="my-[5px] block h-px w-[22px] bg-ink">
-                </span>
-            </button>
+            <a class="flex gap-1 items-center text-[15px] font-extrabold tracking-[-.04em]" href="index.html"><img
+                    src="./Image/envy.svg" alt="Nantha Venkat" class="w-20 h-20">NANTHA VENKAT<sup>®</sup>
+                <nav class="hidden gap-7 text-xs md:flex">
+                    <a href="index.html">Home</a>
+                    <!-- <a class="" href="projects.html">Projects</a> -->
+                    <a class="" href="about.html">About</a>
+                    <a class="" href="experience.html">Experience</a>
+                    <a class="underline underline-offset-8" href="contact.html">Contact</a>
+                </nav>
+                <a class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:block"
+                    href="contact.html">START
+                    A PROJECT →</a>
+                <button class="menu-toggle justify-self-end p-2 md:hidden" aria-label="Open menu" aria-expanded="false">
+                    <span class="my-[5px] block h-px w-[22px] bg-ink">
+                    </span>
+                    <span class="my-[5px] block h-px w-[22px] bg-ink">
+                    </span>
+                </button>
         </div>
     </header>
     <nav
-        class="mobile-menu fixed inset-x-0 top-16 z-10 hidden h-[calc(100vh-4rem)] flex flex-col gap-5 bg-paper px-6 py-8 text-4xl font-bold">
+        class="mobile-menu fixed inset-x-0 top-20 z-10 hidden h-[calc(100vh-5rem)] flex flex-col gap-5 bg-paper px-6 py-8 text-4xl font-bold md:hidden">
         <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
+        <!-- <a href="projects.html">Projects</a> -->
         <a href="about.html">About</a>
         <a href="experience.html">Experience</a>
         <a href="contact.html">Contact</a>
     </nav>
     <main class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)] py-[clamp(65px,10vw,145px)]">
         <p class="font-mono text-[11px] text-orange-600">(005) CONTACT</p>
-        <h1 class="mt-6 max-w-[9ch] text-[clamp(4.3rem,10vw,11rem)] font-extrabold leading-[.79] tracking-[-.095em]">
+        <h1 class="mt-6 max-w-[9ch] text-[clamp(4rem,10vw,11rem)] font-extrabold leading-[.79] tracking-[-.095em]">
             LET'S BUILD SOMETHING USEFUL.</h1>
         <div class="mt-24 grid gap-20 md:grid-cols-2">
             <div>
@@ -61,26 +62,22 @@
             </div>
             <!-- <form action="mailto:vnanthakumar00@gmail.com" method="post">
                 <div class="border-t border-line py-5">
-<label class="mb-2 block font-mono text-[11px] text-orange-600"
-                        for="name">YOUR NAME</label>
-<input class="w-full bg-transparent text-lg outline-none" id="name"
-                        required placeholder="Name">
-</div>
+                    <label class="mb-2 block font-mono text-[11px] text-orange-600" for="name">YOUR NAME</label>
+                    <input class="w-full bg-transparent text-lg outline-none" id="name" required placeholder="Name">
+                </div>
                 <div class="border-t border-line py-5">
-<label class="mb-2 block font-mono text-[11px] text-orange-600"
-                        for="email">EMAIL ADDRESS</label>
-<input class="w-full bg-transparent text-lg outline-none"
-                        id="email" type="email" required placeholder="you@company.com">
-</div>
+                    <label class="mb-2 block font-mono text-[11px] text-orange-600" for="email">EMAIL ADDRESS</label>
+                    <input class="w-full bg-transparent text-lg outline-none" id="email" type="email" required
+                        placeholder="you@company.com">
+                </div>
                 <div class="border-t border-line py-5">
-<label class="mb-2 block font-mono text-[11px] text-orange-600"
-                        for="message">TELL ME A LITTLE MORE</label>
-<textarea
-                        class="min-h-32 w-full resize-y bg-transparent text-lg outline-none" id="message" required
+                    <label class="mb-2 block font-mono text-[11px] text-orange-600" for="message">TELL ME A LITTLE
+                        MORE</label>
+                    <textarea class="min-h-32 w-full resize-y bg-transparent text-lg outline-none" id="message" required
                         placeholder="Project, timeline, goals...">
 </textarea>
-</div>
-<button
+                </div>
+                <button
                     class="border border-ink bg-ink px-5 py-4 text-xs font-bold tracking-[.04em] text-paper hover:bg-transparent hover:text-ink">SEND
                     MESSAGE →</button>
             </form> -->
