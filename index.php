@@ -1,53 +1,9 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Nantha Venkat — Frontend Developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Manrope', 'sans-serif'], mono: ['DM Mono', 'monospace'] }, colors: { paper: '#f4f3ef', ink: '#171716', muted: '#73736e', line: '#cfcec7' } } } }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-</head>
-
-<body class="bg-paper font-sans text-ink antialiased">
-    <header class="h-16 md:h-[77px] border-b border-line">
-        <div
-            class="mx-auto grid h-full w-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]">
-            <a class="flex group gap-1 items-center text-[15px] font-extrabold tracking-[-.04em]" href="index.html"><img src="./Image/envy.svg" alt="Nantha Venkat" class="w-20 h-20 transition-all group-hover:rotate-12">NANTHA VENKAT<sup>®</sup>
-            </a>
-            <nav class="hidden gap-[clamp(15px,2vw,34px)] text-xs md:flex">
-                <a class="underline decoration-1 underline-offset-8" href="index.html">Home</a>
-                <!-- <a href="projects.html">Projects</a> -->
-                <a href="about.html">About</a>
-                <a href="experience.html">Experience</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <a class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:block" href="contact.html">START
-                A PROJECT →</a>
-            <button class="menu-toggle justify-self-end p-2 md:hidden" aria-label="Open menu" aria-expanded="false">
-                <span class="my-[5px] block h-px w-[22px] bg-ink">
-                </span>
-                <span class="my-[5px] block h-px w-[22px] bg-ink">
-                </span>
-            </button>
-        </div>
-    </header>
-
-    <nav
-        class="mobile-menu hidden fixed inset-x-0 top-16 z-10 h-[calc(100vh-4rem)] flex flex-col gap-5 bg-paper px-[clamp(1.25rem,3.1vw,3.5rem)] py-8 text-[clamp(2.2rem,10vw,4rem)] font-bold leading-none tracking-[-.07em]">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="about.html">About</a>
-        <a href="experience.html">Experience</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <main>
+﻿<?php
+$currentPage = 'home';
+$pageTitle = 'Nantha Venkat — Frontend Developer';
+require __DIR__ . '/header.php';
+?>
+<main>
         <section
             class="mx-auto grid min-h-[calc(100svh-4rem)] max-w-[1560px] content-between gap-16 px-[clamp(1.25rem,3.1vw,3.5rem)] py-[clamp(40px,7vw,110px)]">
             <p class="font-mono text-[11px] uppercase tracking-[.05em] text-orange-600">Independent frontend developer ·
@@ -105,24 +61,6 @@
             </div>
         </section>
     </main>
-    <footer class="border-t border-line pt-[clamp(70px,11vw,160px)]">
-        <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
-            <h2
-                class="mb-20 max-w-[8ch] text-[clamp(3.8rem,8.5vw,9rem)] font-extrabold leading-[.83] tracking-[-.09em]">
-                LET'S WORK TOGETHER.</h2>
-            <div
-                class="flex flex-col justify-between gap-3 border-t border-line py-5 font-mono text-[11px] text-orange-600 sm:flex-row">
-                <span>© 2026 NANTHA VENKAT</span>
-                <div class="flex gap-5 text-ink">
-                    <a href="mailto:vnanthakumar00@gmail.com">Email</a>
-                    <a href="https://github.com/NanthaVenkat">GitHub</a>
-                    <a href="#" data-top>Back to top ↑</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="script.js">
-    </script>
-</body>
+<?php require __DIR__ . '/footer.php'; ?>
 
-</html>
+
