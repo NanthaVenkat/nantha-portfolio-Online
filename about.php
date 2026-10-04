@@ -16,17 +16,17 @@ require __DIR__ . '/header.php';
                     WordPress engineering and modern frontend development—translating complex requirements into
                     interfaces people can actually use.</p>
                 <div class="mt-20 border-t border-line text-[clamp(2rem,4vw,5rem)] leading-none tracking-[-.07em]">
-                    <div class="border-b border-line group py-3 overflow-hidden"><span
+                    <div class="border-b border-line group py-3 overflow-hidden cursor-default"><span
                             class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">JAVASCRIPT</span></div>
-                    <div class="border-b border-line group py-3 overflow-hidden"><span
+                    <div class="border-b border-line group py-3 overflow-hidden cursor-default"><span
                             class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">REACT / NEXT.JS</span></div>
-                    <div class="border-b border-line group py-3 overflow-hidden"><span
+                    <div class="border-b border-line group py-3 overflow-hidden cursor-default"><span
                             class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">WORDPRESS / PHP</span></div>
-                    <div class="border-b border-line group py-3 overflow-hidden"><span
+                    <div class="border-b border-line group py-3 overflow-hidden cursor-default"><span
                             class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">HTML / CSS</span></div>
-                    <div class="border-b border-line group py-3 overflow-hidden"><span
+                    <div class="border-b border-line group py-3 overflow-hidden cursor-default"><span
                             class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">UI / UX</span></div>
-                    <div class="border-b border-line group py-3 overflow-hidden"><span
+                    <div class="border-b border-line group py-3 overflow-hidden cursor-default"><span
                             class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">Shopify</span></div>
                 </div>
             </div>
