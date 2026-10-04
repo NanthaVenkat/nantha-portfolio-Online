@@ -44,7 +44,7 @@ $navItems = [
 <body class="bg-paper font-sans text-ink antialiased">
     <header class="h-16 border-b border-line md:h-[77px]">
         <div class="mx-auto grid h-full w-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]">
-            <a class="flex items-center gap-1 text-[15px] font-extrabold tracking-[-.04em]" href="index.php"><img src="Image/envy.svg" alt="" class="h-16 w-16">NANTHA VENKAT<sup>®</sup></a>
+            <a class="flex items-center gap-1 text-[15px] font-extrabold tracking-[-.04em]" href="/index.php"><img src="Image/envy.svg" alt="" class="h-16 w-16">NANTHA VENKAT<sup>®</sup></a>
             <nav class="hidden gap-[clamp(15px,2vw,34px)] text-xs md:flex" aria-label="Main navigation">
                 <?php foreach ($navItems as $key => [$label, $url]): ?>
                     <a href="<?= $url ?>" <?= $currentPage === $key ? ' class="underline decoration-1 underline-offset-8" aria-current="page"' : '' ?>><?= $label ?></a>
