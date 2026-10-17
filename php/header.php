@@ -47,13 +47,13 @@ $navItems = [
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" sizes="32x32" href="./Image/envy.svg">
+    <link rel="icon" sizes="32x32" href="../Image/envy.svg">
 </head>
 
 <body class="bg-paper font-sans text-ink antialiased">
     <header class="h-16 border-b border-line md:h-[77px]">
         <div class="mx-auto grid h-full w-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]">
-            <a class="flex items-center gap-1 text-[15px] font-extrabold tracking-[-.04em]" href="/index.php"><img src="Image/envy.svg" alt="" class="h-16 w-16">NANTHA VENKAT<sup>®</sup></a>
+            <a class="flex items-center gap-1 text-[15px] font-extrabold tracking-[-.04em]" href="index.php"><img src="../Image/envy.svg" alt="" class="h-16 w-16">NANTHA VENKAT<sup>®</sup></a>
             <nav class="hidden gap-[clamp(15px,2vw,34px)] text-xs md:flex" aria-label="Main navigation">
                 <?php foreach ($navItems as $key => [$label, $url]): ?>
                     <a href="<?= $url ?>" <?= $currentPage === $key ? ' class="underline decoration-1 underline-offset-8" aria-current="page"' : '' ?>><?= $label ?></a>
@@ -63,7 +63,7 @@ $navItems = [
             <button class="menu-toggle justify-self-end p-2 md:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span class="my-[5px] block h-px w-[22px] bg-ink"></span><span class="my-[5px] block h-px w-[22px] bg-ink"></span></button>
         </div>
     </header>
-    <nav id="mobile-menu" class="mobile-menu fixed inset-x-0 top-16 z-10 hidden h-[calc(100vh-4rem)] flex-col gap-5 bg-paper px-[clamp(1.25rem,3.1vw,3.5rem)] py-8 text-[clamp(2.2rem,10vw,4rem)] font-bold leading-none tracking-[-.07em] md:hidden" aria-label="Mobile navigation">
+    <nav id="mobile-menu" class="mobile-menu fixed inset-x-0 top-16 z-10 hidden h-[calc(100vh-4rem)] flex flex-col gap-5 bg-paper px-[clamp(1.25rem,3.1vw,3.5rem)] py-8 text-[clamp(2.2rem,10vw,4rem)] font-bold leading-none tracking-[-.07em] md:hidden" aria-label="Mobile navigation">
         <?php foreach ($navItems as $key => [$label, $url]): ?>
             <a href="<?= $url ?>" <?= $currentPage === $key ? ' aria-current="page"' : '' ?>><?= $label ?></a>
         <?php endforeach; ?>
