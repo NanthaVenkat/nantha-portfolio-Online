@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -12,11 +12,15 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-89EX12J4MX");
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Selected Projects — Nantha Venkat</title>
+    <meta
+      name="description"
+      content="Production case studies and software engineering projects delivered by Nantha Venkat across healthcare, SaaS, and bespoke WordPress systems."
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -36,255 +40,288 @@
         },
       };
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="Image/envy.svg" />
+    <link rel="stylesheet" href="custom.css" />
   </head>
 
-  <body class="bg-paper font-sans text-ink">
-    <header class="h-20 border-b border-line md:h-[78px]">
+  <body class="bg-paper font-sans text-ink antialiased selection:bg-orange-600 selection:text-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-paper/95 backdrop-blur-md border-b border-line">
       <div
-        class="mx-auto grid h-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]"
+        class="mx-auto grid h-16 md:h-[77px] w-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]"
       >
         <a
-          class="flex group gap-1 items-center text-[15px] font-extrabold tracking-[-.04em]"
-          href="/index.html"
+          class="flex group gap-2 items-center text-[15px] font-extrabold tracking-[-.04em]"
+          href="index.html"
         >
           <img
-            src="./Image/envy.svg"
+            src="Image/envy.svg"
             alt="Nantha Venkat"
-            class="w-16 h-16 sm:w-20 sm:h-20 transition-all group-hover:rotate-12"
-          />NANTHA VENKAT<sup>®</sup></a
-        >
-        <nav class="hidden gap-7 text-xs md:flex">
-          <a href="/index.html">Home</a>
-          <a class="underline underline-offset-8" href="projects.html"
-            >Projects</a
-          >
-          <a class="" href="about.html">About</a>
-          <a class="" href="experience.html">Experience</a>
-          <a class="" href="contact.html">Contact</a>
+            class="w-12 h-12 sm:w-16 sm:h-16 transition-all group-hover:rotate-12"
+          />
+          <span>NANTHA VENKAT<sup>®</sup></span>
+        </a>
+
+        <nav class="hidden gap-[clamp(15px,2vw,34px)] text-xs font-semibold md:flex">
+          <a class="hover:text-orange-600 transition" href="index.html">Home</a>
+          <a class="underline decoration-2 underline-offset-8 text-orange-600" href="projects.html">Projects</a>
+          <a class="hover:text-orange-600 transition" href="about.html">About</a>
+          <a class="hover:text-orange-600 transition" href="experience.html">Experience</a>
+          <a class="hover:text-orange-600 transition" href="contact.html">Contact</a>
         </nav>
+
         <a
-          class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:block"
+          class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:inline-flex items-center gap-1.5 px-4 py-2 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition"
           href="contact.html"
-          >START A PROJECT →</a
         >
+          START A PROJECT →
+        </a>
+
         <button
           class="menu-toggle justify-self-end p-2 md:hidden"
           aria-label="Open menu"
           aria-expanded="false"
         >
-          <span class="my-[5px] block h-px w-[22px] bg-ink"> </span>
-          <span class="my-[5px] block h-px w-[22px] bg-ink"> </span>
+          <span class="my-[5px] block h-px w-[22px] bg-ink"></span>
+          <span class="my-[5px] block h-px w-[22px] bg-ink"></span>
         </button>
       </div>
     </header>
+
+    <!-- Mobile Nav -->
     <nav
-      class="mobile-menu fixed inset-x-0 top-20 z-10 hidden h-[calc(100vh-5rem)] flex flex-col gap-5 bg-paper px-6 py-8 text-4xl font-bold md:hidden"
+      class="mobile-menu hidden fixed inset-x-0 top-16 z-50 h-[calc(100vh-4rem)] flex flex-col justify-between bg-paper px-[clamp(1.25rem,3.1vw,3.5rem)] py-8 text-[clamp(2.2rem,8vw,3.8rem)] font-bold leading-tight tracking-[-.07em] border-b border-line shadow-2xl"
     >
-      <a href="/index.html">Home</a>
-      <a href="/projects.html">Projects</a>
-      <a href="/about.html">About</a>
-      <a href="/experience.html">Experience</a>
-      <a href="/contact.html">Contact</a>
+      <div class="flex flex-col gap-4">
+        <a href="index.html">Home</a>
+        <a class="text-orange-600 underline underline-offset-8" href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="border-t border-line pt-6 font-mono text-xs font-normal">
+        <p class="text-muted">Available for freelance & full-time roles</p>
+        <p class="text-ink mt-1 font-bold">vnanthakumar00@gmail.com</p>
+      </div>
     </nav>
 
-    <main
-      class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)] py-[clamp(65px,10vw,145px)]"
-    >
-      <p class="font-mono text-[11px] text-orange-600">
-        (002) SELECTED PROJECTS
+    <main class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)] py-[clamp(50px,8vw,120px)]">
+      <p class="font-mono text-[11px] text-orange-600 uppercase tracking-widest">
+        (002) PRODUCTION ARCHIVE
       </p>
       <h1
-        class="mt-6 text-[clamp(4.3rem,10vw,11rem)] font-extrabold leading-[.79] tracking-[-.095em]"
+        class="mt-4 text-[clamp(4rem,9vw,9.5rem)] font-extrabold leading-[.79] tracking-[-.095em]"
       >
         SELECTED<br />PROJECTS.
       </h1>
-      <div class="mt-24 space-y-20">
 
-        <article
-          class="grid gap-5 border-t border-line pt-6 md:grid-cols-[75px_1.15fr_1fr]"
-        >
-          <span class="font-mono text-[11px]">01</span>
-          <a href="projects/6storage.html">
+      <div class="mt-16 space-y-16">
+        <!-- Project 01: 6Storage -->
+        <article class="grid gap-6 border-t border-line pt-8 md:grid-cols-[60px_1.25fr_1fr] items-start group">
+          <span class="font-mono text-sm font-bold text-orange-600">01</span>
+          <a href="projects/6storage.html" class="block overflow-hidden rounded-xl border border-line bg-white shadow-sm">
             <img
-              class="aspect-[1.9] w-full object-cover transition duration-500 hover:scale-[1.02]"
+              class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
               src="Image/6storage.png"
               alt="6Storage website"
             />
           </a>
-          <div class="self-end">
-            <p class="font-mono text-[11px] text-orange-600">
-              6STORAGE / WORDPRESS / PAGE BUILDERS
-            </p>
-            <h2
-              class="my-5 text-[clamp(2.6rem,5vw,6rem)] font-bold leading-[.87] tracking-[-.08em]"
-            >
-              6STORAGE<br />PLUGIN DEVELOPMENT.
-            </h2>
-            <p class="text-sm text-orange-600">
-              A custom page-builder plugin used to deliver 60+ websites and 18+ templates.
-            </p>
-            <a
-              class="mt-8 inline-block text-xs font-bold"
-              href="projects/6storage.html"
-              >VIEW PROJECT →</a
-            >
+          <div class="flex flex-col justify-between h-full">
+            <div>
+              <p class="font-mono text-[11px] text-orange-600 uppercase tracking-wider">
+                6STORAGE / WORDPRESS / PAGE BUILDERS
+              </p>
+              <h2 class="my-4 text-[clamp(2rem,3.8vw,4.2rem)] font-bold leading-[.87] tracking-[-.08em]">
+                6STORAGE<br />PLUGIN DEVELOPMENT.
+              </h2>
+              <p class="text-sm text-muted leading-relaxed">
+                A custom page-builder plugin used to deliver 60+ websites and 18+ multi-tenant templates for North American storage facilities, standardizing component design tokens and streamlining customer onboarding.
+              </p>
+            </div>
+            <div class="mt-8">
+              <a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider py-2 px-4 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition" href="projects/6storage.html">
+                VIEW PROJECT →
+              </a>
+            </div>
           </div>
         </article>
-        <article
-          class="grid gap-5 border-t border-line pt-6 md:grid-cols-[75px_1.15fr_1fr]"
-        >
-          <span class="font-mono text-[11px]">02</span>
-          <a href="projects/sri-ramakrishna-hospital.html">
+
+        <!-- Project 02: Sri Ramakrishna Hospital -->
+        <article class="grid gap-6 border-t border-line pt-8 md:grid-cols-[60px_1.25fr_1fr] items-start group">
+          <span class="font-mono text-sm font-bold text-orange-600">02</span>
+          <a href="projects/sri-ramakrishna-hospital.html" class="block overflow-hidden rounded-xl border border-line bg-white shadow-sm">
             <img
-              class="aspect-[1.9] w-full object-cover transition duration-500 hover:scale-[1.02]"
+              class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
               src="Image/sriramakrishnahospital.png"
               alt="Sri Ramakrishna Hospital website"
             />
           </a>
-          <div class="self-end">
-            <p class="font-mono text-[11px] text-orange-600">
-              BBIT / WORDPRESS / ACF
-            </p>
-            <h2
-              class="my-5 text-[clamp(2.6rem,5vw,6rem)] font-bold leading-[.87] tracking-[-.08em]"
-            >
-              SRI RAMAKRISHNA<br />HOSPITAL.
-            </h2>
-            <p class="text-sm text-orange-600">
-              A custom healthcare theme with doctor profiles and online appointment booking.
-            </p>
-            <a class="mt-8 inline-block text-xs font-bold" href="projects/sri-ramakrishna-hospital.html">VIEW PROJECT →</a>
+          <div class="flex flex-col justify-between h-full">
+            <div>
+              <p class="font-mono text-[11px] text-orange-600 uppercase tracking-wider">
+                BBIT / WORDPRESS / ACF
+              </p>
+              <h2 class="my-4 text-[clamp(2rem,3.8vw,4.2rem)] font-bold leading-[.87] tracking-[-.08em]">
+                SRI RAMAKRISHNA<br />HOSPITAL.
+              </h2>
+              <p class="text-sm text-muted leading-relaxed">
+                A custom healthcare theme with comprehensive doctor profiles, department pathways, and online appointment booking workflows engineered for high resilience and zero friction.
+              </p>
+            </div>
+            <div class="mt-8">
+              <a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider py-2 px-4 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition" href="projects/sri-ramakrishna-hospital.html">
+                VIEW PROJECT →
+              </a>
+            </div>
           </div>
         </article>
-        <article
-          class="grid gap-5 border-t border-line pt-6 md:grid-cols-[75px_1.15fr_1fr]"
-        >
-          <span class="font-mono text-[11px]">03</span>
-          <a href="projects/bodhi-mindcare.html">
+
+        <!-- Project 03: Bodhi Mind Care -->
+        <article class="grid gap-6 border-t border-line pt-8 md:grid-cols-[60px_1.25fr_1fr] items-start group">
+          <span class="font-mono text-sm font-bold text-orange-600">03</span>
+          <a href="projects/bodhi-mindcare.html" class="block overflow-hidden rounded-xl border border-line bg-white shadow-sm">
             <img
-              class="aspect-[1.9] w-full object-cover transition duration-500 hover:scale-[1.02]"
+              class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
               src="Image/bodhiimindcarehospital.png"
               alt="Bodhi Mind Care Hospital website"
             />
           </a>
-          <div class="self-end">
-            <p class="font-mono text-[11px] text-orange-600">
-              BBIT / WORDPRESS / ACF
-            </p>
-            <h2
-              class="my-5 text-[clamp(2.6rem,5vw,6rem)] font-bold leading-[.87] tracking-[-.08em]"
-            >
-              BODHI MIND<br />CARE.
-            </h2>
-            <p class="text-sm text-orange-600">
-              A mindcare hospital website designed and developed from the ground up.
-            </p>
-            <a class="mt-8 inline-block text-xs font-bold" href="projects/bodhi-mindcare.html">VIEW PROJECT →</a>
+          <div class="flex flex-col justify-between h-full">
+            <div>
+              <p class="font-mono text-[11px] text-orange-600 uppercase tracking-wider">
+                BBIT / WORDPRESS / ACF
+              </p>
+              <h2 class="my-4 text-[clamp(2rem,3.8vw,4.2rem)] font-bold leading-[.87] tracking-[-.08em]">
+                BODHI MIND<br />CARE.
+              </h2>
+              <p class="text-sm text-muted leading-relaxed">
+                A mindcare hospital website designed and developed from the ground up, prioritizing user empathy, reassuring color palettes, and quick psychiatric appointment scheduling.
+              </p>
+            </div>
+            <div class="mt-8">
+              <a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider py-2 px-4 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition" href="projects/bodhi-mindcare.html">
+                VIEW PROJECT →
+              </a>
+            </div>
           </div>
         </article>
-        <article
-          class="grid gap-5 border-t border-line pt-6 md:grid-cols-[75px_1.15fr_1fr]"
-        >
-          <span class="font-mono text-[11px]">04</span>
-          <a href="projects/google-review-dashboard.html">
+
+        <!-- Project 04: Google Review Dashboard -->
+        <article class="grid gap-6 border-t border-line pt-8 md:grid-cols-[60px_1.25fr_1fr] items-start group">
+          <span class="font-mono text-sm font-bold text-orange-600">04</span>
+          <a href="projects/google-review-dashboard.html" class="block overflow-hidden rounded-xl border border-line bg-white shadow-sm">
             <img
-              class="aspect-[1.9] w-full object-cover transition duration-500 hover:scale-[1.02]"
+              class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
               src="Image/project-management.png"
               alt="Google reviews dashboard"
             />
           </a>
-          <div class="self-end">
-            <p class="font-mono text-[11px] text-orange-600">
-              BBIT / PHP / GOOGLE APIS
-            </p>
-            <h2
-              class="my-5 text-[clamp(2.6rem,5vw,6rem)] font-bold leading-[.87] tracking-[-.08em]"
-            >
-              GOOGLE REVIEW<br />DASHBOARD.
-            </h2>
-            <p class="text-sm text-orange-600">
-              A dashboard to track Google reviews for an organization.
-            </p>
-            <a class="mt-8 inline-block text-xs font-bold" href="projects/google-review-dashboard.html">VIEW PROJECT →</a>
+          <div class="flex flex-col justify-between h-full">
+            <div>
+              <p class="font-mono text-[11px] text-orange-600 uppercase tracking-wider">
+                BBIT / PHP / GOOGLE APIS
+              </p>
+              <h2 class="my-4 text-[clamp(2rem,3.8vw,4.2rem)] font-bold leading-[.87] tracking-[-.08em]">
+                GOOGLE REVIEW<br />DASHBOARD.
+              </h2>
+              <p class="text-sm text-muted leading-relaxed">
+                A customized dashboard aggregating real-time Google reviews and ratings across business branches, featuring automated sentiment tagging and alert mechanisms.
+              </p>
+            </div>
+            <div class="mt-8">
+              <a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider py-2 px-4 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition" href="projects/google-review-dashboard.html">
+                VIEW PROJECT →
+              </a>
+            </div>
           </div>
         </article>
-        <article
-          class="grid gap-5 border-t border-line pt-6 md:grid-cols-[75px_1.15fr_1fr]"
-        >
-          <span class="font-mono text-[11px]">05</span>
-          <a href="projects/doctor-appointment-booking.html">
+
+        <!-- Project 05: Doctor Appointment Booking -->
+        <article class="grid gap-6 border-t border-line pt-8 md:grid-cols-[60px_1.25fr_1fr] items-start group">
+          <span class="font-mono text-sm font-bold text-orange-600">05</span>
+          <a href="projects/doctor-appointment-booking.html" class="block overflow-hidden rounded-xl border border-line bg-white shadow-sm">
             <img
-              class="aspect-[1.9] w-full object-cover transition duration-500 hover:scale-[1.02]"
+              class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
               src="Image/responsive-website.avif"
               alt="Online doctor appointment booking dashboard"
             />
           </a>
-          <div class="self-end">
-            <p class="font-mono text-[11px] text-orange-600">
-              BBIT / PHP / JAVASCRIPT
-            </p>
-            <h2
-              class="my-5 text-[clamp(2.6rem,5vw,6rem)] font-bold leading-[.87] tracking-[-.08em]"
-            >
-              DOCTOR APPOINTMENT<br />BOOKING.
-            </h2>
-            <p class="text-sm text-orange-600">
-              A dashboard for managing online consultant appointments.
-            </p>
-            <a class="mt-8 inline-block text-xs font-bold" href="projects/doctor-appointment-booking.html">VIEW PROJECT →</a>
+          <div class="flex flex-col justify-between h-full">
+            <div>
+              <p class="font-mono text-[11px] text-orange-600 uppercase tracking-wider">
+                BBIT / PHP / JAVASCRIPT
+              </p>
+              <h2 class="my-4 text-[clamp(2rem,3.8vw,4.2rem)] font-bold leading-[.87] tracking-[-.08em]">
+                DOCTOR APPOINTMENT<br />BOOKING ENGINE.
+              </h2>
+              <p class="text-sm text-muted leading-relaxed">
+                A dynamic consultation booking platform managing doctor availability calendars, automated slot allocation, and email confirmation dispatching.
+              </p>
+            </div>
+            <div class="mt-8">
+              <a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider py-2 px-4 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition" href="projects/doctor-appointment-booking.html">
+                VIEW PROJECT →
+              </a>
+            </div>
           </div>
         </article>
-        <!-- <article
-          class="grid gap-5 border-t border-line pt-6 md:grid-cols-[75px_1.15fr_1fr]"
-        >
-          <span class="font-mono text-[11px]">06</span>
-          <a href="projects/web-vitals-overhaul.html">
+
+        <!-- Project 06: Web Vitals Overhaul -->
+        <article class="grid gap-6 border-t border-line pt-8 md:grid-cols-[60px_1.25fr_1fr] items-start group">
+          <span class="font-mono text-sm font-bold text-orange-600">06</span>
+          <a href="projects/web-vitals-overhaul.html" class="block overflow-hidden rounded-xl border border-line bg-white shadow-sm">
             <img
-              class="aspect-[1.9] w-full object-cover transition duration-500 hover:scale-[1.02]"
+              class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
               src="Image/projectImg-2.jpeg"
               alt="Performance project"
             />
           </a>
-          <div class="self-end">
-            <p class="font-mono text-[11px] text-orange-600">
-              PERFORMANCE / 2023—24
-            </p>
-            <h2
-              class="my-5 text-[clamp(2.6rem,5vw,6rem)] font-bold leading-[.87] tracking-[-.08em]"
-            >
-              WEB VITALS<br />OVERHAUL.
-            </h2>
-            <p class="text-sm text-orange-600">
-              A practical performance programme for high-traffic websites.
-            </p>
-            <a
-              class="mt-8 inline-block text-xs font-bold"
-              href="projects/web-vitals-overhaul.html"
-              >VIEW PROJECT →</a
-            >
+          <div class="flex flex-col justify-between h-full">
+            <div>
+              <p class="font-mono text-[11px] text-orange-600 uppercase tracking-wider">
+                PERFORMANCE / CORE WEB VITALS
+              </p>
+              <h2 class="my-4 text-[clamp(2rem,3.8vw,4.2rem)] font-bold leading-[.87] tracking-[-.08em]">
+                WEB VITALS<br />OVERHAUL.
+              </h2>
+              <p class="text-sm text-muted leading-relaxed">
+                A rigorous performance optimization initiative for high-traffic websites, slashing First Contentful Paint by 60% and establishing sub-second LCP across all viewport sizes.
+              </p>
+            </div>
+            <div class="mt-8">
+              <a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider py-2 px-4 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition" href="projects/web-vitals-overhaul.html">
+                VIEW PROJECT →
+              </a>
+            </div>
           </div>
-        </article> -->
+        </article>
       </div>
     </main>
-    <footer class="border-t border-line pt-24">
+
+    <!-- Footer -->
+    <footer class="border-t border-line pt-20 pb-12 bg-paper">
       <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
-        <h2
-          class="mb-20 max-w-[8ch] text-[clamp(3.8rem,8.5vw,9rem)] font-extrabold leading-[.83] tracking-[-.09em]"
-        >
+        <h2 class="mb-14 max-w-[8ch] text-[clamp(3.8rem,8.5vw,9rem)] font-extrabold leading-[.83] tracking-[-.09em]">
           LET'S WORK TOGETHER.
         </h2>
-        <div
-          class="border-t border-line py-5 font-mono text-[11px] text-orange-600"
-        >
-          © 2026 NANTHA VENKAT
+        <div class="flex flex-col justify-between gap-4 border-t border-line pt-6 font-mono text-xs text-muted sm:flex-row items-center">
+          <span>© 2026 NANTHA VENKAT<sup>®</sup> · ALL RIGHTS RESERVED</span>
+          <div class="flex items-center gap-6 text-ink font-semibold">
+            <a class="hover:text-orange-600 transition" href="https://github.com/NanthaVenkat" target="_blank" rel="noopener">GitHub ↗</a>
+            <a class="hover:text-orange-600 transition" href="https://linkedin.com/in/nantha-venkat-268360240" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a class="hover:text-orange-600 transition" href="mailto:vnanthakumar00@gmail.com">Email ↗</a>
+            <a class="hover:text-orange-600 transition cursor-pointer" data-top>Back to top ↑</a>
+          </div>
         </div>
       </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,398 @@
+/* ==========================================================================
+   Nantha Venkat Portfolio - Custom Interactive Styles
+   AI Crawler, Floating Tech Logos, and Ambient Animations
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   AI Crawler System
+   -------------------------------------------------------------------------- */
+.crawler-container {
+  position: absolute;
+  top: -38px;
+  left: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: grab;
+  user-select: none;
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: transform, left;
+}
+
+.crawler-container:active {
+  cursor: grabbing;
+}
+
+/* Mechanical Crawler Body */
+.crawler-bot {
+  position: relative;
+  width: 58px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.12));
+  transition: transform 0.3s ease;
+}
+
+.crawler-bot.facing-left {
+  transform: scaleX(-1);
+}
+
+.crawler-shell {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #171716;
+  border: 1.5px solid #333330;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(23, 23, 22, 0.3);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.crawler-shell::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 7px;
+  background: radial-gradient(circle at 35% 35%, #2a2a28 0%, #171716 100%);
+  z-index: -1;
+}
+
+.crawler-core-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s ease;
+}
+
+/* Eye / Scanner */
+.crawler-eye {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ea580c;
+  box-shadow: 0 0 8px #ea580c;
+  animation: eye-blink 3.5s infinite;
+}
+
+@keyframes eye-blink {
+  0%, 90%, 100% { opacity: 1; transform: scale(1); }
+  95% { opacity: 0.2; transform: scale(0.6); }
+}
+
+/* Articulated Crawler Legs (3 per side) */
+.crawler-legs-left,
+.crawler-legs-right {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 34px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.crawler-legs-left {
+  left: 3px;
+}
+
+.crawler-legs-right {
+  right: 3px;
+}
+
+.crawler-leg {
+  width: 14px;
+  height: 3px;
+  background: #171716;
+  border-radius: 3px;
+  position: relative;
+  transform-origin: center;
+  transition: transform 0.15s ease;
+}
+
+.crawler-legs-left .crawler-leg:nth-child(1) { transform: rotate(-35deg); }
+.crawler-legs-left .crawler-leg:nth-child(2) { transform: rotate(0deg); }
+.crawler-legs-left .crawler-leg:nth-child(3) { transform: rotate(35deg); }
+
+.crawler-legs-right .crawler-leg:nth-child(1) { transform: rotate(35deg); }
+.crawler-legs-right .crawler-leg:nth-child(2) { transform: rotate(0deg); }
+.crawler-legs-right .crawler-leg:nth-child(3) { transform: rotate(-35deg); }
+
+/* Walking Gait animation when active */
+.crawler-walking .crawler-legs-left .crawler-leg:nth-child(1) {
+  animation: gait-1 0.35s infinite alternate ease-in-out;
+}
+.crawler-walking .crawler-legs-left .crawler-leg:nth-child(2) {
+  animation: gait-2 0.35s infinite alternate ease-in-out;
+}
+.crawler-walking .crawler-legs-left .crawler-leg:nth-child(3) {
+  animation: gait-1 0.35s infinite alternate ease-in-out;
+}
+
+.crawler-walking .crawler-legs-right .crawler-leg:nth-child(1) {
+  animation: gait-2 0.35s infinite alternate ease-in-out;
+}
+.crawler-walking .crawler-legs-right .crawler-leg:nth-child(2) {
+  animation: gait-1 0.35s infinite alternate ease-in-out;
+}
+.crawler-walking .crawler-legs-right .crawler-leg:nth-child(3) {
+  animation: gait-2 0.35s infinite alternate ease-in-out;
+}
+
+@keyframes gait-1 {
+  0% { transform: rotate(-45deg) translateY(-2px); }
+  100% { transform: rotate(15deg) translateY(2px); }
+}
+
+@keyframes gait-2 {
+  0% { transform: rotate(15deg) translateY(2px); }
+  100% { transform: rotate(-45deg) translateY(-2px); }
+}
+
+/* Downward Scanner Laser Beam */
+.crawler-scanner-beam {
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  width: 90px;
+  height: 60px;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, rgba(234, 88, 12, 0.35) 0%, rgba(234, 88, 12, 0) 100%);
+  clip-path: polygon(42% 0%, 58% 0%, 100% 100%, 0% 100%);
+  pointer-events: none;
+  opacity: 0.7;
+  animation: beam-pulse 2s infinite ease-in-out;
+}
+
+@keyframes beam-pulse {
+  0%, 100% { opacity: 0.3; transform: translateX(-50%) scaleX(0.85); }
+  50% { opacity: 0.75; transform: translateX(-50%) scaleX(1.1); }
+}
+
+/* Crawler Speech Bubble & Status Tooltip */
+.crawler-bubble {
+  position: relative;
+  background: #171716;
+  color: #f4f3ef;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  border: 1px solid #333330;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.crawler-bubble:hover {
+  transform: translateY(-2px);
+  background: #242422;
+}
+
+.crawler-bubble-arrow {
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 6px solid #171716;
+}
+
+.crawler-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 6px #22c55e;
+  animation: pulse-dot 1.5s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.7); }
+}
+
+/* --------------------------------------------------------------------------
+   Ambient Floating Badges in Empty Space
+   -------------------------------------------------------------------------- */
+.floating-badge {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: rgba(244, 243, 239, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid #cfcec7;
+  color: #171716;
+  box-shadow: 0 8px 24px -6px rgba(23, 23, 22, 0.08), 0 2px 6px rgba(23, 23, 22, 0.04);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+  user-select: none;
+  cursor: default;
+  z-index: 10;
+}
+
+.floating-badge:hover {
+  transform: translateY(-5px) scale(1.04) !important;
+  border-color: #ea580c;
+  box-shadow: 0 16px 32px -8px rgba(234, 88, 12, 0.2), 0 4px 12px rgba(23, 23, 22, 0.06);
+  z-index: 25;
+}
+
+.badge-icon-box {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e5e4de;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.badge-text-primary {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: #171716;
+}
+
+.badge-text-sub {
+  font-family: "DM Mono", monospace;
+  font-size: 9.5px;
+  font-weight: 500;
+  color: #ea580c;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+/* Ambient Float Animations (Staggered) */
+.float-anim-1 {
+  animation: float-cycle-1 4.8s ease-in-out infinite;
+}
+
+.float-anim-2 {
+  animation: float-cycle-2 5.6s ease-in-out infinite 0.6s;
+}
+
+.float-anim-3 {
+  animation: float-cycle-3 6.2s ease-in-out infinite 1.2s;
+}
+
+.float-anim-4 {
+  animation: float-cycle-1 5.2s ease-in-out infinite 1.8s;
+}
+
+.float-anim-5 {
+  animation: float-cycle-2 6.5s ease-in-out infinite 2.4s;
+}
+
+.float-anim-6 {
+  animation: float-cycle-3 5.8s ease-in-out infinite 0.9s;
+}
+
+@keyframes float-cycle-1 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1.5deg); }
+}
+
+@keyframes float-cycle-2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(10px) rotate(-1.5deg); }
+}
+
+@keyframes float-cycle-3 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(-1deg); }
+}
+
+/* --------------------------------------------------------------------------
+   Interactive Tech Marquee & Strip
+   -------------------------------------------------------------------------- */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 32s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* --------------------------------------------------------------------------
+   Hover Cards & Micro-interactions
+   -------------------------------------------------------------------------- */
+.interactive-card {
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.interactive-card:hover {
+  background-color: #ffffff;
+  border-color: #171716;
+  transform: translateY(-2px);
+}
+
+/* Subtle laser trail on the big font */
+.hero-font-container {
+  position: relative;
+  overflow: visible;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .crawler-bubble {
+    font-size: 9.5px;
+    padding: 4px 8px;
+  }
+  .crawler-container {
+    top: -30px;
+  }
+  .floating-badge {
+    padding: 6px 10px;
+    border-radius: 9px;
+  }
+  .badge-icon-box {
+    width: 22px;
+    height: 22px;
+  }
+  .badge-text-primary {
+    font-size: 11px;
+  }
+  .badge-text-sub {
+    font-size: 8px;
+  }
+}

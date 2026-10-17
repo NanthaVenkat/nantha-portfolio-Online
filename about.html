@@ -1,112 +1,284 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-89EX12J4MX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-89EX12J4MX');
-    </script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="https://cdn.tailwindcss.com">
-    </script>
-    <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Manrope', 'sans-serif'], mono: ['DM Mono', 'monospace'] }, colors: { paper: '#f4f3ef', ink: '#171716', muted: '#73736e', line: '#cfcec7' } } } }</script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="Image/envy.svg">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-89EX12J4MX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-89EX12J4MX");
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Nantha Venkat — Fullstack &amp; Frontend Engineer</title>
+  <meta name="description"
+    content="Learn about Nantha Venkat's engineering journey, problem-solving philosophy, technical skill set, and AI-augmented developer workflow." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Manrope", "sans-serif"],
+            mono: ["DM Mono", "monospace"],
+          },
+          colors: {
+            paper: "#f4f3ef",
+            ink: "#171716",
+            muted: "#73736e",
+            line: "#cfcec7",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="Image/envy.svg" />
+  <link rel="stylesheet" href="custom.css" />
 </head>
 
-<body class="bg-paper font-sans text-ink antialiased">
-    <header class="h-20 border-b border-line md:h-[78px]">
-        <div
-            class="mx-auto grid h-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]">
-            <a class="flex group gap-1 items-center text-[15px] font-extrabold tracking-[-.04em]" href="/index.html"><img
-                    src="./Image/envy.svg" alt="Nantha Venkat" class="w-16 h-16 sm:w-20 sm:h-20 transition-all group-hover:rotate-12">NANTHA
-                VENKAT<sup>®</sup></a>
-            <nav class="hidden gap-7 text-xs md:flex">
-                <a href="/index.html">Home</a>
-                <a class="" href="projects.html">Projects</a>
-                <a class="underline underline-offset-8" href="about.html">About</a>
-                <a class="" href="experience.html">Experience</a>
-                <a class="" href="contact.html">Contact</a>
-            </nav>
-            <a class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:block" href="contact.html">START
-                A PROJECT →</a>
-            <button class="menu-toggle justify-self-end p-2 md:hidden" aria-label="Open menu" aria-expanded="false">
-                <span class="my-[5px] block h-px w-[22px] bg-ink">
-                </span>
-                <span class="my-[5px] block h-px w-[22px] bg-ink">
-                </span>
-            </button>
+<body class="bg-paper font-sans text-ink antialiased selection:bg-orange-600 selection:text-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-paper/95 backdrop-blur-md border-b border-line">
+    <div
+      class="mx-auto grid h-16 md:h-[77px] w-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]">
+      <a class="flex group gap-2 items-center text-[15px] font-extrabold tracking-[-.04em]" href="index.html">
+        <img src="Image/envy.svg" alt="Nantha Venkat"
+          class="w-12 h-12 sm:w-16 sm:h-16 transition-all group-hover:rotate-12" />
+        <span>NANTHA VENKAT<sup>®</sup></span>
+      </a>
+
+      <nav class="hidden gap-[clamp(15px,2vw,34px)] text-xs font-semibold md:flex">
+        <a class="hover:text-orange-600 transition" href="index.html">Home</a>
+        <a class="hover:text-orange-600 transition" href="projects.html">Projects</a>
+        <a class="underline decoration-2 underline-offset-8 text-orange-600" href="about.html">About</a>
+        <a class="hover:text-orange-600 transition" href="experience.html">Experience</a>
+        <a class="hover:text-orange-600 transition" href="contact.html">Contact</a>
+      </nav>
+
+      <a class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:inline-flex items-center gap-1.5 px-4 py-2 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition"
+        href="contact.html">
+        START A PROJECT →
+      </a>
+
+      <button class="menu-toggle justify-self-end p-2 md:hidden" aria-label="Open menu" aria-expanded="false">
+        <span class="my-[5px] block h-px w-[22px] bg-ink"></span>
+        <span class="my-[5px] block h-px w-[22px] bg-ink"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav
+    class="mobile-menu hidden fixed inset-x-0 top-16 z-50 h-[calc(100vh-4rem)] flex flex-col justify-between bg-paper px-[clamp(1.25rem,3.1vw,3.5rem)] py-8 text-[clamp(2.2rem,8vw,3.8rem)] font-bold leading-tight tracking-[-.07em] border-b border-line shadow-2xl">
+    <div class="flex flex-col gap-4">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a class="text-orange-600 underline underline-offset-8" href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="border-t border-line pt-6 font-mono text-xs font-normal">
+      <p class="text-muted">Available for freelance & full-time roles</p>
+      <p class="text-ink mt-1 font-bold">vnanthakumar00@gmail.com</p>
+    </div>
+  </nav>
+
+  <main class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)] py-[clamp(50px,8vw,120px)]">
+    <!-- Intro Tag & Headline -->
+    <p class="font-mono text-[11px] text-orange-600 uppercase tracking-widest">(003) ABOUT ME</p>
+    <h1 class="mt-4 max-w-[12ch] text-[clamp(3.5rem,8vw,8.5rem)] font-extrabold leading-[.83] tracking-[-.09em]">
+      CRAFTING SOFTWARE WITH RIGOR &amp; CURIOSITY.
+    </h1>
+
+    <!-- Main Story Grid -->
+    <div class="mt-16 grid gap-12 lg:grid-cols-[1.1fr_1.4fr] items-start">
+      <!-- Photo and Highlights -->
+      <div class="sticky top-24 space-y-6">
+        <div class="relative overflow-hidden rounded-xl border border-line bg-white shadow-sm">
+          <img class="aspect-[4/5] w-full object-cover grayscale contrast-125" src="Image/prof-1.jpeg"
+            alt="Nantha Venkat Profile" />
+          <div class="absolute bottom-4 left-4 right-4 bg-paper/90 backdrop-blur-md p-4 rounded-lg border border-line">
+            <p class="font-bold text-sm">Nanthakumar V (Nantha Venkat)</p>
+            <p class="font-mono text-[11px] text-orange-600">Fullstack &amp; Frontend Software Engineer</p>
+            <p class="text-xs text-muted mt-1">Coimbatore, Tamil Nadu, India · Global Remote</p>
+          </div>
         </div>
-    </header>
-    <nav
-        class="mobile-menu fixed inset-x-0 top-20 z-10 hidden h-[calc(100vh-5rem)] flex flex-col gap-5 bg-paper px-6 py-8 text-4xl font-bold md:hidden">
-        <a href="/index.html">Home</a>
-        <a href="/projects.html">Projects</a>
-        <a href="/about.html">About</a>
-        <a href="/experience.html">Experience</a>
-        <a href="/contact.html">Contact</a>
-    </nav>
-    <main class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)] py-[clamp(65px,10vw,145px)]">
-        <p class="font-mono text-[11px] text-orange-600">(003) ABOUT</p>
-        <h1 class="mt-6 max-w-[9ch] text-[clamp(4rem,10vw,11rem)] font-extrabold leading-[.79] tracking-[-.095em]">A
-            DEVELOPER WHO CARES ABOUT DETAILS.</h1>
-        <div class="mt-[clamp(70px,12vw,180px)] grid gap-[clamp(40px,10vw,170px)] md:grid-cols-[1fr_1.3fr]">
-            <img class="aspect-[.8] w-full object-cover grayscale" src="Image/prof-1.jpeg" alt="Nantha Venkat">
-            <div>
-                <p class="text-[clamp(20px,2.4vw,37px)] leading-[1.18] tracking-[-.05em]">I am a frontend developer who
-                    believes the best digital experiences feel straightforward, quick and quietly considered.</p>
-                <p class="mt-10 max-w-[48ch] text-orange-600">For over four years, I have worked at the intersection of
-                    WordPress engineering and modern frontend development—translating complex requirements into
-                    interfaces people can actually use.</p>
-                <div class="mt-20 border-t border-line text-[clamp(2rem,4vw,5rem)] leading-none tracking-[-.07em]">
-                    <div class="border-b border-line group py-3 overflow-hidden cursor-default"><span
-                            class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">JAVASCRIPT</span>
-                    </div>
-                    <div class="border-b border-line group py-3 overflow-hidden cursor-default"><span
-                            class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">REACT /
-                            NEXT.JS</span></div>
-                    <div class="border-b border-line group py-3 overflow-hidden cursor-default"><span
-                            class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">WORDPRESS /
-                            PHP</span></div>
-                    <div class="border-b border-line group py-3 overflow-hidden cursor-default"><span
-                            class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">HTML /
-                            CSS</span></div>
-                    <div class="border-b border-line group py-3 overflow-hidden cursor-default"><span
-                            class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">UI / UX</span>
-                    </div>
-                    <div class="border-b border-line group py-3 overflow-hidden cursor-default"><span
-                            class="transition-all relative -bottom-5 md:-bottom-8 group-hover:bottom-0">Shopify</span>
-                    </div>
-                </div>
+
+        <!-- Education & Foundation Card -->
+        <div class="p-6 bg-white border border-line rounded-xl">
+          <p class="font-mono text-xs text-orange-600 uppercase tracking-wider font-bold">Education &amp; Roots</p>
+          <h4 class="mt-2 text-lg font-bold">Master of Computer Applicatoin</h4>
+          <p class="text-xs text-muted mt-1 leading-relaxed">
+            Fascinated by computer science since high school. Rigorous foundations in algorithms, data structures,
+            network protocols, and object-oriented systems design.
+          </p>
+        </div>
+      </div>
+
+      <!-- Narrative Content -->
+      <div class="space-y-12">
+        <div>
+          <h2 class="text-[clamp(1.8rem,2.8vw,3.2rem)] font-extrabold leading-tight tracking-[-.06em]">
+            The best digital experiences feel effortless because someone cared deeply about the details.
+          </h2>
+          <div class="mt-6 space-y-4 text-[15px] md:text-[16px] text-muted leading-relaxed">
+            <p>
+              Hello! I am Nanthakumar (known professionally as Nantha Venkat), a fullstack and frontend engineer based
+              in Tamil Nadu, India. For over four years, I have worked across the entire web engineering spectrum—from
+              architecting multi-tenant WordPress plugin ecosystems and complex medical portals to engineering
+              performant React and Next.js applications.
+            </p>
+            <p>
+              My journey began with a curiosity about how computer software operates beneath the surface. After
+              graduating with a Master of Computer Applicatoin, I joined as a technical support engineer. Driven by an
+              insatiable hunger to build,
+              I dedicated nights and weekends to software craftsmanship, rapidly advancing into core software
+              engineering roles.
+            </p>
+            <p>
+              Since then, I have developed dozens of production applications across enterprise self-storage, healthcare,
+              e-commerce, and business analytics. Today, I combine fullstack foundations with cutting-edge AI-assisted
+              engineering (Cursor, Claude, Copilot) to ship rock-solid digital experiences in a fraction of traditional
+              timelines.
+            </p>
+          </div>
+        </div>
+
+        <!-- The Learning Process Philosophy -->
+        <div class="border-t border-line pt-8">
+          <p class="font-mono text-xs text-orange-600 uppercase tracking-wider font-bold">Mental Model</p>
+          <h3 class="mt-2 text-2xl font-bold tracking-tight">My Learning Philosophy: Connecting The Dots</h3>
+          <p class="mt-4 text-sm text-muted leading-relaxed">
+            I firmly believe that true engineering mastery comes from connecting concepts. Over the years, engineers
+            gather fragments of knowledge in isolation. But true breakthroughs occur when you connect those ideas:
+            linking how a database stores indexed B-trees to how a browser schedules DOM repaints, or understanding how
+            declarative UI states map to relational tables.
+          </p>
+          <p class="mt-3 text-sm text-muted leading-relaxed">
+            Every time I evaluate a new language, framework, or AI paradigm, I look for its underlying connections to
+            first principles. This allows me to pick up new technologies and deliver production code in days rather than
+            months.
+          </p>
+        </div>
+
+        <!-- My Core Strengths Grid -->
+        <div class="border-t border-line pt-8">
+          <p class="font-mono text-xs text-orange-600 uppercase tracking-wider font-bold">Strengths</p>
+          <h3 class="mt-2 text-2xl font-bold tracking-tight">What I Bring to Every Team</h3>
+
+          <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-5 bg-white border border-line rounded-lg">
+              <span class="text-orange-600 text-lg">✦</span>
+              <h4 class="mt-2 font-bold text-base">Root-Cause Debugging</h4>
+              <p class="mt-1 text-xs text-muted leading-relaxed">
+                Persistent and analytical. I track down race conditions, memory leaks, and layout shifts down to the
+                exact offending line.
+              </p>
             </div>
-        </div>
-    </main>
-    <footer class="border-t border-line pt-24">
-        <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
-            <h2
-                class="mb-20 max-w-[8ch] text-[clamp(3.8rem,8.5vw,9rem)] font-extrabold leading-[.83] tracking-[-.09em]">
-                LET'S WORK TOGETHER.</h2>
-            <div
-                class="flex flex-col justify-between gap-3 border-t border-line py-5 font-mono text-[11px] text-orange-600 sm:flex-row">
-                <span>© 2026 NANTHA VENKAT</span>
-                <div class="flex gap-5 text-ink">
-                    <a href="mailto:vnanthakumar00@gmail.com">Email</a>
-                    <a href="https://github.com/NanthaVenkat">GitHub</a>
-                    <a href="#" data-top>Back to top ↑</a>
-                </div>
+
+            <div class="p-5 bg-white border border-line rounded-lg">
+              <span class="text-orange-600 text-lg">✦</span>
+              <h4 class="mt-2 font-bold text-base">AI-Augmented Velocity</h4>
+              <p class="mt-1 text-xs text-muted leading-relaxed">
+                Leveraging Cursor AI and Claude 3.7 to eliminate boilerplate, draft unit tests, and explore architecture
+                options with extreme speed.
+              </p>
             </div>
+
+            <div class="p-5 bg-white border border-line rounded-lg">
+              <span class="text-orange-600 text-lg">✦</span>
+              <h4 class="mt-2 font-bold text-base">Systems Thinking</h4>
+              <p class="mt-1 text-xs text-muted leading-relaxed">
+                Designing cohesive component systems and REST APIs that scale smoothly without introducing technical
+                debt or architectural spaghetti.
+              </p>
+            </div>
+
+            <div class="p-5 bg-white border border-line rounded-lg">
+              <span class="text-orange-600 text-lg">✦</span>
+              <h4 class="mt-2 font-bold text-base">Ownership &amp; Teamwork</h4>
+              <p class="mt-1 text-xs text-muted leading-relaxed">
+                Clear, proactive communicator. I take complete ownership of features from Figma mockups through QA and
+                production deployment.
+              </p>
+            </div>
+          </div>
         </div>
-    </footer>
-    <script src="script.js">
-    </script>
+
+        <!-- Core Competencies Stack list -->
+        <div class="border-t border-line pt-8">
+          <p class="font-mono text-xs text-orange-600 uppercase tracking-wider font-bold">Core Stack</p>
+          <h3 class="mt-2 text-2xl font-bold tracking-tight">Specialized Technologies</h3>
+
+          <div
+            class="mt-6 border-t border-line divide-y divide-line text-[clamp(1.5rem,2.8vw,2.8rem)] font-bold tracking-[-.06em]">
+            <div class="py-3 flex justify-between items-center group hover:text-orange-600 transition cursor-default">
+              <span>REACT 19 / NEXT.JS 15</span>
+              <span class="font-mono text-xs font-normal text-muted group-hover:text-orange-600">Frontend
+                Architecture</span>
+            </div>
+            <div class="py-3 flex justify-between items-center group hover:text-orange-600 transition cursor-default">
+              <span>CURSOR AI &amp; CLAUDE 3.7</span>
+              <span class="font-mono text-xs font-normal text-muted group-hover:text-orange-600">AI-Assisted
+                Workflow</span>
+            </div>
+            <div class="py-3 flex justify-between items-center group hover:text-orange-600 transition cursor-default">
+              <span>WORDPRESS &amp; PHP</span>
+              <span class="font-mono text-xs font-normal text-muted group-hover:text-orange-600">60+ Custom
+                Implementations</span>
+            </div>
+            <div class="py-3 flex justify-between items-center group hover:text-orange-600 transition cursor-default">
+              <span>TAILWIND CSS &amp; DESIGN TOKENS</span>
+              <span class="font-mono text-xs font-normal text-muted group-hover:text-orange-600">Responsive
+                Systems</span>
+            </div>
+            <div class="py-3 flex justify-between items-center group hover:text-orange-600 transition cursor-default">
+              <span>NODE.JS &amp; REST APIS</span>
+              <span class="font-mono text-xs font-normal text-muted group-hover:text-orange-600">Fullstack
+                Services</span>
+            </div>
+            <div class="py-3 flex justify-between items-center group hover:text-orange-600 transition cursor-default">
+              <span>LINUX DEVOPS</span>
+              <span class="font-mono text-xs font-normal text-muted group-hover:text-orange-600">Deployments &amp;
+                CI/CD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-line pt-20 pb-12 bg-paper">
+    <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
+      <h2 class="mb-14 max-w-[8ch] text-[clamp(3.8rem,8.5vw,9rem)] font-extrabold leading-[.83] tracking-[-.09em]">
+        LET'S WORK TOGETHER.
+      </h2>
+      <div
+        class="flex flex-col justify-between gap-4 border-t border-line pt-6 font-mono text-xs text-muted sm:flex-row items-center">
+        <span>© 2026 NANTHA VENKAT<sup>®</sup> · ALL RIGHTS RESERVED</span>
+        <div class="flex items-center gap-6 text-ink font-semibold">
+          <a class="hover:text-orange-600 transition" href="https://github.com/NanthaVenkat" target="_blank"
+            rel="noopener">GitHub ↗</a>
+          <a class="hover:text-orange-600 transition" href="https://linkedin.com/in/nantha-venkat-268360240"
+            target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="hover:text-orange-600 transition" href="mailto:vnanthakumar00@gmail.com">Email ↗</a>
+          <a class="hover:text-orange-600 transition cursor-pointer" data-top>Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
