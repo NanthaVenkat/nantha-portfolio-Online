@@ -1,1218 +1,1226 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-89EX12J4MX"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-89EX12J4MX");
-    </script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Nantha Venkat — Fullstack & Frontend Developer | AI-Augmented Engineer</title>
-    <meta
-      name="description"
-      content="Nantha Venkat is a Frontend & Fullstack Developer specializing in React, Next.js, WordPress, Node.js, and AI-augmented engineering workflows (Cursor, Claude, Copilot)."
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ["Manrope", "sans-serif"],
-              mono: ["DM Mono", "monospace"],
-            },
-            colors: {
-              paper: "#f4f3ef",
-              ink: "#171716",
-              muted: "#73736e",
-              line: "#cfcec7",
-            },
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-89EX12J4MX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-89EX12J4MX");
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nantha Venkat — Fullstack & Frontend Developer | AI-Augmented Engineer</title>
+  <meta name="description"
+    content="Nantha Venkat is a Frontend & Fullstack Developer specializing in React, Next.js, WordPress, Node.js, and AI-augmented engineering workflows (Cursor, Claude, Copilot)." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Manrope", "sans-serif"],
+            mono: ["DM Mono", "monospace"],
+          },
+          colors: {
+            paper: "#f4f3ef",
+            ink: "#171716",
+            muted: "#73736e",
+            line: "#cfcec7",
           },
         },
-      };
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/svg+xml" href="Image/envy.svg" />
-    <link rel="stylesheet" href="custom.css" />
-  </head>
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="Image/envy.svg" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
 
-  <body class="bg-paper font-sans text-ink antialiased selection:bg-orange-600 selection:text-white">
-    <!-- Header -->
-    <header class="sticky top-0 z-40 bg-paper/95 backdrop-blur-md border-b border-line">
-      <div
-        class="mx-auto grid h-16 md:h-[77px] w-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]"
-      >
-        <a
-          class="flex group gap-2 items-center text-[15px] font-extrabold tracking-[-.04em]"
-          href="index.html"
-        >
-          <img
-            src="Image/envy.svg"
-            alt="Nantha Venkat"
-            class="w-12 h-12 sm:w-16 sm:h-16 transition-all group-hover:rotate-12"
-          />
-          <span>NANTHA VENKAT<sup>®</sup></span>
-        </a>
+<body class="bg-paper font-sans text-ink antialiased selection:bg-orange-600 selection:text-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-paper/95 backdrop-blur-md border-b border-line">
+    <div
+      class="mx-auto grid h-16 md:h-[77px] w-full max-w-[1560px] grid-cols-[1fr_auto] items-center px-[clamp(1.25rem,3.1vw,3.5rem)] md:grid-cols-[1fr_auto_1fr]">
+      <a class="flex group gap-2 items-center text-[15px] font-extrabold tracking-[-.04em]" href="index.html">
+        <img src="Image/envy.svg" alt="Nantha Venkat"
+          class="w-12 h-12 sm:w-16 sm:h-16 transition-all group-hover:rotate-12" />
+        <span>NANTHA VENKAT<sup>®</sup></span>
+      </a>
 
-        <nav class="hidden gap-[clamp(15px,2vw,34px)] text-xs font-semibold md:flex">
-          <a class="underline decoration-2 underline-offset-8 text-orange-600" href="index.html">Home</a>
-          <a class="hover:text-orange-600 transition" href="projects.html">Projects</a>
-          <a class="hover:text-orange-600 transition" href="about.html">About</a>
-          <a class="hover:text-orange-600 transition" href="experience.html">Experience</a>
-          <a class="hover:text-orange-600 transition" href="contact.html">Contact</a>
-        </nav>
+      <nav class="hidden gap-[clamp(15px,2vw,34px)] text-xs font-semibold md:flex">
+        <a class="underline decoration-2 underline-offset-8 text-orange-600" href="index.html">Home</a>
+        <a class="hover:text-orange-600 transition" href="projects.html">Projects</a>
+        <a class="hover:text-orange-600 transition" href="about.html">About</a>
+        <a class="hover:text-orange-600 transition" href="experience.html">Experience</a>
+        <a class="hover:text-orange-600 transition" href="contact.html">Contact</a>
+      </nav>
 
-        <a
-          class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:inline-flex items-center gap-1.5 px-4 py-2 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition"
-          href="contact.html"
-        >
-          START A PROJECT →
-        </a>
+      <a class="hidden justify-self-end text-[11px] font-bold tracking-[.04em] md:inline-flex items-center gap-1.5 px-4 py-2 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition"
+        href="contact.html">
+        START A PROJECT →
+      </a>
 
-        <button
-          class="menu-toggle justify-self-end p-2 md:hidden"
-          aria-label="Open menu"
-          aria-expanded="false"
-        >
-          <span class="my-[5px] block h-px w-[22px] bg-ink"></span>
-          <span class="my-[5px] block h-px w-[22px] bg-ink"></span>
-        </button>
-      </div>
-    </header>
+      <button class="menu-toggle justify-self-end p-2 md:hidden" aria-label="Open menu" aria-expanded="false">
+        <span class="my-[5px] block h-px w-[22px] bg-ink"></span>
+        <span class="my-[5px] block h-px w-[22px] bg-ink"></span>
+      </button>
+    </div>
+  </header>
 
-    <!-- Mobile Navigation -->
-    <nav
-      class="mobile-menu hidden fixed inset-x-0 top-16 z-50 h-[calc(100vh-4rem)] flex flex-col justify-between bg-paper px-[clamp(1.25rem,3.1vw,3.5rem)] py-8 text-[clamp(2.2rem,8vw,3.8rem)] font-bold leading-tight tracking-[-.07em] border-b border-line shadow-2xl"
-    >
-      <div class="flex flex-col gap-4">
-        <a class="text-orange-600 underline underline-offset-8" href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="about.html">About</a>
-        <a href="experience.html">Experience</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="border-t border-line pt-6 font-mono text-xs font-normal">
-        <p class="text-muted">Available for freelance & full-time roles</p>
-        <p class="text-ink mt-1 font-bold">vnanthakumar00@gmail.com</p>
-      </div>
-    </nav>
+  <!-- Mobile Navigation -->
+  <nav
+    class="mobile-menu hidden fixed inset-x-0 top-16 z-50 h-[calc(100vh-4rem)] flex flex-col justify-between bg-paper px-[clamp(1.25rem,3.1vw,3.5rem)] py-8 text-[clamp(2.2rem,8vw,3.8rem)] font-bold leading-tight tracking-[-.07em] border-b border-line shadow-2xl">
+    <div class="flex flex-col gap-4">
+      <a class="text-orange-600 underline underline-offset-8" href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="border-t border-line pt-6 font-mono text-xs font-normal">
+      <p class="text-muted">Available for freelance & full-time roles</p>
+      <p class="text-ink mt-1 font-bold">vnanthakumar00@gmail.com</p>
+    </div>
+  </nav>
 
-    <main>
-      <!-- Hero Section -->
-      <section
-        class="relative mx-auto min-h-[calc(100svh-4.8rem)] max-w-[1560px] flex flex-col justify-between px-[clamp(1.25rem,3.1vw,3.5rem)] py-[clamp(35px,6vw,90px)]"
-      >
-        <!-- Top Status Bar & AI Badge -->
-        <div class="flex flex-wrap items-center justify-between gap-4">
-          <p class="font-mono text-[11px] uppercase tracking-[.05em] text-orange-600 flex items-center gap-2">
-            <span class="inline-block w-2 h-2 rounded-full bg-orange-600 animate-pulse"></span>
-            Independent Fullstack &amp; Frontend Developer · India
-          </p>
+  <main>
+    <!-- Hero Section -->
+    <section
+      class="relative mx-auto min-h-[calc(100svh-4.8rem)] max-w-[1560px] flex flex-col justify-between px-[clamp(1.25rem,3.1vw,3.5rem)] py-[clamp(35px,6vw,90px)]">
+      <!-- Top Status Bar & AI Badge -->
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <p class="font-mono text-[11px] uppercase tracking-[.05em] text-orange-600 flex items-center gap-2">
+          <span class="inline-block w-2 h-2 rounded-full bg-orange-600 animate-pulse"></span>
+          Independent Fullstack &amp; Frontend Developer · India
+        </p>
 
-          <div class="flex items-center gap-2 font-mono text-[10px] bg-paper border border-line px-3 py-1 rounded-full shadow-sm">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-            <span class="font-medium">AI-AUGMENTED WORKFLOW ACTIVE</span>
-            <span class="text-muted">·</span>
-            <span class="text-orange-600 font-bold">CURSOR / CLAUDE / REACT</span>
-          </div>
+        <div
+          class="flex items-center gap-2 font-mono text-[10px] bg-paper border border-line px-3 py-1 rounded-full shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+          <span class="font-medium">AI-AUGMENTED WORKFLOW ACTIVE</span>
+          <span class="text-muted">·</span>
+          <span class="text-orange-600 font-bold">CURSOR / CLAUDE / REACT</span>
         </div>
+      </div>
 
-        <!-- Big Typography & Interactive Floating Stack Space -->
-        <div class="relative my-8 lg:my-14 floating-badges-area">
-          <!-- The AI Crawler Living on Big Font Area -->
-          <div id="ai-crawler" class="crawler-container" title="Click me to switch AI agent or click any word below!">
-            <div class="crawler-bot">
-              <div class="crawler-legs-left">
-                <span class="crawler-leg"></span>
-                <span class="crawler-leg"></span>
-                <span class="crawler-leg"></span>
-              </div>
-              <div class="crawler-shell">
-                <span id="crawler-icon" class="crawler-core-icon">
-                  <!-- Default Cursor SVG Icon -->
-                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                    <polyline points="2 17 12 22 22 17"></polyline>
-                    <polyline points="2 12 12 17 22 12"></polyline>
-                  </svg>
-                </span>
-                <span class="crawler-eye"></span>
-              </div>
-              <div class="crawler-legs-right">
-                <span class="crawler-leg"></span>
-                <span class="crawler-leg"></span>
-                <span class="crawler-leg"></span>
-              </div>
-              <div class="crawler-scanner-beam"></div>
+      <!-- Big Typography & Interactive Floating Stack Space -->
+      <div class="relative my-8 lg:my-14 floating-badges-area">
+        <!-- The AI Crawler Living on Big Font Area -->
+        <div id="ai-crawler" class="crawler-container" title="Click me to switch AI agent or click any word below!">
+          <div class="crawler-bot">
+            <div class="crawler-legs-left">
+              <span class="crawler-leg"></span>
+              <span class="crawler-leg"></span>
+              <span class="crawler-leg"></span>
             </div>
-
-            <div id="crawler-speech" class="crawler-bubble">
-              <span class="crawler-bubble-arrow"></span>
-              <span class="crawler-dot"></span>
-              <span id="crawler-text">✦ AI Agent crawling typography...</span>
-            </div>
-          </div>
-
-          <!-- Hero Main Headline -->
-          <h1
-            id="hero-headline"
-            class="relative max-w-[13ch] text-[clamp(3.6rem,8.8vw,9.8rem)] font-extrabold leading-[.83] tracking-[-.09em] select-none"
-          >
-            FRONTEND<br />DEVELOPER
-            <span class="ml-[clamp(1.2rem,11vw,13.5rem)] block">&amp; DIGITAL</span>
-            EXPERIENCE<br />BUILDER.
-          </h1>
-
-          <!-- Ambient Floating AI & Tech Badges in Open Right Space (Desktop & Tablet) -->
-          <div class="hidden lg:block pointer-events-auto">
-            <!-- Badge 1: Cursor AI -->
-            <div class="floating-badge float-anim-1 top-4 right-16" title="Cursor AI · Primary AI-Assisted Code Editor">
-              <div class="badge-icon-box bg-black text-white">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <div class="crawler-shell">
+              <span id="crawler-icon" class="crawler-core-icon">
+                <!-- Default Cursor SVG Icon -->
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
                   <polyline points="2 17 12 22 22 17"></polyline>
                   <polyline points="2 12 12 17 22 12"></polyline>
                 </svg>
-              </div>
-              <div>
-                <p class="badge-text-primary">Cursor AI</p>
-                <p class="badge-text-sub">AI Code Editor</p>
-              </div>
+              </span>
+              <span class="crawler-eye"></span>
             </div>
+            <div class="crawler-legs-right">
+              <span class="crawler-leg"></span>
+              <span class="crawler-leg"></span>
+              <span class="crawler-leg"></span>
+            </div>
+            <div class="crawler-scanner-beam"></div>
+          </div>
 
-            <!-- Badge 2: Claude 3.7 -->
-            <div class="floating-badge float-anim-2 top-28 right-72" title="Claude 3.7 Sonnet · Deep Reasoning & Architecture">
-              <div class="badge-icon-box bg-[#d97706]/10 text-[#d97706]">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                  <path d="M12 2L14.4 8.6L21.5 9.1L16 13.6L17.8 20.6L12 16.8L6.2 20.6L8 13.6L2.5 9.1L9.6 8.6L12 2Z"/>
-                </svg>
-              </div>
-              <div>
-                <p class="badge-text-primary">Claude 3.7</p>
-                <p class="badge-text-sub">Anthropic Logic</p>
-              </div>
-            </div>
-
-            <!-- Badge 3: React 19 & Next.js -->
-            <div class="floating-badge float-anim-3 top-56 right-20" title="React 19 & Next.js · Modern Component Architecture">
-              <div class="badge-icon-box bg-[#00d8ff]/10 text-[#087ea4]">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                  <ellipse cx="12" cy="12" rx="10" ry="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
-                  <ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(60 12 12)" fill="none" stroke="currentColor" stroke-width="1.8"/>
-                  <ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(120 12 12)" fill="none" stroke="currentColor" stroke-width="1.8"/>
-                  <circle cx="12" cy="12" r="2" fill="currentColor"/>
-                </svg>
-              </div>
-              <div>
-                <p class="badge-text-primary">React &amp; Next.js</p>
-                <p class="badge-text-sub">Component Systems</p>
-              </div>
-            </div>
-
-            <!-- Badge 4: TypeScript -->
-            <div class="floating-badge float-anim-4 top-84 right-64" title="TypeScript · Type-Safe Engineering">
-              <div class="badge-icon-box bg-[#3178c6] text-white">
-                <span class="font-mono text-xs font-bold leading-none">TS</span>
-              </div>
-              <div>
-                <p class="badge-text-primary">TypeScript</p>
-                <p class="badge-text-sub">Strict Architecture</p>
-              </div>
-            </div>
-
-            <!-- Badge 5: Tailwind CSS -->
-            <div class="floating-badge float-anim-5 bottom-8 right-28" title="Tailwind CSS · Utility-First Design Systems">
-              <div class="badge-icon-box bg-[#38bdf8]/10 text-[#0ea5e9]">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                  <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
-                </svg>
-              </div>
-              <div>
-                <p class="badge-text-primary">Tailwind CSS</p>
-                <p class="badge-text-sub">Design Systems</p>
-              </div>
-            </div>
-
-            <!-- Badge 6: OpenAI & Copilot -->
-            <div class="floating-badge float-anim-6 bottom-32 right-96" title="OpenAI & GitHub Copilot · Synthetic Workflows">
-              <div class="badge-icon-box bg-[#10a37f]/10 text-[#059669]">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-2h2v2zm0-4h-2V7h2v5z"/>
-                </svg>
-              </div>
-              <div>
-                <p class="badge-text-primary">OpenAI &amp; Copilot</p>
-                <p class="badge-text-sub">Velocity Pair</p>
-              </div>
-            </div>
+          <div id="crawler-speech" class="crawler-bubble">
+            <span class="crawler-bubble-arrow"></span>
+            <span class="crawler-dot"></span>
+            <span id="crawler-text">✦ AI Agent crawling typography...</span>
           </div>
         </div>
 
-        <!-- Bottom Hero Grid: Bio, Profile, Key Metrics -->
-        <div class="grid grid-cols-1 md:grid-cols-[2.5fr_1.2fr_1.8fr] gap-8 border-t border-line pt-6 items-center">
-          <div>
-            <p class="text-[clamp(16px,1.3vw,21px)] leading-[1.4] text-ink font-medium max-w-[42ch]">
-              I build thoughtful, ultra-fast and deeply usable web applications for businesses that care about the details.
-              Bridging 4+ years of fullstack &amp; WordPress craft with an AI-augmented engineering pipeline.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-4 text-xs font-mono text-muted">
-              <span>✦ Clean Code</span>
-              <span>✦ Sub-Second TTFB</span>
-              <span>✦ Design-System Driven</span>
-            </div>
-          </div>
+        <!-- Hero Main Headline -->
+        <h1 id="hero-headline"
+          class="relative max-w-[13ch] text-[clamp(3.6rem,8.8vw,9.8rem)] font-extrabold leading-[.83] tracking-[-.09em] select-none">
+          FRONTEND<br />DEVELOPER
+          <span class="ml-[clamp(1.2rem,11vw,13.5rem)] block">&amp; DIGITAL</span>
+          EXPERIENCE<br />BUILDER.
+        </h1>
 
-          <div class="flex items-center gap-4">
-            <img
-              class="aspect-square w-[75px] md:w-[95px] rounded-lg object-cover grayscale contrast-125 border border-line"
-              src="Image/prof-1.jpeg"
-              alt="Nantha Venkat Profile"
-            />
-            <div class="text-[13px] leading-relaxed">
-              <strong class="text-ink block font-bold">Nantha Venkat</strong>
-              <span class="text-orange-600 block text-xs font-mono">Available for Work</span>
-              <span class="text-muted text-xs">Coimbatore &amp; Remote</span>
-            </div>
-          </div>
-
-          <!-- Key Stats / Social Proof Strip -->
-          <div class="grid grid-cols-3 gap-2 border-l-0 md:border-l border-line md:pl-8">
-            <div>
-              <p class="text-2xl md:text-3xl font-extrabold tracking-tight">4<span class="text-orange-600">+</span></p>
-              <p class="font-mono text-[10px] text-muted uppercase mt-0.5">Years Exp</p>
+        <!-- Ambient Floating AI & Tech Badges in Open Right Space (Desktop & Tablet) -->
+        <div class="hidden lg:block pointer-events-auto">
+          <!-- Badge 1: Cursor AI -->
+          <div class="floating-badge float-anim-1 top-4 right-16" title="Cursor AI · Primary AI-Assisted Code Editor">
+            <div class="badge-icon-box bg-black text-white">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
             </div>
             <div>
-              <p class="text-2xl md:text-3xl font-extrabold tracking-tight">40<span class="text-orange-600">+</span></p>
-              <p class="font-mono text-[10px] text-muted uppercase mt-0.5">Sites Shipped</p>
+              <p class="badge-text-primary">Cursor AI</p>
+              <p class="badge-text-sub">AI Code Editor</p>
+            </div>
+          </div>
+
+          <!-- Badge 2: Claude 3.7 -->
+          <div class="floating-badge float-anim-2 top-28 right-72"
+            title="Claude 3.7 Sonnet · Deep Reasoning & Architecture">
+            <div class="badge-icon-box bg-[#d97706]/10 text-[#d97706]">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M12 2L14.4 8.6L21.5 9.1L16 13.6L17.8 20.6L12 16.8L6.2 20.6L8 13.6L2.5 9.1L9.6 8.6L12 2Z" />
+              </svg>
             </div>
             <div>
-              <p class="text-2xl md:text-3xl font-extrabold tracking-tight">18<span class="text-orange-600">+</span></p>
-              <p class="font-mono text-[10px] text-muted uppercase mt-0.5">Templates &amp; Plugins</p>
+              <p class="badge-text-primary">Claude 3.7</p>
+              <p class="badge-text-sub">Anthropic Logic</p>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Infinite Tech Ribbon / Micro-Marquee -->
-      <section class="border-y border-line bg-paper py-3.5 overflow-hidden">
-        <div class="marquee-track flex items-center gap-12 font-mono text-xs uppercase tracking-wider text-muted">
-          <span class="flex items-center gap-2"><strong class="text-ink">CURSOR AI</strong> · AGENTIC REFRACTOR</span>
-          <span class="text-orange-600">✦</span>
-          <span class="flex items-center gap-2"><strong class="text-ink">CLAUDE 3.7</strong> · ARCHITECTURE LOGIC</span>
-          <span class="text-orange-600">✦</span>
-          <span class="flex items-center gap-2"><strong class="text-ink">REACT 19</strong> &amp; NEXT.JS 15</span>
-          <span class="text-orange-600">✦</span>
-          <span class="flex items-center gap-2"><strong class="text-ink">TYPESCRIPT</strong> · ZERO DEFECTS</span>
-          <span class="text-orange-600">✦</span>
-          <span class="flex items-center gap-2"><strong class="text-ink">TAILWIND CSS</strong> · DESIGN SYSTEMS</span>
-          <span class="text-orange-600">✦</span>
-          <span class="flex items-center gap-2"><strong class="text-ink">WORDPRESS</strong> · ACF PRO &amp; HEADLESS</span>
-          <span class="text-orange-600">✦</span>
-          <span class="flex items-center gap-2"><strong class="text-ink">NODE.JS</strong> &amp; REST APIS</span>
-          <span class="text-orange-600">✦</span>
-          <span class="flex items-center gap-2"><strong class="text-ink">DOCKER</strong> &amp; LINUX DEVOPS</span>
-          <span class="text-orange-600">✦</span>
-          <!-- Duplicate for seamless infinite loop -->
-          <span class="flex items-center gap-2"><strong class="text-ink">CURSOR AI</strong> · AGENTIC REFRACTOR</span>
-          <span class="text-orange-600">✦</span>
-          <span class="flex items-center gap-2"><strong class="text-ink">CLAUDE 3.7</strong> · ARCHITECTURE LOGIC</span>
-          <span class="text-orange-600">✦</span>
-          <span class="flex items-center gap-2"><strong class="text-ink">REACT 19</strong> &amp; NEXT.JS 15</span>
-          <span class="text-orange-600">✦</span>
-          <span class="flex items-center gap-2"><strong class="text-ink">TYPESCRIPT</strong> · ZERO DEFECTS</span>
-          <span class="text-orange-600">✦</span>
-          <span class="flex items-center gap-2"><strong class="text-ink">TAILWIND CSS</strong> · DESIGN SYSTEMS</span>
-          <span class="text-orange-600">✦</span>
-          <span class="flex items-center gap-2"><strong class="text-ink">WORDPRESS</strong> · ACF PRO &amp; HEADLESS</span>
-          <span class="text-orange-600">✦</span>
-        </div>
-      </section>
-
-      <!-- Section (001): Services / Capabilities -->
-      <section class="border-b border-line py-[clamp(60px,10vw,140px)]">
-        <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
-          <div class="mb-[clamp(40px,6vw,90px)] grid gap-6 md:grid-cols-[2fr_5fr_3fr]">
-            <p class="font-mono text-[11px] uppercase text-orange-600">(001) Services</p>
-            <h2 class="text-[clamp(3.2rem,6.8vw,8rem)] font-extrabold leading-[.85] tracking-[-.085em]">
-              BUILT WITH<br />INTENTION.
-            </h2>
-            <p class="text-[14px] leading-relaxed text-muted">
-              A disciplined practice spanning frontend craft, systems architecture, high-converting CMS platforms, and AI-augmented velocity.
-            </p>
-          </div>
-
-          <div class="border-t border-line divide-y divide-line">
-            <!-- Row 1 -->
-            <article class="grid gap-4 py-8 md:grid-cols-[80px_4fr_3fr_1.5fr] md:py-10 group hover:bg-white/60 transition px-2 rounded-lg">
-              <span class="font-mono text-xs font-bold text-orange-600">001</span>
-              <div>
-                <h3 class="text-[clamp(1.6rem,2.8vw,3.2rem)] font-bold leading-none tracking-[-.065em]">
-                  FRONTEND &amp; UI ARCHITECTURE
-                </h3>
-                <p class="mt-2 text-xs font-mono text-muted">Core: React 19 / Next.js / TypeScript / Tailwind CSS</p>
-              </div>
-              <p class="text-[13px] text-muted leading-relaxed">
-                Responsive, accessible web interfaces engineered to feel immediate and frictionless. From fluid typography systems to complex client-side state management and Lighthouse 95+ performance scores.
-              </p>
-              <div class="md:text-right font-mono text-[11px] text-ink font-semibold self-center">
-                Interactive Apps · SPAs · Design Systems
-              </div>
-            </article>
-
-            <!-- Row 2 -->
-            <article class="grid gap-4 py-8 md:grid-cols-[80px_4fr_3fr_1.5fr] md:py-10 group hover:bg-white/60 transition px-2 rounded-lg">
-              <span class="font-mono text-xs font-bold text-orange-600">002</span>
-              <div>
-                <h3 class="text-[clamp(1.6rem,2.8vw,3.2rem)] font-bold leading-none tracking-[-.065em]">
-                  CUSTOM WORDPRESS &amp; CMS ENGINEERING
-                </h3>
-                <p class="mt-2 text-xs font-mono text-muted">Core: PHP 8 / ACF Pro / Custom Gutenberg Blocks / WooCommerce</p>
-              </div>
-              <p class="text-[13px] text-muted leading-relaxed">
-                Bespoke WordPress theme and plugin development without template bloat. Building flexible, client-friendly publishing experiences, multi-tenant templates, and high-security enterprise installations.
-              </p>
-              <div class="md:text-right font-mono text-[11px] text-ink font-semibold self-center">
-                60+ Delivered · Headless WP · Plugins
-              </div>
-            </article>
-
-            <!-- Row 3 -->
-            <article class="grid gap-4 py-8 md:grid-cols-[80px_4fr_3fr_1.5fr] md:py-10 group hover:bg-white/60 transition px-2 rounded-lg">
-              <span class="font-mono text-xs font-bold text-orange-600">003</span>
-              <div>
-                <h3 class="text-[clamp(1.6rem,2.8vw,3.2rem)] font-bold leading-none tracking-[-.065em]">
-                  FULLSTACK &amp; API INTEGRATION
-                </h3>
-                <p class="mt-2 text-xs font-mono text-muted">Core: Node.js / Express / REST APIs / MySQL / PostgreSQL</p>
-              </div>
-              <p class="text-[13px] text-muted leading-relaxed">
-                Seamless connection of third-party APIs (Google, payment gateways, appointment scheduling, CRM webhooks) into robust frontend dashboards with comprehensive error handling and authentication.
-              </p>
-              <div class="md:text-right font-mono text-[11px] text-ink font-semibold self-center">
-                RESTful APIs · Auth · Webhooks
-              </div>
-            </article>
-
-            <!-- Row 4 -->
-            <article class="grid gap-4 py-8 md:grid-cols-[80px_4fr_3fr_1.5fr] md:py-10 group hover:bg-white/60 transition px-2 rounded-lg">
-              <span class="font-mono text-xs font-bold text-orange-600">004</span>
-              <div>
-                <h3 class="text-[clamp(1.6rem,2.8vw,3.2rem)] font-bold leading-none tracking-[-.065em]">
-                  AI-AUGMENTED PRODUCTIVITY &amp; QA
-                </h3>
-                <p class="mt-2 text-xs font-mono text-muted">Core: Cursor AI / Claude 3.7 / GitHub Copilot / LLM Pipelines</p>
-              </div>
-              <p class="text-[13px] text-muted leading-relaxed">
-                Harnessing state-of-the-art AI tooling to accelerate development velocity by 3x. Generating comprehensive test fixtures, validating algorithmic edge cases, and continuous automated refactoring.
-              </p>
-              <div class="md:text-right font-mono text-[11px] text-ink font-semibold self-center">
-                3x Delivery Velocity · Zero Hallucinations
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section (002): Full AI Tools & Tech Stack Matrix -->
-      <section class="border-b border-line py-[clamp(60px,10vw,140px)] bg-paper">
-        <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
-          <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
+          <!-- Badge 3: React 19 & Next.js -->
+          <div class="floating-badge float-anim-3 top-56 right-20"
+            title="React 19 & Next.js · Modern Component Architecture">
+            <div class="badge-icon-box bg-[#00d8ff]/10 text-[#087ea4]">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <ellipse cx="12" cy="12" rx="10" ry="4.2" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(60 12 12)" fill="none" stroke="currentColor"
+                  stroke-width="1.8" />
+                <ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(120 12 12)" fill="none"
+                  stroke="currentColor" stroke-width="1.8" />
+                <circle cx="12" cy="12" r="2" fill="currentColor" />
+              </svg>
+            </div>
             <div>
-              <p class="font-mono text-[11px] uppercase text-orange-600">(002) Tech Stack &amp; AI Tools</p>
-              <h2 class="mt-2 text-[clamp(2.8rem,6vw,6.5rem)] font-extrabold leading-[.85] tracking-[-.085em]">
-                THE AI &amp; STACK<br />ECOSYSTEM.
-              </h2>
-            </div>
-            <p class="text-sm text-muted max-w-[44ch] leading-relaxed">
-              Every tool in my stack is chosen for reliability, high performance, and rapid iteration speed.
-            </p>
-          </div>
-
-          <!-- Interactive Filter Tabs -->
-          <div class="flex flex-wrap gap-2 mb-10 pb-4 border-b border-line font-mono text-xs">
-            <button
-              class="px-4 py-2 rounded-full border border-ink bg-ink text-paper font-semibold transition"
-              data-stack-filter="all"
-            >
-              All Technologies (16)
-            </button>
-            <button
-              class="px-4 py-2 rounded-full border border-line bg-transparent text-ink font-semibold hover:border-ink transition"
-              data-stack-filter="ai"
-            >
-              AI Suite &amp; LLMs (5)
-            </button>
-            <button
-              class="px-4 py-2 rounded-full border border-line bg-transparent text-ink font-semibold hover:border-ink transition"
-              data-stack-filter="frontend"
-            >
-              Frontend &amp; UI (5)
-            </button>
-            <button
-              class="px-4 py-2 rounded-full border border-line bg-transparent text-ink font-semibold hover:border-ink transition"
-              data-stack-filter="backend"
-            >
-              Backend &amp; CMS (4)
-            </button>
-            <button
-              class="px-4 py-2 rounded-full border border-line bg-transparent text-ink font-semibold hover:border-ink transition"
-              data-stack-filter="tools"
-            >
-              DevOps &amp; Tools (2)
-            </button>
-          </div>
-
-          <!-- Tech Stack Grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <!-- 1. Cursor AI -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="ai"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-black text-white flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                      <polyline points="2 17 12 22 22 17"></polyline>
-                      <polyline points="2 12 12 17 22 12"></polyline>
-                    </svg>
-                  </div>
-                  <span class="font-mono text-[10px] text-orange-600 bg-orange-50 px-2 py-0.5 rounded border border-orange-200">DAILY AI DRIVER</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">Cursor AI</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  Deep agentic coding, multi-file codebase indexing, rapid AST refactoring, and AI-assisted debugging.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">95% · Daily Workflow</span>
-              </div>
-            </div>
-
-            <!-- 2. Claude 3.7 -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="ai"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-[#d97706]/10 text-[#d97706] flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                      <path d="M12 2L14.4 8.6L21.5 9.1L16 13.6L17.8 20.6L12 16.8L6.2 20.6L8 13.6L2.5 9.1L9.6 8.6L12 2Z"/>
-                    </svg>
-                  </div>
-                  <span class="font-mono text-[10px] text-orange-600 bg-orange-50 px-2 py-0.5 rounded border border-orange-200">REASONING</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">Claude 3.7 Sonnet</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  Systems architecture, complex data models, architectural validation, and high-accuracy code synthesis.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">96% · Architecture</span>
-              </div>
-            </div>
-
-            <!-- 3. OpenAI GPT-4o -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="ai"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-[#10a37f]/10 text-[#059669] flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <path d="m10 15 5-3-5-3v6Z"></path>
-                    </svg>
-                  </div>
-                  <span class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">PROTOTYPING</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">OpenAI GPT-4o</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  Synthetic test case generation, API mock data pipelines, regex construction, and documentation authoring.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">92% · Automation</span>
-              </div>
-            </div>
-
-            <!-- 4. Google Gemini -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="ai"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                      <path d="M12 2C12 7.523 7.523 12 2 12C7.523 12 12 16.477 12 22C12 16.477 16.477 12 22 12C16.477 12 12 7.523 12 2Z"/>
-                    </svg>
-                  </div>
-                  <span class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">MULTIMODAL</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">Google Gemini</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  Large token context window analysis, visual asset evaluation, UI layout parsing, and rapid data extraction.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">90% · Context Engine</span>
-              </div>
-            </div>
-
-            <!-- 5. GitHub Copilot -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="ai"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M16 18a4 4 0 0 0-8 0"></path>
-                      <circle cx="9" cy="10" r="1"></circle>
-                      <circle cx="15" cy="10" r="1"></circle>
-                      <path d="M20 10c0-4.4-3.6-8-8-8s-8 3.6-8 8c0 3.1 1.7 5.8 4.3 7.1"></path>
-                    </svg>
-                  </div>
-                  <span class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">PAIR CODING</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">GitHub Copilot</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  Inline autocomplete, boilerplate generation, repetitive transformation routines, and instant unit test scaffolds.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">94% · Inline Helper</span>
-              </div>
-            </div>
-
-            <!-- 6. React & Next.js -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="frontend"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-[#00d8ff]/10 text-[#087ea4] flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                      <ellipse cx="12" cy="12" rx="10" ry="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
-                      <ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(60 12 12)" fill="none" stroke="currentColor" stroke-width="1.8"/>
-                      <ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(120 12 12)" fill="none" stroke="currentColor" stroke-width="1.8"/>
-                      <circle cx="12" cy="12" r="2" fill="currentColor"/>
-                    </svg>
-                  </div>
-                  <span class="font-mono text-[10px] text-orange-600 bg-orange-50 px-2 py-0.5 rounded border border-orange-200">PRIMARY UI</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">React &amp; Next.js</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  React 19, Server Components, App Router, hooks architecture, optimized rendering lifecycles, and SSR/SSG.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">95% · 4+ Years</span>
-              </div>
-            </div>
-
-            <!-- 7. TypeScript -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="frontend"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-[#3178c6] text-white flex items-center justify-center font-mono font-bold text-sm">
-                    TS
-                  </div>
-                  <span class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">TYPE SAFETY</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">TypeScript</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  Strict types, interfaces, generics, zod validation schemas, and predictable application refactoring.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">92% · Enterprise Grade</span>
-              </div>
-            </div>
-
-            <!-- 8. Tailwind CSS -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="frontend"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-[#38bdf8]/10 text-[#0ea5e9] flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                      <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
-                    </svg>
-                  </div>
-                  <span class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">DESIGN SYSTEM</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">Tailwind CSS</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  Utility-first design tokens, dark modes, complex responsive breakpoints, micro-animations, and fluid clamp sizing.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">98% · Deep Mastery</span>
-              </div>
-            </div>
-
-            <!-- 9. JavaScript (ES6+) -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="frontend"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-[#f7df1e] text-black flex items-center justify-center font-mono font-bold text-sm">
-                    JS
-                  </div>
-                  <span class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">CORE LOGIC</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">JavaScript (ES6+)</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  Asynchronous workflows, Promises, Event Loop, Web APIs, DOM manipulation, closures, and modular architecture.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">96% · Native Foundations</span>
-              </div>
-            </div>
-
-            <!-- 10. WordPress & PHP -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="backend"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-[#21759b]/10 text-[#21759b] flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                      <path d="M12 2C6.486 2 2 6.486 2 12c0 4.148 2.52 7.712 6.136 9.222L4.01 7.828A9.957 9.957 0 0 1 12 4c2.046 0 3.935.617 5.508 1.674l-2.073 6.012-2.31-6.697A10.02 10.02 0 0 1 12 2zm-8.877 10c0 1.942.628 3.738 1.696 5.203L1.517 7.728A9.972 9.972 0 0 0 3.123 12zm7.142 9.774a9.98 9.98 0 0 1-2.909-.434l3.703-10.741 3.543 9.709c-.066.036-.134.07-.202.103a9.92 9.92 0 0 1-4.135 1.363zm9.61-4.571a9.948 9.948 0 0 0 1.002-4.203c0-2.338-.802-4.488-2.148-6.196l-3.327 9.658 4.473.741z"/>
-                    </svg>
-                  </div>
-                  <span class="font-mono text-[10px] text-orange-600 bg-orange-50 px-2 py-0.5 rounded border border-orange-200">60+ PROJECTS</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">WordPress &amp; PHP</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  ACF Pro, custom plugins, bespoke page-builders, REST API endpoints, hooks, filters, and theme engineering.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">98% · Deep Specialization</span>
-              </div>
-            </div>
-
-            <!-- 11. Node.js & Express -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="backend"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-[#539e43]/10 text-[#539e43] flex items-center justify-center font-mono font-bold text-sm">
-                    NODE
-                  </div>
-                  <span class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">BACKEND API</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">Node.js &amp; Express</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  RESTful microservices, authentication JWT pipelines, file streaming, backend cron tasks, and webhook listeners.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">90% · Fullstack</span>
-              </div>
-            </div>
-
-            <!-- 12. Databases (MySQL & PostgreSQL) -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="backend"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center font-mono font-bold text-xs">
-                    SQL
-                  </div>
-                  <span class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">DATA LAYER</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">MySQL &amp; PostgreSQL</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  Relational schemas, query profiling, indexing strategies, migrations, and ORMs (Prisma, Sequelize, PDO).
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">88% · Relational Data</span>
-              </div>
-            </div>
-
-            <!-- 13. HTML5 & Semantic Web -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="frontend"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center font-mono font-bold text-xs">
-                    HTML5
-                  </div>
-                  <span class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">ACCESSIBILITY</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">HTML5 &amp; Modern CSS</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  Strict semantic structure, WCAG 2.1 AA accessibility, ARIA patterns, CSS subgrid, clamp typography, and micro-keyframes.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">99% · Flawless Basics</span>
-              </div>
-            </div>
-
-            <!-- 14. Docker & Linux Server -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="tools"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-[#2496ed]/10 text-[#2496ed] flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                      <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.186.185.186m0 2.715h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.186.185.186m-2.953 0h2.118a.186.186 0 00.186-.186V6.29a.186.186 0 00-.186-.185H8.076a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186m5.907 0h2.119a.186.186 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.119a.186.186 0 00-.185.185v1.887c0 .102.082.186.185.186m-8.862 2.715h2.118a.187.187 0 00.186-.185V9.006a.186.186 0 00-.186-.186H5.123a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m2.955 0h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186H8.077a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m2.953 0h2.118a.187.187 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185M23.76 11.23c-.33-.238-.85-.355-1.554-.355-.38 0-.82.046-1.28.14a4.4 4.4 0 00-2.884-1.745l-.478-.063-.264.402a5.4 5.4 0 00-.77 2.052c-.67.11-1.393.284-2.154.526l-.423.136V3.388c0-.3-.243-.543-.543-.543H4.72a.543.543 0 00-.543.543v8.528c-.808.384-1.636.88-2.45 1.488C.714 14.15 0 15.342 0 16.48c0 3.738 3.516 6.78 8.877 6.78 6.136 0 11.135-3.328 12.825-8.243.326-.06.663-.092 1.01-.092.353 0 .7.03 1.036.09.28.05.52.008.68-.118.17-.13.25-.333.22-.544a1.7 1.7 0 00-.888-1.123"/>
-                    </svg>
-                  </div>
-                  <span class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">CONTAINERS</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">Docker &amp; Linux Servers</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  Ubuntu/Debian environment administration, Nginx reverse proxies, SSL configuration, cPanel, Plesk, and CI/CD pipelines.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">88% · Server Craft</span>
-              </div>
-            </div>
-
-            <!-- 15. Git & GitHub Workflows -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="tools"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-black text-white flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
-                    </svg>
-                  </div>
-                  <span class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">VERSIONING</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">Git &amp; GitHub Actions</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  Clean commit discipline, branch management, semantic release workflows, pull request reviews, and automated deployment actions.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">96% · Daily Standard</span>
-              </div>
-            </div>
-
-            <!-- 16. UI/UX & Figma -->
-            <div
-              class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
-              data-stack-category="frontend"
-            >
-              <div>
-                <div class="flex items-center justify-between">
-                  <div class="w-10 h-10 rounded-lg bg-[#a259ff]/10 text-[#a259ff] flex items-center justify-center font-mono font-bold text-xs">
-                    FIGMA
-                  </div>
-                  <span class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">DESIGN-TO-CODE</span>
-                </div>
-                <h3 class="mt-4 text-xl font-bold">Figma &amp; UI Systems</h3>
-                <p class="mt-2 text-xs text-muted leading-relaxed">
-                  Pixel-perfect design translation, responsive wireframing, auto-layout tokens, interactive prototyping, and handoff precision.
-                </p>
-              </div>
-              <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
-                <span class="text-muted">Mastery</span>
-                <span class="font-bold text-ink">90% · Pixel Precision</span>
-              </div>
+              <p class="badge-text-primary">React &amp; Next.js</p>
+              <p class="badge-text-sub">Component Systems</p>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Section (003): Selected Featured Projects -->
-      <section class="border-b border-line py-[clamp(60px,10vw,140px)]">
-        <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
-          <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
+          <!-- Badge 4: TypeScript -->
+          <div class="floating-badge float-anim-4 top-84 right-64" title="TypeScript · Type-Safe Engineering">
+            <div class="badge-icon-box bg-[#3178c6] text-white">
+              <span class="font-mono text-xs font-bold leading-none">TS</span>
+            </div>
             <div>
-              <p class="font-mono text-[11px] uppercase text-orange-600">(003) Selected Work</p>
-              <h2 class="mt-2 text-[clamp(3.2rem,6.8vw,8rem)] font-extrabold leading-[.85] tracking-[-.085em]">
-                PROOF IN<br />PRODUCTION.
-              </h2>
-            </div>
-            <a
-              class="text-xs font-bold tracking-[.04em] pb-1 border-b border-ink hover:text-orange-600 hover:border-orange-600 transition"
-              href="projects.html"
-            >
-              VIEW ALL PROJECTS →
-            </a>
-          </div>
-
-          <div class="space-y-16">
-            <!-- Project 1: 6Storage -->
-            <article class="grid gap-6 border-t border-line pt-8 md:grid-cols-[60px_1.25fr_1fr] items-start group">
-              <span class="font-mono text-sm font-bold text-orange-600">01</span>
-              <a href="projects/6storage.html" class="block overflow-hidden rounded-xl border border-line bg-white shadow-sm">
-                <img
-                  class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
-                  src="Image/6storage.png"
-                  alt="6Storage Plugin &amp; Template System"
-                />
-              </a>
-              <div class="flex flex-col justify-between h-full">
-                <div>
-                  <p class="font-mono text-[11px] uppercase text-orange-600 tracking-wider">
-                    6STORAGE / WORDPRESS / PAGE BUILDERS
-                  </p>
-                  <h3 class="my-4 text-[clamp(2rem,3.8vw,4.2rem)] font-extrabold leading-[.9] tracking-[-.07em]">
-                    6STORAGE<br />PLUGIN ECOSYSTEM.
-                  </h3>
-                  <p class="text-sm text-muted leading-relaxed">
-                    A proprietary page-builder plugin engineered to streamline website rollouts for self-storage facilities. Powered 60+ production websites and 18+ reusable multi-tenant templates with custom block components.
-                  </p>
-                  <div class="mt-4 flex flex-wrap gap-2 font-mono text-[11px]">
-                    <span class="bg-paper border border-line px-2.5 py-1 rounded">WordPress</span>
-                    <span class="bg-paper border border-line px-2.5 py-1 rounded">PHP 8</span>
-                    <span class="bg-paper border border-line px-2.5 py-1 rounded">JavaScript</span>
-                    <span class="bg-paper border border-line px-2.5 py-1 rounded">Page Builders</span>
-                  </div>
-                </div>
-                <div class="mt-8">
-                  <a
-                    class="inline-flex items-center gap-2 text-xs font-bold tracking-wider py-2 px-4 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition"
-                    href="projects/6storage.html"
-                  >
-                    READ CASE STUDY →
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 2: Sri Ramakrishna Hospital -->
-            <article class="grid gap-6 border-t border-line pt-8 md:grid-cols-[60px_1.25fr_1fr] items-start group">
-              <span class="font-mono text-sm font-bold text-orange-600">02</span>
-              <a href="projects/sri-ramakrishna-hospital.html" class="block overflow-hidden rounded-xl border border-line bg-white shadow-sm">
-                <img
-                  class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
-                  src="Image/sriramakrishnahospital.png"
-                  alt="Sri Ramakrishna Hospital Portal"
-                />
-              </a>
-              <div class="flex flex-col justify-between h-full">
-                <div>
-                  <p class="font-mono text-[11px] uppercase text-orange-600 tracking-wider">
-                    HEALTHCARE / CUSTOM THEME / ACF
-                  </p>
-                  <h3 class="my-4 text-[clamp(2rem,3.8vw,4.2rem)] font-extrabold leading-[.9] tracking-[-.07em]">
-                    SRI RAMAKRISHNA<br />HOSPITAL.
-                  </h3>
-                  <p class="text-sm text-muted leading-relaxed">
-                    A comprehensive multi-specialty healthcare platform featuring an interactive doctor directory, department pathways, and real-time appointment booking workflows engineered for high reliability and accessibility.
-                  </p>
-                  <div class="mt-4 flex flex-wrap gap-2 font-mono text-[11px]">
-                    <span class="bg-paper border border-line px-2.5 py-1 rounded">WordPress</span>
-                    <span class="bg-paper border border-line px-2.5 py-1 rounded">ACF Pro</span>
-                    <span class="bg-paper border border-line px-2.5 py-1 rounded">Tailwind CSS</span>
-                    <span class="bg-paper border border-line px-2.5 py-1 rounded">Healthcare Booking</span>
-                  </div>
-                </div>
-                <div class="mt-8">
-                  <a
-                    class="inline-flex items-center gap-2 text-xs font-bold tracking-wider py-2 px-4 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition"
-                    href="projects/sri-ramakrishna-hospital.html"
-                  >
-                    READ CASE STUDY →
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 3: Bodhi Mind Care Hospital -->
-            <article class="grid gap-6 border-t border-line pt-8 md:grid-cols-[60px_1.25fr_1fr] items-start group">
-              <span class="font-mono text-sm font-bold text-orange-600">03</span>
-              <a href="projects/bodhi-mindcare.html" class="block overflow-hidden rounded-xl border border-line bg-white shadow-sm">
-                <img
-                  class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
-                  src="Image/bodhiimindcarehospital.png"
-                  alt="Bodhi Mind Care Hospital"
-                />
-              </a>
-              <div class="flex flex-col justify-between h-full">
-                <div>
-                  <p class="font-mono text-[11px] uppercase text-orange-600 tracking-wider">
-                    CLINICAL / ACCESSIBILITY / SEO
-                  </p>
-                  <h3 class="my-4 text-[clamp(2rem,3.8vw,4.2rem)] font-extrabold leading-[.9] tracking-[-.07em]">
-                    BODHI MIND<br />CARE HOSPITAL.
-                  </h3>
-                  <p class="text-sm text-muted leading-relaxed">
-                    Designed and built from the ground up to provide calming, accessible, and informative care guidance for mental health consultations with seamless appointment inquiry pipelines.
-                  </p>
-                  <div class="mt-4 flex flex-wrap gap-2 font-mono text-[11px]">
-                    <span class="bg-paper border border-line px-2.5 py-1 rounded">Custom WordPress</span>
-                    <span class="bg-paper border border-line px-2.5 py-1 rounded">PHP</span>
-                    <span class="bg-paper border border-line px-2.5 py-1 rounded">UI Design</span>
-                  </div>
-                </div>
-                <div class="mt-8">
-                  <a
-                    class="inline-flex items-center gap-2 text-xs font-bold tracking-wider py-2 px-4 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition"
-                    href="projects/bodhi-mindcare.html"
-                  >
-                    READ CASE STUDY →
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 4: Google Review & Analytics Dashboard -->
-            <article class="grid gap-6 border-t border-line pt-8 md:grid-cols-[60px_1.25fr_1fr] items-start group">
-              <span class="font-mono text-sm font-bold text-orange-600">04</span>
-              <a href="projects/google-review-dashboard.html" class="block overflow-hidden rounded-xl border border-line bg-white shadow-sm">
-                <img
-                  class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
-                  src="Image/project-management.png"
-                  alt="Google Review &amp; Analytics Dashboard"
-                />
-              </a>
-              <div class="flex flex-col justify-between h-full">
-                <div>
-                  <p class="font-mono text-[11px] uppercase text-orange-600 tracking-wider">
-                    FULLSTACK / GOOGLE APIS / PHP
-                  </p>
-                  <h3 class="my-4 text-[clamp(2rem,3.8vw,4.2rem)] font-extrabold leading-[.9] tracking-[-.07em]">
-                    GOOGLE REVIEW<br />ANALYTICS ENGINE.
-                  </h3>
-                  <p class="text-sm text-muted leading-relaxed">
-                    A centralized real-time dashboard aggregating customer feedback and Google Business ratings across multiple branches, with sentiment scoring and automated team notifications.
-                  </p>
-                  <div class="mt-4 flex flex-wrap gap-2 font-mono text-[11px]">
-                    <span class="bg-paper border border-line px-2.5 py-1 rounded">Google APIs</span>
-                    <span class="bg-paper border border-line px-2.5 py-1 rounded">PHP / MySQL</span>
-                    <span class="bg-paper border border-line px-2.5 py-1 rounded">Dashboard UI</span>
-                  </div>
-                </div>
-                <div class="mt-8">
-                  <a
-                    class="inline-flex items-center gap-2 text-xs font-bold tracking-wider py-2 px-4 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition"
-                    href="projects/google-review-dashboard.html"
-                  >
-                    READ CASE STUDY →
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section (004): Philosophy & Engineering Values -->
-      <section class="border-b border-line py-[clamp(60px,10vw,140px)] bg-paper">
-        <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
-          <div class="mb-14 max-w-[70ch]">
-            <p class="font-mono text-[11px] uppercase text-orange-600">(004) Engineering Values</p>
-            <h2 class="mt-3 text-[clamp(2.8rem,6vw,6.5rem)] font-extrabold leading-[.85] tracking-[-.085em]">
-              HOW I THINK<br />&amp; SOLVE PROBLEMS.
-            </h2>
-            <p class="mt-4 text-[15px] leading-relaxed text-muted">
-              Great software engineering is not merely writing syntax—it is understanding user needs, debugging with scientific rigor, and continually connecting the dots between technologies.
-            </p>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-line pt-10">
-            <!-- Value 1 -->
-            <div class="p-8 border border-line bg-white rounded-xl">
-              <span class="font-mono text-xs font-bold text-orange-600">01</span>
-              <h3 class="mt-3 text-2xl font-bold tracking-tight">Root-Cause Debugging &amp; Troubleshooting</h3>
-              <p class="mt-3 text-sm text-muted leading-relaxed">
-                I do not apply temporary band-aids. Whether it is an insidious race condition in client-side state, a bottleneck in database indexing, or a CSS subgrid misalignment, I dive deep into DevTools profilers, server logs, and network waterfalls until the fundamental cause is eradicated.
-              </p>
-            </div>
-
-            <!-- Value 2 -->
-            <div class="p-8 border border-line bg-white rounded-xl">
-              <span class="font-mono text-xs font-bold text-orange-600">02</span>
-              <h3 class="mt-3 text-2xl font-bold tracking-tight">Learning by Connecting Concepts</h3>
-              <p class="mt-3 text-sm text-muted leading-relaxed">
-                I firmly believe that learning is about making connections. Having mastered backend architectures and database modeling early on, adopting reactive frontend frameworks and modern AI tooling felt natural because the core architectural paradigms intersect and reinforce one another.
-              </p>
-            </div>
-
-            <!-- Value 3 -->
-            <div class="p-8 border border-line bg-white rounded-xl">
-              <span class="font-mono text-xs font-bold text-orange-600">03</span>
-              <h3 class="mt-3 text-2xl font-bold tracking-tight">AI-Augmented Velocity, Human Judgment</h3>
-              <p class="mt-3 text-sm text-muted leading-relaxed">
-                I leverage LLMs (Cursor, Claude, Copilot) as supercharged intellectual co-pilots for boilerplate elimination, rapid exploration, and synthetic testing. However, architectural design, type safety, security auditing, and UX refinement always remain under strict human ownership.
-              </p>
-            </div>
-
-            <!-- Value 4 -->
-            <div class="p-8 border border-line bg-white rounded-xl">
-              <span class="font-mono text-xs font-bold text-orange-600">04</span>
-              <h3 class="mt-3 text-2xl font-bold tracking-tight">Ownership, Transparency &amp; Delivery</h3>
-              <p class="mt-3 text-sm text-muted leading-relaxed">
-                From high-level discussions with product stakeholders to writing clean commit logs and setting up reliable deployments, I treat every project with founder-level ownership. When commitments are made, deadlines are met without excuses.
-              </p>
+              <p class="badge-text-primary">TypeScript</p>
+              <p class="badge-text-sub">Strict Architecture</p>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Section (005): Experience Snapshot -->
-      <section class="border-b border-line py-[clamp(60px,8vw,110px)]">
-        <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
-          <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-10">
+          <!-- Badge 5: Tailwind CSS -->
+          <div class="floating-badge float-anim-5 bottom-8 right-28"
+            title="Tailwind CSS · Utility-First Design Systems">
+            <div class="badge-icon-box bg-[#38bdf8]/10 text-[#0ea5e9]">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path
+                  d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
+              </svg>
+            </div>
             <div>
-              <p class="font-mono text-[11px] uppercase text-orange-600">(005) Career Track</p>
-              <h2 class="mt-2 text-[clamp(2.5rem,5vw,5.5rem)] font-extrabold leading-[.85] tracking-[-.085em]">
-                WORK EXPERIENCE.
-              </h2>
-            </div>
-            <a
-              class="text-xs font-bold tracking-[.04em] pb-1 border-b border-ink hover:text-orange-600 hover:border-orange-600 transition"
-              href="experience.html"
-            >
-              FULL RESUME &amp; ROLES →
-            </a>
-          </div>
-
-          <div class="border-t border-line divide-y divide-line">
-            <div class="py-6 grid grid-cols-1 md:grid-cols-[1.2fr_2fr_3fr] gap-4 items-baseline">
-              <span class="font-mono text-xs text-orange-600 font-bold">2024 — PRESENT</span>
-              <div>
-                <h3 class="text-xl font-bold">Frontend &amp; Fullstack Developer</h3>
-                <p class="font-mono text-xs text-muted">Bright Bridge Info Tech</p>
-              </div>
-              <p class="text-sm text-muted leading-relaxed">
-                Architecting high-traffic WordPress platforms, bespoke client portals, and modern React interfaces with API and payment gateway integrations.
-              </p>
-            </div>
-
-            <div class="py-6 grid grid-cols-1 md:grid-cols-[1.2fr_2fr_3fr] gap-4 items-baseline">
-              <span class="font-mono text-xs text-orange-600 font-bold">2022 — 2024</span>
-              <div>
-                <h3 class="text-xl font-bold">Web Developer</h3>
-                <p class="font-mono text-xs text-muted">6Storage</p>
-              </div>
-              <p class="text-sm text-muted leading-relaxed">
-                Engineered the core custom page-builder plugin supporting 60+ facility portals, optimizing Core Web Vitals and automated customer onboarding.
-              </p>
+              <p class="badge-text-primary">Tailwind CSS</p>
+              <p class="badge-text-sub">Design Systems</p>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="border-t border-line pt-[clamp(60px,10vw,140px)] pb-12 bg-paper">
-      <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
-        <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 mb-16">
-          <div>
-            <p class="font-mono text-xs uppercase text-orange-600 mb-4">(006) INQUIRIES &amp; COLLABORATION</p>
-            <h2 class="text-[clamp(3.5rem,8vw,8.5rem)] font-extrabold leading-[.83] tracking-[-.09em]">
-              LET'S WORK<br />TOGETHER.
-            </h2>
-            <p class="mt-6 text-base md:text-lg text-muted max-w-[48ch] leading-relaxed">
-              Have a web application, custom WordPress platform, or high-performance frontend you want built with precision? Let's connect and make it happen.
-            </p>
-          </div>
-
-          <div class="flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-line pt-8 lg:pt-0 lg:pl-12">
+          <!-- Badge 6: OpenAI & Copilot -->
+          <div class="floating-badge float-anim-6 bottom-32 right-96"
+            title="OpenAI & GitHub Copilot · Synthetic Workflows">
+            <div class="badge-icon-box bg-[#10a37f]/10 text-[#059669]">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-2h2v2zm0-4h-2V7h2v5z" />
+              </svg>
+            </div>
             <div>
-              <p class="font-mono text-xs uppercase text-muted mb-2">Direct Contact</p>
-              <a
-                class="text-xl md:text-2xl font-bold tracking-tight block hover:text-orange-600 transition"
-                href="mailto:vnanthakumar00@gmail.com"
-              >
-                vnanthakumar00@gmail.com
-              </a>
-              <button
-                class="mt-3 inline-flex items-center gap-1.5 font-mono text-xs text-orange-600 hover:underline"
-                data-copy-email="vnanthakumar00@gmail.com"
-              >
-                <span>📋 Copy email address</span>
-              </button>
+              <p class="badge-text-primary">OpenAI &amp; Copilot</p>
+              <p class="badge-text-sub">Velocity Pair</p>
             </div>
-
-            <div class="mt-8 space-y-2 font-mono text-xs">
-              <p class="text-muted">LOCATION: Coimbatore, Tamil Nadu, India</p>
-              <p class="text-muted">TIMEZONE: IST (UTC+05:30) · Global Remote</p>
-              <p class="text-emerald-600 font-bold">● CURRENT STATUS: AVAILABLE FOR SELECT WORK</p>
-            </div>
-
-            <div class="mt-8">
-              <a
-                href="contact.html"
-                class="inline-block px-6 py-3.5 bg-ink text-paper text-xs font-bold tracking-wider hover:bg-orange-600 transition"
-              >
-                START A PROJECT →
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bottom Copyright Bar -->
-        <div class="flex flex-col justify-between gap-4 border-t border-line pt-6 font-mono text-xs text-muted sm:flex-row items-center">
-          <span>© 2026 NANTHA VENKAT<sup>®</sup> · ALL RIGHTS RESERVED</span>
-          <div class="flex items-center gap-6 text-ink font-semibold">
-            <a class="hover:text-orange-600 transition" href="https://github.com/NanthaVenkat" target="_blank" rel="noopener">GitHub ↗</a>
-            <a class="hover:text-orange-600 transition" href="https://linkedin.com/in/nantha-venkat-268360240" target="_blank" rel="noopener">LinkedIn ↗</a>
-            <a class="hover:text-orange-600 transition" href="mailto:vnanthakumar00@gmail.com">Email ↗</a>
-            <a class="hover:text-orange-600 transition cursor-pointer" data-top>Back to top ↑</a>
           </div>
         </div>
       </div>
-    </footer>
 
-    <script src="script.js"></script>
-  </body>
+      <!-- Bottom Hero Grid: Bio, Profile, Key Metrics -->
+      <div class="grid grid-cols-1 md:grid-cols-[2.5fr_1.2fr_1.8fr] gap-8 border-t border-line pt-6 items-center">
+        <div>
+          <p class="text-[clamp(16px,1.3vw,21px)] leading-[1.4] text-ink font-medium max-w-[42ch]">
+            I build thoughtful, ultra-fast and deeply usable web applications for businesses that care about the
+            details.
+            Bridging 4+ years of fullstack &amp; WordPress craft with an AI-augmented engineering pipeline.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-4 text-xs font-mono text-muted">
+            <span>✦ Clean Code</span>
+            <span>✦ Sub-Second TTFB</span>
+            <span>✦ Design-System Driven</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <img
+            class="aspect-square w-[75px] md:w-[95px] rounded-lg object-cover grayscale contrast-125 border border-line"
+            src="Image/prof-1.jpeg" alt="Nantha Venkat Profile" />
+          <div class="text-[13px] leading-relaxed">
+            <strong class="text-ink block font-bold">Nantha Venkat</strong>
+            <span class="text-orange-600 block text-xs font-mono">Available for Work</span>
+            <span class="text-muted text-xs">Coimbatore &amp; Remote</span>
+          </div>
+        </div>
+
+        <!-- Key Stats / Social Proof Strip -->
+        <div class="grid grid-cols-3 gap-2 border-l-0 md:border-l border-line md:pl-8">
+          <div>
+            <p class="text-2xl md:text-3xl font-extrabold tracking-tight">4<span class="text-orange-600">+</span></p>
+            <p class="font-mono text-[10px] text-muted uppercase mt-0.5">Years Exp</p>
+          </div>
+          <div>
+            <p class="text-2xl md:text-3xl font-extrabold tracking-tight">40<span class="text-orange-600">+</span></p>
+            <p class="font-mono text-[10px] text-muted uppercase mt-0.5">Sites Shipped</p>
+          </div>
+          <div>
+            <p class="text-2xl md:text-3xl font-extrabold tracking-tight">18<span class="text-orange-600">+</span></p>
+            <p class="font-mono text-[10px] text-muted uppercase mt-0.5">Templates &amp; Plugins</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infinite Tech Ribbon / Micro-Marquee -->
+    <section class="border-y border-line bg-paper py-3.5 overflow-hidden">
+      <div class="marquee-track flex items-center gap-12 font-mono text-xs uppercase tracking-wider text-muted">
+        <span class="flex items-center gap-2"><strong class="text-ink">CURSOR AI</strong> · AGENTIC REFRACTOR</span>
+        <span class="text-orange-600">✦</span>
+        <span class="flex items-center gap-2"><strong class="text-ink">CLAUDE 3.7</strong> · ARCHITECTURE LOGIC</span>
+        <span class="text-orange-600">✦</span>
+        <span class="flex items-center gap-2"><strong class="text-ink">REACT 19</strong> &amp; NEXT.JS 15</span>
+        <span class="text-orange-600">✦</span>
+        <span class="flex items-center gap-2"><strong class="text-ink">TYPESCRIPT</strong> · ZERO DEFECTS</span>
+        <span class="text-orange-600">✦</span>
+        <span class="flex items-center gap-2"><strong class="text-ink">TAILWIND CSS</strong> · DESIGN SYSTEMS</span>
+        <span class="text-orange-600">✦</span>
+        <span class="flex items-center gap-2"><strong class="text-ink">WORDPRESS</strong> · ACF PRO &amp;
+          HEADLESS</span>
+        <span class="text-orange-600">✦</span>
+        <span class="flex items-center gap-2"><strong class="text-ink">NODE.JS</strong> &amp; REST APIS</span>
+        <span class="text-orange-600">✦</span>
+        <span class="flex items-center gap-2"><strong class="text-ink">DOCKER</strong> &amp; LINUX DEVOPS</span>
+        <span class="text-orange-600">✦</span>
+        <!-- Duplicate for seamless infinite loop -->
+        <span class="flex items-center gap-2"><strong class="text-ink">CURSOR AI</strong> · AGENTIC REFRACTOR</span>
+        <span class="text-orange-600">✦</span>
+        <span class="flex items-center gap-2"><strong class="text-ink">CLAUDE 3.7</strong> · ARCHITECTURE LOGIC</span>
+        <span class="text-orange-600">✦</span>
+        <span class="flex items-center gap-2"><strong class="text-ink">REACT 19</strong> &amp; NEXT.JS 15</span>
+        <span class="text-orange-600">✦</span>
+        <span class="flex items-center gap-2"><strong class="text-ink">TYPESCRIPT</strong> · ZERO DEFECTS</span>
+        <span class="text-orange-600">✦</span>
+        <span class="flex items-center gap-2"><strong class="text-ink">TAILWIND CSS</strong> · DESIGN SYSTEMS</span>
+        <span class="text-orange-600">✦</span>
+        <span class="flex items-center gap-2"><strong class="text-ink">WORDPRESS</strong> · ACF PRO &amp;
+          HEADLESS</span>
+        <span class="text-orange-600">✦</span>
+      </div>
+    </section>
+
+    <!-- Section (001): Services / Capabilities -->
+    <section class="border-b border-line py-[clamp(60px,10vw,140px)]">
+      <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
+        <div class="mb-[clamp(40px,6vw,90px)] grid gap-6 md:grid-cols-[2fr_5fr_3fr]">
+          <p class="font-mono text-[11px] uppercase text-orange-600">(001) Services</p>
+          <h2 class="text-[clamp(3.2rem,6.8vw,8rem)] font-extrabold leading-[.85] tracking-[-.085em]">
+            BUILT WITH<br />INTENTION.
+          </h2>
+          <p class="text-[14px] leading-relaxed text-muted">
+            A disciplined practice spanning frontend craft, systems architecture, high-converting CMS platforms, and
+            AI-augmented velocity.
+          </p>
+        </div>
+
+        <div class="border-t border-line divide-y divide-line">
+          <!-- Row 1 -->
+          <article
+            class="grid gap-4 py-8 md:grid-cols-[80px_4fr_3fr_1.5fr] md:py-10 group hover:bg-white/60 transition px-2 rounded-lg">
+            <span class="font-mono text-xs font-bold text-orange-600">001</span>
+            <div>
+              <h3 class="text-[clamp(1.6rem,2.8vw,3.2rem)] font-bold leading-none tracking-[-.065em]">
+                FRONTEND &amp; UI ARCHITECTURE
+              </h3>
+              <p class="mt-2 text-xs font-mono text-muted">Core: React 19 / Next.js / TypeScript / Tailwind CSS</p>
+            </div>
+            <p class="text-[13px] text-muted leading-relaxed">
+              Responsive, accessible web interfaces engineered to feel immediate and frictionless. From fluid typography
+              systems to complex client-side state management and Lighthouse 95+ performance scores.
+            </p>
+            <div class="md:text-right font-mono text-[11px] text-ink font-semibold self-center">
+              Interactive Apps · SPAs · Design Systems
+            </div>
+          </article>
+
+          <!-- Row 2 -->
+          <article
+            class="grid gap-4 py-8 md:grid-cols-[80px_4fr_3fr_1.5fr] md:py-10 group hover:bg-white/60 transition px-2 rounded-lg">
+            <span class="font-mono text-xs font-bold text-orange-600">002</span>
+            <div>
+              <h3 class="text-[clamp(1.6rem,2.8vw,3.2rem)] font-bold leading-none tracking-[-.065em]">
+                CUSTOM WORDPRESS &amp; CMS ENGINEERING
+              </h3>
+              <p class="mt-2 text-xs font-mono text-muted">Core: PHP 8 / ACF Pro / Custom Gutenberg Blocks / WooCommerce
+              </p>
+            </div>
+            <p class="text-[13px] text-muted leading-relaxed">
+              Bespoke WordPress theme and plugin development without template bloat. Building flexible, client-friendly
+              publishing experiences, multi-tenant templates, and high-security enterprise installations.
+            </p>
+            <div class="md:text-right font-mono text-[11px] text-ink font-semibold self-center">
+              40+ Delivered · Headless WP · Plugins
+            </div>
+          </article>
+
+          <!-- Row 3 -->
+          <article
+            class="grid gap-4 py-8 md:grid-cols-[80px_4fr_3fr_1.5fr] md:py-10 group hover:bg-white/60 transition px-2 rounded-lg">
+            <span class="font-mono text-xs font-bold text-orange-600">003</span>
+            <div>
+              <h3 class="text-[clamp(1.6rem,2.8vw,3.2rem)] font-bold leading-none tracking-[-.065em]">
+                FULLSTACK &amp; API INTEGRATION
+              </h3>
+              <p class="mt-2 text-xs font-mono text-muted">Core: Node.js / Express / REST APIs / MySQL / PostgreSQL</p>
+            </div>
+            <p class="text-[13px] text-muted leading-relaxed">
+              Seamless connection of third-party APIs (Google, payment gateways, appointment scheduling, CRM webhooks)
+              into robust frontend dashboards with comprehensive error handling and authentication.
+            </p>
+            <div class="md:text-right font-mono text-[11px] text-ink font-semibold self-center">
+              RESTful APIs · Auth · Webhooks
+            </div>
+          </article>
+
+          <!-- Row 4 -->
+          <article
+            class="grid gap-4 py-8 md:grid-cols-[80px_4fr_3fr_1.5fr] md:py-10 group hover:bg-white/60 transition px-2 rounded-lg">
+            <span class="font-mono text-xs font-bold text-orange-600">004</span>
+            <div>
+              <h3 class="text-[clamp(1.6rem,2.8vw,3.2rem)] font-bold leading-none tracking-[-.065em]">
+                AI-AUGMENTED PRODUCTIVITY &amp; QA
+              </h3>
+              <p class="mt-2 text-xs font-mono text-muted">Core: Cursor AI / Claude 3.7 / GitHub Copilot / LLM Pipelines
+              </p>
+            </div>
+            <p class="text-[13px] text-muted leading-relaxed">
+              Harnessing state-of-the-art AI tooling to accelerate development velocity by 3x. Generating comprehensive
+              test fixtures, validating algorithmic edge cases, and continuous automated refactoring.
+            </p>
+            <div class="md:text-right font-mono text-[11px] text-ink font-semibold self-center">
+              3x Delivery Velocity · Zero Hallucinations
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section (002): Full AI Tools & Tech Stack Matrix -->
+    <section class="border-b border-line py-[clamp(60px,10vw,140px)] bg-paper">
+      <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
+          <div>
+            <p class="font-mono text-[11px] uppercase text-orange-600">(002) Tech Stack &amp; AI Tools</p>
+            <h2 class="mt-2 text-[clamp(2.8rem,6vw,6.5rem)] font-extrabold leading-[.85] tracking-[-.085em]">
+              THE AI &amp; STACK<br />ECOSYSTEM.
+            </h2>
+          </div>
+          <p class="text-sm text-muted max-w-[44ch] leading-relaxed">
+            Every tool in my stack is chosen for reliability, high performance, and rapid iteration speed.
+          </p>
+        </div>
+
+        <!-- Interactive Filter Tabs -->
+        <div class="flex flex-wrap gap-2 mb-10 pb-4 border-b border-line font-mono text-xs">
+          <button class="px-4 py-2 rounded-full border border-ink bg-ink text-paper font-semibold transition"
+            data-stack-filter="all">
+            All Technologies (16)
+          </button>
+          <button
+            class="px-4 py-2 rounded-full border border-line bg-transparent text-ink font-semibold hover:border-ink transition"
+            data-stack-filter="ai">
+            AI Suite &amp; LLMs (5)
+          </button>
+          <button
+            class="px-4 py-2 rounded-full border border-line bg-transparent text-ink font-semibold hover:border-ink transition"
+            data-stack-filter="frontend">
+            Frontend &amp; UI (5)
+          </button>
+          <button
+            class="px-4 py-2 rounded-full border border-line bg-transparent text-ink font-semibold hover:border-ink transition"
+            data-stack-filter="backend">
+            Backend &amp; CMS (4)
+          </button>
+          <button
+            class="px-4 py-2 rounded-full border border-line bg-transparent text-ink font-semibold hover:border-ink transition"
+            data-stack-filter="tools">
+            DevOps &amp; Tools (2)
+          </button>
+        </div>
+
+        <!-- Tech Stack Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- 1. Cursor AI -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="ai">
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-lg bg-black text-white flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <span
+                  class="font-mono text-[10px] text-orange-600 bg-orange-50 px-2 py-0.5 rounded border border-orange-200">DAILY
+                  AI DRIVER</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">Cursor AI</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                Deep agentic coding, multi-file codebase indexing, rapid AST refactoring, and AI-assisted debugging.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">95% · Daily Workflow</span>
+            </div>
+          </div>
+
+          <!-- 2. Claude 3.7 -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="ai">
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-lg bg-[#d97706]/10 text-[#d97706] flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M12 2L14.4 8.6L21.5 9.1L16 13.6L17.8 20.6L12 16.8L6.2 20.6L8 13.6L2.5 9.1L9.6 8.6L12 2Z" />
+                  </svg>
+                </div>
+                <span
+                  class="font-mono text-[10px] text-orange-600 bg-orange-50 px-2 py-0.5 rounded border border-orange-200">REASONING</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">Claude 3.7 Sonnet</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                Systems architecture, complex data models, architectural validation, and high-accuracy code synthesis.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">96% · Architecture</span>
+            </div>
+          </div>
+
+          <!-- 3. OpenAI GPT-4o -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="ai">
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-lg bg-[#10a37f]/10 text-[#059669] flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m10 15 5-3-5-3v6Z"></path>
+                  </svg>
+                </div>
+                <span
+                  class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">PROTOTYPING</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">OpenAI GPT-4o</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                Synthetic test case generation, API mock data pipelines, regex construction, and documentation
+                authoring.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">92% · Automation</span>
+            </div>
+          </div>
+
+          <!-- 4. Google Gemini -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="ai">
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path
+                      d="M12 2C12 7.523 7.523 12 2 12C7.523 12 12 16.477 12 22C12 16.477 16.477 12 22 12C16.477 12 12 7.523 12 2Z" />
+                  </svg>
+                </div>
+                <span
+                  class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">MULTIMODAL</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">Google Gemini</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                Large token context window analysis, visual asset evaluation, UI layout parsing, and rapid data
+                extraction.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">90% · Context Engine</span>
+            </div>
+          </div>
+
+          <!-- 5. GitHub Copilot -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="ai">
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 18a4 4 0 0 0-8 0"></path>
+                    <circle cx="9" cy="10" r="1"></circle>
+                    <circle cx="15" cy="10" r="1"></circle>
+                    <path d="M20 10c0-4.4-3.6-8-8-8s-8 3.6-8 8c0 3.1 1.7 5.8 4.3 7.1"></path>
+                  </svg>
+                </div>
+                <span
+                  class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">PAIR
+                  CODING</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">GitHub Copilot</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                Inline autocomplete, boilerplate generation, repetitive transformation routines, and instant unit test
+                scaffolds.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">94% · Inline Helper</span>
+            </div>
+          </div>
+
+          <!-- 6. React & Next.js -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="frontend">
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-lg bg-[#00d8ff]/10 text-[#087ea4] flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <ellipse cx="12" cy="12" rx="10" ry="4.2" fill="none" stroke="currentColor" stroke-width="1.8" />
+                    <ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(60 12 12)" fill="none"
+                      stroke="currentColor" stroke-width="1.8" />
+                    <ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(120 12 12)" fill="none"
+                      stroke="currentColor" stroke-width="1.8" />
+                    <circle cx="12" cy="12" r="2" fill="currentColor" />
+                  </svg>
+                </div>
+                <span
+                  class="font-mono text-[10px] text-orange-600 bg-orange-50 px-2 py-0.5 rounded border border-orange-200">PRIMARY
+                  UI</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">React &amp; Next.js</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                React 19, Server Components, App Router, hooks architecture, optimized rendering lifecycles, and
+                SSR/SSG.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">95% · 4+ Years</span>
+            </div>
+          </div>
+
+          <!-- 7. TypeScript -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="frontend">
+            <div>
+              <div class="flex items-center justify-between">
+                <div
+                  class="w-10 h-10 rounded-lg bg-[#3178c6] text-white flex items-center justify-center font-mono font-bold text-sm">
+                  TS
+                </div>
+                <span
+                  class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">TYPE
+                  SAFETY</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">TypeScript</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                Strict types, interfaces, generics, zod validation schemas, and predictable application refactoring.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">92% · Enterprise Grade</span>
+            </div>
+          </div>
+
+          <!-- 8. Tailwind CSS -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="frontend">
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-lg bg-[#38bdf8]/10 text-[#0ea5e9] flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path
+                      d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
+                  </svg>
+                </div>
+                <span
+                  class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">DESIGN
+                  SYSTEM</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">Tailwind CSS</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                Utility-first design tokens, dark modes, complex responsive breakpoints, micro-animations, and fluid
+                clamp sizing.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">98% · Deep Mastery</span>
+            </div>
+          </div>
+
+          <!-- 9. JavaScript (ES6+) -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="frontend">
+            <div>
+              <div class="flex items-center justify-between">
+                <div
+                  class="w-10 h-10 rounded-lg bg-[#f7df1e] text-black flex items-center justify-center font-mono font-bold text-sm">
+                  JS
+                </div>
+                <span
+                  class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">CORE
+                  LOGIC</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">JavaScript (ES6+)</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                Asynchronous workflows, Promises, Event Loop, Web APIs, DOM manipulation, closures, and modular
+                architecture.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">96% · Native Foundations</span>
+            </div>
+          </div>
+
+          <!-- 10. WordPress & PHP -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="backend">
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-lg bg-[#21759b]/10 text-[#21759b] flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path
+                      d="M12 2C6.486 2 2 6.486 2 12c0 4.148 2.52 7.712 6.136 9.222L4.01 7.828A9.957 9.957 0 0 1 12 4c2.046 0 3.935.617 5.508 1.674l-2.073 6.012-2.31-6.697A10.02 10.02 0 0 1 12 2zm-8.877 10c0 1.942.628 3.738 1.696 5.203L1.517 7.728A9.972 9.972 0 0 0 3.123 12zm7.142 9.774a9.98 9.98 0 0 1-2.909-.434l3.703-10.741 3.543 9.709c-.066.036-.134.07-.202.103a9.92 9.92 0 0 1-4.135 1.363zm9.61-4.571a9.948 9.948 0 0 0 1.002-4.203c0-2.338-.802-4.488-2.148-6.196l-3.327 9.658 4.473.741z" />
+                  </svg>
+                </div>
+                <span
+                  class="font-mono text-[10px] text-orange-600 bg-orange-50 px-2 py-0.5 rounded border border-orange-200">60+
+                  PROJECTS</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">WordPress &amp; PHP</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                ACF Pro, custom plugins, bespoke page-builders, REST API endpoints, hooks, filters, and theme
+                engineering.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">98% · Deep Specialization</span>
+            </div>
+          </div>
+
+          <!-- 11. Node.js & Express -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="backend">
+            <div>
+              <div class="flex items-center justify-between">
+                <div
+                  class="w-10 h-10 rounded-lg bg-[#539e43]/10 text-[#539e43] flex items-center justify-center font-mono font-bold text-sm">
+                  NODE
+                </div>
+                <span
+                  class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">BACKEND
+                  API</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">Node.js &amp; Express</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                RESTful microservices, authentication JWT pipelines, file streaming, backend cron tasks, and webhook
+                listeners.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">90% · Fullstack</span>
+            </div>
+          </div>
+
+          <!-- 12. Databases (MySQL & PostgreSQL) -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="backend">
+            <div>
+              <div class="flex items-center justify-between">
+                <div
+                  class="w-10 h-10 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center font-mono font-bold text-xs">
+                  SQL
+                </div>
+                <span
+                  class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">DATA
+                  LAYER</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">MySQL &amp; PostgreSQL</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                Relational schemas, query profiling, indexing strategies, migrations, and ORMs (Prisma, Sequelize, PDO).
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">88% · Relational Data</span>
+            </div>
+          </div>
+
+          <!-- 13. HTML5 & Semantic Web -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="frontend">
+            <div>
+              <div class="flex items-center justify-between">
+                <div
+                  class="w-10 h-10 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center font-mono font-bold text-xs">
+                  HTML5
+                </div>
+                <span
+                  class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">ACCESSIBILITY</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">HTML5 &amp; Modern CSS</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                Strict semantic structure, WCAG 2.1 AA accessibility, ARIA patterns, CSS subgrid, clamp typography, and
+                micro-keyframes.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">99% · Flawless Basics</span>
+            </div>
+          </div>
+
+          <!-- 14. Docker & Linux Server -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="tools">
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-lg bg-[#2496ed]/10 text-[#2496ed] flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path
+                      d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.186.185.186m0 2.715h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.186.185.186m-2.953 0h2.118a.186.186 0 00.186-.186V6.29a.186.186 0 00-.186-.185H8.076a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186m5.907 0h2.119a.186.186 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.119a.186.186 0 00-.185.185v1.887c0 .102.082.186.185.186m-8.862 2.715h2.118a.187.187 0 00.186-.185V9.006a.186.186 0 00-.186-.186H5.123a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m2.955 0h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186H8.077a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m2.953 0h2.118a.187.187 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185M23.76 11.23c-.33-.238-.85-.355-1.554-.355-.38 0-.82.046-1.28.14a4.4 4.4 0 00-2.884-1.745l-.478-.063-.264.402a5.4 5.4 0 00-.77 2.052c-.67.11-1.393.284-2.154.526l-.423.136V3.388c0-.3-.243-.543-.543-.543H4.72a.543.543 0 00-.543.543v8.528c-.808.384-1.636.88-2.45 1.488C.714 14.15 0 15.342 0 16.48c0 3.738 3.516 6.78 8.877 6.78 6.136 0 11.135-3.328 12.825-8.243.326-.06.663-.092 1.01-.092.353 0 .7.03 1.036.09.28.05.52.008.68-.118.17-.13.25-.333.22-.544a1.7 1.7 0 00-.888-1.123" />
+                  </svg>
+                </div>
+                <span
+                  class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">CONTAINERS</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">Docker &amp; Linux Servers</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                Ubuntu/Debian environment administration, Nginx reverse proxies, SSL configuration, cPanel, Plesk, and
+                CI/CD pipelines.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">88% · Server Craft</span>
+            </div>
+          </div>
+
+          <!-- 15. Git & GitHub Workflows -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="tools">
+            <div>
+              <div class="flex items-center justify-between">
+                <div class="w-10 h-10 rounded-lg bg-black text-white flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                </div>
+                <span
+                  class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">VERSIONING</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">Git &amp; GitHub Actions</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                Clean commit discipline, branch management, semantic release workflows, pull request reviews, and
+                automated deployment actions.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">96% · Daily Standard</span>
+            </div>
+          </div>
+
+          <!-- 16. UI/UX & Figma -->
+          <div class="flex flex-col justify-between p-6 bg-white border border-line rounded-xl interactive-card"
+            data-stack-category="frontend">
+            <div>
+              <div class="flex items-center justify-between">
+                <div
+                  class="w-10 h-10 rounded-lg bg-[#a259ff]/10 text-[#a259ff] flex items-center justify-center font-mono font-bold text-xs">
+                  FIGMA
+                </div>
+                <span
+                  class="font-mono text-[10px] text-muted bg-gray-50 px-2 py-0.5 rounded border border-gray-200">DESIGN-TO-CODE</span>
+              </div>
+              <h3 class="mt-4 text-xl font-bold">Figma &amp; UI Systems</h3>
+              <p class="mt-2 text-xs text-muted leading-relaxed">
+                Pixel-perfect design translation, responsive wireframing, auto-layout tokens, interactive prototyping,
+                and handoff precision.
+              </p>
+            </div>
+            <div class="mt-6 pt-3 border-t border-line flex justify-between items-center text-[11px] font-mono">
+              <span class="text-muted">Mastery</span>
+              <span class="font-bold text-ink">90% · Pixel Precision</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section (003): Selected Featured Projects -->
+    <section class="border-b border-line py-[clamp(60px,10vw,140px)]">
+      <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
+          <div>
+            <p class="font-mono text-[11px] uppercase text-orange-600">(003) Selected Work</p>
+            <h2 class="mt-2 text-[clamp(3.2rem,6.8vw,8rem)] font-extrabold leading-[.85] tracking-[-.085em]">
+              PROOF IN<br />PRODUCTION.
+            </h2>
+          </div>
+          <a class="text-xs font-bold tracking-[.04em] pb-1 border-b border-ink hover:text-orange-600 hover:border-orange-600 transition"
+            href="projects.html">
+            VIEW ALL PROJECTS →
+          </a>
+        </div>
+
+        <div class="space-y-16">
+          <!-- Project 1: 6Storage -->
+          <article class="grid gap-6 border-t border-line pt-8 md:grid-cols-[60px_1.25fr_1fr] items-start group">
+            <span class="font-mono text-sm font-bold text-orange-600">01</span>
+            <a href="projects/6storage.html"
+              class="block overflow-hidden rounded-xl border border-line bg-white shadow-sm">
+              <img class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
+                src="Image/6storage.png" alt="6Storage Plugin &amp; Template System" />
+            </a>
+            <div class="flex flex-col justify-between h-full">
+              <div>
+                <p class="font-mono text-[11px] uppercase text-orange-600 tracking-wider">
+                  6STORAGE / WORDPRESS / PAGE BUILDERS
+                </p>
+                <h3 class="my-4 text-[clamp(2rem,3.8vw,4.2rem)] font-extrabold leading-[.9] tracking-[-.07em]">
+                  6STORAGE<br />PLUGIN ECOSYSTEM.
+                </h3>
+                <p class="text-sm text-muted leading-relaxed">
+                  A proprietary page-builder plugin engineered to streamline website rollouts for self-storage
+                  facilities. Powered 60+ production websites and 18+ reusable multi-tenant templates with custom block
+                  components.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2 font-mono text-[11px]">
+                  <span class="bg-paper border border-line px-2.5 py-1 rounded">WordPress</span>
+                  <span class="bg-paper border border-line px-2.5 py-1 rounded">PHP 8</span>
+                  <span class="bg-paper border border-line px-2.5 py-1 rounded">JavaScript</span>
+                  <span class="bg-paper border border-line px-2.5 py-1 rounded">Page Builders</span>
+                </div>
+              </div>
+              <div class="mt-8">
+                <a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider py-2 px-4 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition"
+                  href="projects/6storage.html">
+                  READ CASE STUDY →
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Sri Ramakrishna Hospital -->
+          <article class="grid gap-6 border-t border-line pt-8 md:grid-cols-[60px_1.25fr_1fr] items-start group">
+            <span class="font-mono text-sm font-bold text-orange-600">02</span>
+            <a href="projects/sri-ramakrishna-hospital.html"
+              class="block overflow-hidden rounded-xl border border-line bg-white shadow-sm">
+              <img class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
+                src="Image/sriramakrishnahospital.png" alt="Sri Ramakrishna Hospital Portal" />
+            </a>
+            <div class="flex flex-col justify-between h-full">
+              <div>
+                <p class="font-mono text-[11px] uppercase text-orange-600 tracking-wider">
+                  HEALTHCARE / CUSTOM THEME / ACF
+                </p>
+                <h3 class="my-4 text-[clamp(2rem,3.8vw,4.2rem)] font-extrabold leading-[.9] tracking-[-.07em]">
+                  SRI RAMAKRISHNA<br />HOSPITAL.
+                </h3>
+                <p class="text-sm text-muted leading-relaxed">
+                  A comprehensive multi-specialty healthcare platform featuring an interactive doctor directory,
+                  department pathways, and real-time appointment booking workflows engineered for high reliability and
+                  accessibility.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2 font-mono text-[11px]">
+                  <span class="bg-paper border border-line px-2.5 py-1 rounded">WordPress</span>
+                  <span class="bg-paper border border-line px-2.5 py-1 rounded">ACF Pro</span>
+                  <span class="bg-paper border border-line px-2.5 py-1 rounded">Tailwind CSS</span>
+                  <span class="bg-paper border border-line px-2.5 py-1 rounded">Healthcare Booking</span>
+                </div>
+              </div>
+              <div class="mt-8">
+                <a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider py-2 px-4 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition"
+                  href="projects/sri-ramakrishna-hospital.html">
+                  READ CASE STUDY →
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Bodhi Mind Care Hospital -->
+          <article class="grid gap-6 border-t border-line pt-8 md:grid-cols-[60px_1.25fr_1fr] items-start group">
+            <span class="font-mono text-sm font-bold text-orange-600">03</span>
+            <a href="projects/bodhi-mindcare.html"
+              class="block overflow-hidden rounded-xl border border-line bg-white shadow-sm">
+              <img class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
+                src="Image/bodhiimindcarehospital.png" alt="Bodhi Mind Care Hospital" />
+            </a>
+            <div class="flex flex-col justify-between h-full">
+              <div>
+                <p class="font-mono text-[11px] uppercase text-orange-600 tracking-wider">
+                  CLINICAL / ACCESSIBILITY / SEO
+                </p>
+                <h3 class="my-4 text-[clamp(2rem,3.8vw,4.2rem)] font-extrabold leading-[.9] tracking-[-.07em]">
+                  BODHI MIND<br />CARE HOSPITAL.
+                </h3>
+                <p class="text-sm text-muted leading-relaxed">
+                  Designed and built from the ground up to provide calming, accessible, and informative care guidance
+                  for mental health consultations with seamless appointment inquiry pipelines.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2 font-mono text-[11px]">
+                  <span class="bg-paper border border-line px-2.5 py-1 rounded">Custom WordPress</span>
+                  <span class="bg-paper border border-line px-2.5 py-1 rounded">PHP</span>
+                  <span class="bg-paper border border-line px-2.5 py-1 rounded">UI Design</span>
+                </div>
+              </div>
+              <div class="mt-8">
+                <a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider py-2 px-4 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition"
+                  href="projects/bodhi-mindcare.html">
+                  READ CASE STUDY →
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Google Review & Analytics Dashboard -->
+          <article class="grid gap-6 border-t border-line pt-8 md:grid-cols-[60px_1.25fr_1fr] items-start group">
+            <span class="font-mono text-sm font-bold text-orange-600">04</span>
+            <a href="projects/google-review-dashboard.html"
+              class="block overflow-hidden rounded-xl border border-line bg-white shadow-sm">
+              <img class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
+                src="Image/project-management.png" alt="Google Review &amp; Analytics Dashboard" />
+            </a>
+            <div class="flex flex-col justify-between h-full">
+              <div>
+                <p class="font-mono text-[11px] uppercase text-orange-600 tracking-wider">
+                  FULLSTACK / GOOGLE APIS / PHP
+                </p>
+                <h3 class="my-4 text-[clamp(2rem,3.8vw,4.2rem)] font-extrabold leading-[.9] tracking-[-.07em]">
+                  GOOGLE REVIEW<br />ANALYTICS ENGINE.
+                </h3>
+                <p class="text-sm text-muted leading-relaxed">
+                  A centralized real-time dashboard aggregating customer feedback and Google Business ratings across
+                  multiple branches, with sentiment scoring and automated team notifications.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2 font-mono text-[11px]">
+                  <span class="bg-paper border border-line px-2.5 py-1 rounded">Google APIs</span>
+                  <span class="bg-paper border border-line px-2.5 py-1 rounded">PHP / MySQL</span>
+                  <span class="bg-paper border border-line px-2.5 py-1 rounded">Dashboard UI</span>
+                </div>
+              </div>
+              <div class="mt-8">
+                <a class="inline-flex items-center gap-2 text-xs font-bold tracking-wider py-2 px-4 border border-ink bg-ink text-paper hover:bg-transparent hover:text-ink transition"
+                  href="projects/google-review-dashboard.html">
+                  READ CASE STUDY →
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section (004): Philosophy & Engineering Values -->
+    <section class="border-b border-line py-[clamp(60px,10vw,140px)] bg-paper">
+      <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
+        <div class="mb-14 max-w-[70ch]">
+          <p class="font-mono text-[11px] uppercase text-orange-600">(004) Engineering Values</p>
+          <h2 class="mt-3 text-[clamp(2.8rem,6vw,6.5rem)] font-extrabold leading-[.85] tracking-[-.085em]">
+            HOW I THINK<br />&amp; SOLVE PROBLEMS.
+          </h2>
+          <p class="mt-4 text-[15px] leading-relaxed text-muted">
+            Great software engineering is not merely writing syntax—it is understanding user needs, debugging with
+            scientific rigor, and continually connecting the dots between technologies.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-line pt-10">
+          <!-- Value 1 -->
+          <div class="p-8 border border-line bg-white rounded-xl">
+            <span class="font-mono text-xs font-bold text-orange-600">01</span>
+            <h3 class="mt-3 text-2xl font-bold tracking-tight">Root-Cause Debugging &amp; Troubleshooting</h3>
+            <p class="mt-3 text-sm text-muted leading-relaxed">
+              I do not apply temporary band-aids. Whether it is an insidious race condition in client-side state, a
+              bottleneck in database indexing, or a CSS subgrid misalignment, I dive deep into DevTools profilers,
+              server logs, and network waterfalls until the fundamental cause is eradicated.
+            </p>
+          </div>
+
+          <!-- Value 2 -->
+          <div class="p-8 border border-line bg-white rounded-xl">
+            <span class="font-mono text-xs font-bold text-orange-600">02</span>
+            <h3 class="mt-3 text-2xl font-bold tracking-tight">Learning by Connecting Concepts</h3>
+            <p class="mt-3 text-sm text-muted leading-relaxed">
+              I firmly believe that learning is about making connections. Having mastered backend architectures and
+              database modeling early on, adopting reactive frontend frameworks and modern AI tooling felt natural
+              because the core architectural paradigms intersect and reinforce one another.
+            </p>
+          </div>
+
+          <!-- Value 3 -->
+          <div class="p-8 border border-line bg-white rounded-xl">
+            <span class="font-mono text-xs font-bold text-orange-600">03</span>
+            <h3 class="mt-3 text-2xl font-bold tracking-tight">AI-Augmented Velocity, Human Judgment</h3>
+            <p class="mt-3 text-sm text-muted leading-relaxed">
+              I leverage LLMs (Cursor, Claude, Copilot) as supercharged intellectual co-pilots for boilerplate
+              elimination, rapid exploration, and synthetic testing. However, architectural design, type safety,
+              security auditing, and UX refinement always remain under strict human ownership.
+            </p>
+          </div>
+
+          <!-- Value 4 -->
+          <div class="p-8 border border-line bg-white rounded-xl">
+            <span class="font-mono text-xs font-bold text-orange-600">04</span>
+            <h3 class="mt-3 text-2xl font-bold tracking-tight">Ownership, Transparency &amp; Delivery</h3>
+            <p class="mt-3 text-sm text-muted leading-relaxed">
+              From high-level discussions with product stakeholders to writing clean commit logs and setting up reliable
+              deployments, I treat every project with founder-level ownership. When commitments are made, deadlines are
+              met without excuses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section (005): Experience Snapshot -->
+    <section class="border-b border-line py-[clamp(60px,8vw,110px)]">
+      <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-10">
+          <div>
+            <p class="font-mono text-[11px] uppercase text-orange-600">(005) Career Track</p>
+            <h2 class="mt-2 text-[clamp(2.5rem,5vw,5.5rem)] font-extrabold leading-[.85] tracking-[-.085em]">
+              WORK EXPERIENCE.
+            </h2>
+          </div>
+          <a class="text-xs font-bold tracking-[.04em] pb-1 border-b border-ink hover:text-orange-600 hover:border-orange-600 transition"
+            href="experience.html">
+            FULL RESUME &amp; ROLES →
+          </a>
+        </div>
+
+        <div class="border-t border-line divide-y divide-line">
+          <div class="py-6 grid grid-cols-1 md:grid-cols-[1.2fr_2fr_3fr] gap-4 items-baseline">
+            <span class="font-mono text-xs text-orange-600 font-bold">2024 — PRESENT</span>
+            <div>
+              <h3 class="text-xl font-bold">Frontend &amp; Fullstack Developer</h3>
+              <p class="font-mono text-xs text-muted">Bright Bridge Info Tech</p>
+            </div>
+            <p class="text-sm text-muted leading-relaxed">
+              Architecting high-traffic WordPress platforms, bespoke client portals, and modern React interfaces with
+              API and payment gateway integrations.
+            </p>
+          </div>
+
+          <div class="py-6 grid grid-cols-1 md:grid-cols-[1.2fr_2fr_3fr] gap-4 items-baseline">
+            <span class="font-mono text-xs text-orange-600 font-bold">2022 — 2024</span>
+            <div>
+              <h3 class="text-xl font-bold">Web Developer</h3>
+              <p class="font-mono text-xs text-muted">6Storage</p>
+            </div>
+            <p class="text-sm text-muted leading-relaxed">
+              Engineered the core custom page-builder plugin supporting 60+ facility portals, optimizing Core Web Vitals
+              and automated customer onboarding.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-line pt-[clamp(60px,10vw,140px)] pb-12 bg-paper">
+    <div class="mx-auto max-w-[1560px] px-[clamp(1.25rem,3.1vw,3.5rem)]">
+      <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 mb-16">
+        <div>
+          <p class="font-mono text-xs uppercase text-orange-600 mb-4">(006) INQUIRIES &amp; COLLABORATION</p>
+          <h2 class="text-[clamp(3.5rem,8vw,8.5rem)] font-extrabold leading-[.83] tracking-[-.09em]">
+            LET'S WORK<br />TOGETHER.
+          </h2>
+          <p class="mt-6 text-base md:text-lg text-muted max-w-[48ch] leading-relaxed">
+            Have a web application, custom WordPress platform, or high-performance frontend you want built with
+            precision? Let's connect and make it happen.
+          </p>
+        </div>
+
+        <div class="flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-line pt-8 lg:pt-0 lg:pl-12">
+          <div>
+            <p class="font-mono text-xs uppercase text-muted mb-2">Direct Contact</p>
+            <a class="text-xl md:text-2xl font-bold tracking-tight block hover:text-orange-600 transition"
+              href="mailto:vnanthakumar00@gmail.com">
+              vnanthakumar00@gmail.com
+            </a>
+            <button class="mt-3 inline-flex items-center gap-1.5 font-mono text-xs text-orange-600 hover:underline"
+              data-copy-email="vnanthakumar00@gmail.com">
+              <span>📋 Copy email address</span>
+            </button>
+          </div>
+
+          <div class="mt-8 space-y-2 font-mono text-xs">
+            <p class="text-muted">LOCATION: Coimbatore, Tamil Nadu, India</p>
+            <p class="text-muted">TIMEZONE: IST (UTC+05:30) · Global Remote</p>
+            <p class="text-emerald-600 font-bold">● CURRENT STATUS: AVAILABLE FOR SELECT WORK</p>
+          </div>
+
+          <div class="mt-8">
+            <a href="contact.html"
+              class="inline-block px-6 py-3.5 bg-ink text-paper text-xs font-bold tracking-wider hover:bg-orange-600 transition">
+              START A PROJECT →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright Bar -->
+      <div
+        class="flex flex-col justify-between gap-4 border-t border-line pt-6 font-mono text-xs text-muted sm:flex-row items-center">
+        <span>© 2026 NANTHA VENKAT<sup>®</sup> · ALL RIGHTS RESERVED</span>
+        <div class="flex items-center gap-6 text-ink font-semibold">
+          <a class="hover:text-orange-600 transition" href="https://github.com/NanthaVenkat" target="_blank"
+            rel="noopener">GitHub ↗</a>
+          <a class="hover:text-orange-600 transition" href="https://linkedin.com/in/nantha-venkat-268360240"
+            target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="hover:text-orange-600 transition" href="mailto:vnanthakumar00@gmail.com">Email ↗</a>
+          <a class="hover:text-orange-600 transition cursor-pointer" data-top>Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
