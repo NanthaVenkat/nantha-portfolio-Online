@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ------------------------------------------------------------------------
   // 3. AI Crawler System on Hero Big Font
   // ------------------------------------------------------------------------
-  initAICrawler();
+  // initAICrawler();
 
   // ------------------------------------------------------------------------
   // 4. Ambient Floating Badges Parallax & Interactions
