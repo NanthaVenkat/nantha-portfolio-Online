@@ -372,6 +372,24 @@
   overflow: visible;
 }
 
+/* Keep replacement logos proportional to the responsive headline font size. */
+#hero-headline .headline-letter-image {
+  display: block;
+  width: 0.72em;
+  height: 0.72em;
+  flex: none;
+  object-fit: contain;
+}
+
+#hero-headline .headline-ampersand-image {
+  display: block;
+  width: 0.56em;
+  height: 0.56em;
+  flex: none;
+  margin-right: 0.18em;
+  object-fit: contain;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .crawler-bubble {
